@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+
+{%block title %}Hello, {{user.user_name}}{% endblock %}
+
+{%block body%}
+<h1>How are you feeling today, {{user.user_name}}?</h1>
+<div id="daily questionaire" class="daily">
+    <div class="symptoms"><p>What symptoms are you feeling today?</p></div>
+    <div class="medications"><p>What medications did you take?</p></div>
+</div> </div>
+{%endblock%}
