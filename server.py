@@ -56,14 +56,37 @@ def create_account():
     user = crud.get_user_by_email(email)
     
     if user:
-        flash("Account with that email already exists.")
+        flash("Account with that email already exists. Please log in.")
     else:
         user = crud.create_user(email, password, user_name)
         db.session.add(user)
         db.session.commit()
+
+        session["name"] = user.user_name
+        session["user_id"] = user.user_id
+        
         flash("Account successfully created!")
 
-    return redirect("/")
+        return redirect("/intake")
+
+@app.route("/intake")
+def show_intake_form():
+    """User intake when account first created"""
+
+    user_id= session["user_id"]
+    user= crud.get_user_by_id(user_id)
+
+    return render_template('welcomepage.html', user = user)
+
+@app.route("/profile")
+def show_daily_questionnaire():
+    """Shows page with daily questionnaire"""
+
+    user_id= session["user_id"]
+    user= crud.get_user_by_id(user_id)
+
+    return render_template("userpage.html", user=user)
+
 
 @app.route('/profile/<user_id>')
 def show_user_page(user_id):
@@ -72,7 +95,7 @@ def show_user_page(user_id):
     user_id= session["user_id"]
     user= crud.get_user_by_id(user_id)
 
-    return render_template("userpage.html", user = user )
+    return render_template("user_details.html", user = user )
 
 
 if __name__ == "__main__":

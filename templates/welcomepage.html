@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{%block title%}Welcome to Onco Buddy {{user.user_name}} {%endblock%}
+
+{% block body %}
+<h1>Welcome to Onco Buddy</h1>
+<p>This is where intake form will be.
+    <li>Choose from a list of conditions</li>
+    <li>Sex</li>
+    <li>Age</li>
+
+<a href="/profile">Go to profile</a>
+</p>{% endblock %}
