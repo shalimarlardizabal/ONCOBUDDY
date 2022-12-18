@@ -51,7 +51,7 @@ def create_account():
 
     email = request.form.get("email")
     password = request.form.get("password")
-    user_name= request.form.get("username")
+    user_name= request.form.get("name")
 
     user = crud.get_user_by_email(email)
     
@@ -64,7 +64,7 @@ def create_account():
 
         session["name"] = user.user_name
         session["user_id"] = user.user_id
-        
+
         flash("Account successfully created!")
 
         return redirect("/intake")
