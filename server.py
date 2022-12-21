@@ -22,10 +22,10 @@ def user_login():
 
     email = request.form.get("email")
     password = request.form.get("password")
-    print(f'email {email}')
+    # print(f'email {email}')
 
     user = crud.get_user_by_email(email)
-    print(f'user {user}')
+    # print(f'user {user}')
 
     if not user or user.password != password:
         flash ('Incorrect email or password')
@@ -83,7 +83,7 @@ def show_daily_questionnaire():
     """Shows page with daily questionnaire"""
 
     user_id= session["user_id"]
-    user= crud.get_user_by_id(user_id)
+    user= crud.get_user_by_id(hon)
 
     return render_template("userpage.html", user=user)
 

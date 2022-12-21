@@ -1,0 +1,4982 @@
+[
+    {
+        "id": "c_1",
+        "type": "condition",
+        "name": "Achalasia",
+        "common_name": "Achalasia"
+    },
+    {
+        "id": "c_2",
+        "type": "condition",
+        "name": "Atopic dermatitis",
+        "common_name": "Eczema"
+    },
+    {
+        "id": "c_3",
+        "type": "condition",
+        "name": "Allergic conjunctivitis",
+        "common_name": "Allergic conjunctivitis"
+    },
+    {
+        "id": "c_4",
+        "type": "condition",
+        "name": "Allergic rhinitis",
+        "common_name": "Hay fever"
+    },
+    {
+        "id": "c_5",
+        "type": "condition",
+        "name": "Alcoholism",
+        "common_name": "Alcoholism"
+    },
+    {
+        "id": "c_6",
+        "type": "condition",
+        "name": "Alcoholic liver disease",
+        "common_name": "Alcoholic liver disease"
+    },
+    {
+        "id": "c_7",
+        "type": "condition",
+        "name": "Anorexia nervosa",
+        "common_name": "Anorexia"
+    },
+    {
+        "id": "c_8",
+        "type": "condition",
+        "name": "Asthma",
+        "common_name": "Asthma"
+    },
+    {
+        "id": "c_12",
+        "type": "condition",
+        "name": "Anogenital warts",
+        "common_name": "Genital warts"
+    },
+    {
+        "id": "c_13",
+        "type": "condition",
+        "name": "Warts",
+        "common_name": "Warts"
+    },
+    {
+        "id": "c_14",
+        "type": "condition",
+        "name": "Bulimia nervosa",
+        "common_name": "Bulimia"
+    },
+    {
+        "id": "c_15",
+        "type": "condition",
+        "name": "Celiac disease",
+        "common_name": "Celiac disease"
+    },
+    {
+        "id": "c_16",
+        "type": "condition",
+        "name": "Alzheimer's disease",
+        "common_name": "Alzheimer's disease"
+    },
+    {
+        "id": "c_17",
+        "type": "condition",
+        "name": "Crohn's disease",
+        "common_name": "Crohn's disease"
+    },
+    {
+        "id": "c_19",
+        "type": "condition",
+        "name": "Parkinson's disease",
+        "common_name": "Parkinson's disease"
+    },
+    {
+        "id": "c_20",
+        "type": "condition",
+        "name": "Peptic ulcer",
+        "common_name": "Peptic ulcer disease"
+    },
+    {
+        "id": "c_22",
+        "type": "condition",
+        "name": "Pregnancy",
+        "common_name": "Pregnancy"
+    },
+    {
+        "id": "c_23",
+        "type": "condition",
+        "name": "Ulcerative colitis",
+        "common_name": "Colitis ulcerosa"
+    },
+    {
+        "id": "c_25",
+        "type": "condition",
+        "name": "Melanoma",
+        "common_name": "Melanoma"
+    },
+    {
+        "id": "c_26",
+        "type": "condition",
+        "name": "Depressive disorder",
+        "common_name": "Depression"
+    },
+    {
+        "id": "c_27",
+        "type": "condition",
+        "name": "Gout",
+        "common_name": "Gout"
+    },
+    {
+        "id": "c_29",
+        "type": "condition",
+        "name": "Essential tremor",
+        "common_name": "Essential tremor"
+    },
+    {
+        "id": "c_30",
+        "type": "condition",
+        "name": "Degenerative disc disease of the lumbar and sacral spine",
+        "common_name": "Degenerative disc disease of the lumbar and sacral spine"
+    },
+    {
+        "id": "c_31",
+        "type": "condition",
+        "name": "Endometriosis",
+        "common_name": "Endometriosis"
+    },
+    {
+        "id": "c_32",
+        "type": "condition",
+        "name": "Pulmonary tuberculosis",
+        "common_name": "Pulmonary tuberculosis"
+    },
+    {
+        "id": "c_33",
+        "type": "condition",
+        "name": "Influenza",
+        "common_name": "Flu"
+    },
+    {
+        "id": "c_34",
+        "type": "condition",
+        "name": "Gilbert's syndrome",
+        "common_name": "Gilbert's syndrome"
+    },
+    {
+        "id": "c_35",
+        "type": "condition",
+        "name": "Hypotension",
+        "common_name": "Hypotension"
+    },
+    {
+        "id": "c_36",
+        "type": "condition",
+        "name": "Infectious arthritis",
+        "common_name": "Infectious arthritis"
+    },
+    {
+        "id": "c_37",
+        "type": "condition",
+        "name": "Nephrolithiasis",
+        "common_name": "Kidney stones"
+    },
+    {
+        "id": "c_38",
+        "type": "condition",
+        "name": "Cholecystolithiasis",
+        "common_name": "Gallstones within the gallbladder"
+    },
+    {
+        "id": "c_39",
+        "type": "condition",
+        "name": "Cluster headaches",
+        "common_name": "Cluster headaches"
+    },
+    {
+        "id": "c_41",
+        "type": "condition",
+        "name": "Mild cognitive impairment",
+        "common_name": "Mild cognitive impairment"
+    },
+    {
+        "id": "c_42",
+        "type": "condition",
+        "name": "Impetigo contagiosa",
+        "common_name": "Impetigo"
+    },
+    {
+        "id": "c_43",
+        "type": "condition",
+        "name": "Psoriasis",
+        "common_name": "Psoriasis"
+    },
+    {
+        "id": "c_45",
+        "type": "condition",
+        "name": "Menopause",
+        "common_name": "Menopause"
+    },
+    {
+        "id": "c_46",
+        "type": "condition",
+        "name": "Myasthenia gravis",
+        "common_name": "Progressive muscle weakness"
+    },
+    {
+        "id": "c_47",
+        "type": "condition",
+        "name": "Uterine fibroids",
+        "common_name": "Uterine fibroids"
+    },
+    {
+        "id": "c_48",
+        "type": "condition",
+        "name": "Atrial fibrillation",
+        "common_name": "Atrial fibrillation"
+    },
+    {
+        "id": "c_49",
+        "type": "condition",
+        "name": "Migraine",
+        "common_name": "Migraine"
+    },
+    {
+        "id": "c_50",
+        "type": "condition",
+        "name": "Hypertension",
+        "common_name": "High blood pressure"
+    },
+    {
+        "id": "c_51",
+        "type": "condition",
+        "name": "Hyperparathyroidism",
+        "common_name": "Hyperparathyroidism"
+    },
+    {
+        "id": "c_52",
+        "type": "condition",
+        "name": "Hyperthyroidism",
+        "common_name": "Hyperthyroidism"
+    },
+    {
+        "id": "c_54",
+        "type": "condition",
+        "name": "Urge urinary incontinence",
+        "common_name": "Urge incontinence"
+    },
+    {
+        "id": "c_55",
+        "type": "condition",
+        "name": "Tension-type headaches",
+        "common_name": "Tension headaches"
+    },
+    {
+        "id": "c_57",
+        "type": "condition",
+        "name": "Addison's disease",
+        "common_name": "Addison's disease"
+    },
+    {
+        "id": "c_58",
+        "type": "condition",
+        "name": "Hypoparathyroidism",
+        "common_name": "Hypoparathyroidism"
+    },
+    {
+        "id": "c_59",
+        "type": "condition",
+        "name": "Hypothyroidism",
+        "common_name": "Hypothyroidism"
+    },
+    {
+        "id": "c_60",
+        "type": "condition",
+        "name": "Hemolytic anemia",
+        "common_name": "Hemolytic anemia"
+    },
+    {
+        "id": "c_61",
+        "type": "condition",
+        "name": "Vitamin B12 deficiency anemia",
+        "common_name": "Vitamin B12 deficiency anemia"
+    },
+    {
+        "id": "c_62",
+        "type": "condition",
+        "name": "Iron deficiency anemia",
+        "common_name": "Iron deficiency anemia"
+    },
+    {
+        "id": "c_63",
+        "type": "condition",
+        "name": "Nicotine dependence",
+        "common_name": "Nicotine dependence"
+    },
+    {
+        "id": "c_64",
+        "type": "condition",
+        "name": "Lung cancer",
+        "common_name": "Lung cancer"
+    },
+    {
+        "id": "c_65",
+        "type": "condition",
+        "name": "Gall bladder and bile duct cancer",
+        "common_name": "Gall bladder and bile duct cancer"
+    },
+    {
+        "id": "c_66",
+        "type": "condition",
+        "name": "Gastric cancer",
+        "common_name": "Gastric cancer"
+    },
+    {
+        "id": "c_67",
+        "type": "condition",
+        "name": "Oral herpes",
+        "common_name": "Cold sore"
+    },
+    {
+        "id": "c_68",
+        "type": "condition",
+        "name": "Chickenpox",
+        "common_name": "Chickenpox"
+    },
+    {
+        "id": "c_69",
+        "type": "condition",
+        "name": "Osteoporosis",
+        "common_name": "Osteoporosis"
+    },
+    {
+        "id": "c_70",
+        "type": "condition",
+        "name": "Acute lymphoblastic leukemia",
+        "common_name": "Acute lymphoid leukemia"
+    },
+    {
+        "id": "c_71",
+        "type": "condition",
+        "name": "Acute myeloid leukemia",
+        "common_name": "Acute myeloid leukemia"
+    },
+    {
+        "id": "c_72",
+        "type": "condition",
+        "name": "Acute bronchitis",
+        "common_name": "Chest cold"
+    },
+    {
+        "id": "c_73",
+        "type": "condition",
+        "name": "Acute pancreatitis",
+        "common_name": "Acute pancreatitis"
+    },
+    {
+        "id": "c_74",
+        "type": "condition",
+        "name": "Epilepsy",
+        "common_name": "Epilepsy"
+    },
+    {
+        "id": "c_75",
+        "type": "condition",
+        "name": "Periodontitis",
+        "common_name": "Gum disease"
+    },
+    {
+        "id": "c_76",
+        "type": "condition",
+        "name": "Chronic obstructive pulmonary disease",
+        "common_name": "Chronic obstructive pulmonary disease"
+    },
+    {
+        "id": "c_77",
+        "type": "condition",
+        "name": "Acute urticaria",
+        "common_name": "Short-term hives"
+    },
+    {
+        "id": "c_78",
+        "type": "condition",
+        "name": "Shingles",
+        "common_name": "Shingles"
+    },
+    {
+        "id": "c_79",
+        "type": "condition",
+        "name": "Dental caries",
+        "common_name": "Dental cavities"
+    },
+    {
+        "id": "c_80",
+        "type": "condition",
+        "name": "Fatigue",
+        "common_name": "Fatigue"
+    },
+    {
+        "id": "c_81",
+        "type": "condition",
+        "name": "Benign prostatic hyperplasia",
+        "common_name": "Benign prostatic hyperplasia"
+    },
+    {
+        "id": "c_82",
+        "type": "condition",
+        "name": "Chronic lymphocytic leukemia",
+        "common_name": "Chronic lymphocytic leukemia"
+    },
+    {
+        "id": "c_83",
+        "type": "condition",
+        "name": "Chronic myelogenous leukemia",
+        "common_name": "Chronic myelogenous leukemia"
+    },
+    {
+        "id": "c_84",
+        "type": "condition",
+        "name": "Chronic venous insufficiency",
+        "common_name": "Chronic venous insufficiency"
+    },
+    {
+        "id": "c_85",
+        "type": "condition",
+        "name": "Peripheral vascular disease",
+        "common_name": "Peripheral arterial disease"
+    },
+    {
+        "id": "c_86",
+        "type": "condition",
+        "name": "Chronic pancreatitis",
+        "common_name": "Chronic pancreatitis"
+    },
+    {
+        "id": "c_87",
+        "type": "condition",
+        "name": "Common cold",
+        "common_name": "Common cold"
+    },
+    {
+        "id": "c_88",
+        "type": "condition",
+        "name": "Endometrial cancer",
+        "common_name": "Endometrial cancer"
+    },
+    {
+        "id": "c_89",
+        "type": "condition",
+        "name": "Ovarian cancer",
+        "common_name": "Ovarian cancer"
+    },
+    {
+        "id": "c_90",
+        "type": "condition",
+        "name": "Colon cancer",
+        "common_name": "Colon cancer"
+    },
+    {
+        "id": "c_91",
+        "type": "condition",
+        "name": "Laryngeal cancer",
+        "common_name": "Laryngeal cancer"
+    },
+    {
+        "id": "c_92",
+        "type": "condition",
+        "name": "Kidney cancer",
+        "common_name": "Kidney cancer"
+    },
+    {
+        "id": "c_93",
+        "type": "condition",
+        "name": "Breast cancer",
+        "common_name": "Breast cancer"
+    },
+    {
+        "id": "c_94",
+        "type": "condition",
+        "name": "Esophageal cancer",
+        "common_name": "Esophageal cancer"
+    },
+    {
+        "id": "c_95",
+        "type": "condition",
+        "name": "Vulvar cancer",
+        "common_name": "Vulvar cancer"
+    },
+    {
+        "id": "c_96",
+        "type": "condition",
+        "name": "Cervical cancer",
+        "common_name": "Cervical cancer"
+    },
+    {
+        "id": "c_97",
+        "type": "condition",
+        "name": "Thyroid cancer",
+        "common_name": "Thyroid cancer"
+    },
+    {
+        "id": "c_98",
+        "type": "condition",
+        "name": "Pancreatic cancer",
+        "common_name": "Pancreatic cancer"
+    },
+    {
+        "id": "c_99",
+        "type": "condition",
+        "name": "Liver cancer",
+        "common_name": "Liver cancer"
+    },
+    {
+        "id": "c_100",
+        "type": "condition",
+        "name": "Reactive arthritis",
+        "common_name": "Reactive arthritis"
+    },
+    {
+        "id": "c_101",
+        "type": "condition",
+        "name": "Gastroesophageal reflux disease",
+        "common_name": "Gastroesophageal reflux disease"
+    },
+    {
+        "id": "c_102",
+        "type": "condition",
+        "name": "Sciatica",
+        "common_name": "Sciatica"
+    },
+    {
+        "id": "c_103",
+        "type": "condition",
+        "name": "Trichomoniasis",
+        "common_name": "Trichomoniasis"
+    },
+    {
+        "id": "c_104",
+        "type": "condition",
+        "name": "Rheumatoid arthritis",
+        "common_name": "Rheumatoid arthritis"
+    },
+    {
+        "id": "c_105",
+        "type": "condition",
+        "name": "Sarcoidosis",
+        "common_name": "Sarcoidosis"
+    },
+    {
+        "id": "c_106",
+        "type": "condition",
+        "name": "Sexual addiction",
+        "common_name": "Sexual addiction"
+    },
+    {
+        "id": "c_108",
+        "type": "condition",
+        "name": "Multiple sclerosis",
+        "common_name": "Multiple sclerosis"
+    },
+    {
+        "id": "c_109",
+        "type": "condition",
+        "name": "Systemic lupus erythematosus",
+        "common_name": "Lupus"
+    },
+    {
+        "id": "c_110",
+        "type": "condition",
+        "name": "Bartholin's cyst",
+        "common_name": "Vulvar cyst"
+    },
+    {
+        "id": "c_111",
+        "type": "condition",
+        "name": "Acne",
+        "common_name": "Acne"
+    },
+    {
+        "id": "c_112",
+        "type": "condition",
+        "name": "Systemic scleroderma",
+        "common_name": "Systemic scleroderma"
+    },
+    {
+        "id": "c_113",
+        "type": "condition",
+        "name": "Diverticulosis",
+        "common_name": "Diverticulosis"
+    },
+    {
+        "id": "c_114",
+        "type": "condition",
+        "name": "Ischemic stroke",
+        "common_name": "Ischemic stroke"
+    },
+    {
+        "id": "c_116",
+        "type": "condition",
+        "name": "Stress urinary incontinence",
+        "common_name": "Stress incontinence"
+    },
+    {
+        "id": "c_117",
+        "type": "condition",
+        "name": "Anxiety disorder",
+        "common_name": "Anxiety disorder"
+    },
+    {
+        "id": "c_118",
+        "type": "condition",
+        "name": "Obsessive-compulsive disorder",
+        "common_name": "Obsessive-compulsive disorder"
+    },
+    {
+        "id": "c_120",
+        "type": "condition",
+        "name": "Gingivitis",
+        "common_name": "Inflammation of the gums"
+    },
+    {
+        "id": "c_121",
+        "type": "condition",
+        "name": "Acute viral pharyngitis",
+        "common_name": "Acute viral throat infection"
+    },
+    {
+        "id": "c_122",
+        "type": "condition",
+        "name": "Prostatitis",
+        "common_name": "Prostatitis"
+    },
+    {
+        "id": "c_123",
+        "type": "condition",
+        "name": "Acute laryngitis",
+        "common_name": "Acute laryngitis"
+    },
+    {
+        "id": "c_124",
+        "type": "condition",
+        "name": "Pulpitis",
+        "common_name": "Inflammation of the pulp"
+    },
+    {
+        "id": "c_125",
+        "type": "condition",
+        "name": "Orchitis and epididymitis",
+        "common_name": "Inflammation of testes and epididymis"
+    },
+    {
+        "id": "c_126",
+        "type": "condition",
+        "name": "Pericarditis",
+        "common_name": "Pericarditis"
+    },
+    {
+        "id": "c_127",
+        "type": "condition",
+        "name": "Pneumonia",
+        "common_name": "Pneumonia"
+    },
+    {
+        "id": "c_128",
+        "type": "condition",
+        "name": "Bacterial vaginitis",
+        "common_name": "Bacterial vaginitis"
+    },
+    {
+        "id": "c_129",
+        "type": "condition",
+        "name": "Cervicitis",
+        "common_name": "Acute inflammation of the uterine cervix"
+    },
+    {
+        "id": "c_130",
+        "type": "condition",
+        "name": "Acute otitis media",
+        "common_name": "Middle ear infection"
+    },
+    {
+        "id": "c_131",
+        "type": "condition",
+        "name": "Otitis externa",
+        "common_name": "Inflammation of the external ear"
+    },
+    {
+        "id": "c_132",
+        "type": "condition",
+        "name": "Appendicitis",
+        "common_name": "Appendicitis"
+    },
+    {
+        "id": "c_134",
+        "type": "condition",
+        "name": "Balanoposthitis",
+        "common_name": "Balanoposthitis"
+    },
+    {
+        "id": "c_135",
+        "type": "condition",
+        "name": "Superficial thrombophlebitis",
+        "common_name": "Inflammation of the superficial veins"
+    },
+    {
+        "id": "c_136",
+        "type": "condition",
+        "name": "Pulmonary embolism",
+        "common_name": "Pulmonary embolism"
+    },
+    {
+        "id": "c_137",
+        "type": "condition",
+        "name": "Hangover",
+        "common_name": "Hangover"
+    },
+    {
+        "id": "c_138",
+        "type": "condition",
+        "name": "Food poisoning",
+        "common_name": "Food poisoning"
+    },
+    {
+        "id": "c_139",
+        "type": "condition",
+        "name": "Impacted wisdom tooth",
+        "common_name": "Impacted wisdom tooth"
+    },
+    {
+        "id": "c_140",
+        "type": "condition",
+        "name": "Myocardial infarction",
+        "common_name": "Heart attack"
+    },
+    {
+        "id": "c_141",
+        "type": "condition",
+        "name": "Cushing's syndrome",
+        "common_name": "Cushing's syndrome"
+    },
+    {
+        "id": "c_142",
+        "type": "condition",
+        "name": "Irritable bowel syndrome",
+        "common_name": "Irritable bowel syndrome"
+    },
+    {
+        "id": "c_143",
+        "type": "condition",
+        "name": "Premenstrual syndrome",
+        "common_name": "Premenstrual syndrome"
+    },
+    {
+        "id": "c_144",
+        "type": "condition",
+        "name": "Sj\u00f6gren's syndrome",
+        "common_name": "Sj\u00f6gren's syndrome"
+    },
+    {
+        "id": "c_145",
+        "type": "condition",
+        "name": "Polycystic ovary syndrome",
+        "common_name": "Polycystic ovary syndrome"
+    },
+    {
+        "id": "c_146",
+        "type": "condition",
+        "name": "Dental pulp gangrene",
+        "common_name": "Dental pulp gangrene"
+    },
+    {
+        "id": "c_147",
+        "type": "condition",
+        "name": "Hemorrhoids",
+        "common_name": "Hemorrhoids"
+    },
+    {
+        "id": "c_148",
+        "type": "condition",
+        "name": "Deep vein thrombosis",
+        "common_name": "Deep vein thrombosis"
+    },
+    {
+        "id": "c_149",
+        "type": "condition",
+        "name": "Ankylosing spondylitis",
+        "common_name": "Ankylosing spondylitis"
+    },
+    {
+        "id": "c_150",
+        "type": "condition",
+        "name": "Trigeminal neuralgia",
+        "common_name": "Trigeminal neuralgia"
+    },
+    {
+        "id": "c_152",
+        "type": "condition",
+        "name": "Temporomandibular joint disorders",
+        "common_name": "Temporomandibular joint disorders"
+    },
+    {
+        "id": "c_159",
+        "type": "condition",
+        "name": "Gonorrhea",
+        "common_name": "Gonorrhea"
+    },
+    {
+        "id": "c_160",
+        "type": "condition",
+        "name": "Pelvic inflammatory disease",
+        "common_name": "Pelvic inflammatory disease"
+    },
+    {
+        "id": "c_161",
+        "type": "condition",
+        "name": "Carbon monoxide poisoning",
+        "common_name": "Carbon monoxide poisoning"
+    },
+    {
+        "id": "c_162",
+        "type": "condition",
+        "name": "Labyrinthitis",
+        "common_name": "Inflammation of the inner ear"
+    },
+    {
+        "id": "c_163",
+        "type": "condition",
+        "name": "Acromegaly",
+        "common_name": "Acromegaly"
+    },
+    {
+        "id": "c_164",
+        "type": "condition",
+        "name": "M\u00e9n\u00e9trier's disease",
+        "common_name": "M\u00e9n\u00e9trier's disease"
+    },
+    {
+        "id": "c_165",
+        "type": "condition",
+        "name": "Giardiasis",
+        "common_name": "Giardia infection"
+    },
+    {
+        "id": "c_166",
+        "type": "condition",
+        "name": "Enterobiasis",
+        "common_name": "Pinworm infection"
+    },
+    {
+        "id": "c_168",
+        "type": "condition",
+        "name": "Acute porphyria",
+        "common_name": "Acute porphyria"
+    },
+    {
+        "id": "c_169",
+        "type": "condition",
+        "name": "Erysipelas",
+        "common_name": "Erysipelas"
+    },
+    {
+        "id": "c_170",
+        "type": "condition",
+        "name": "Stye",
+        "common_name": "Stye"
+    },
+    {
+        "id": "c_171",
+        "type": "condition",
+        "name": "Chalazion",
+        "common_name": "Chalazion"
+    },
+    {
+        "id": "c_172",
+        "type": "condition",
+        "name": "Conjunctivitis",
+        "common_name": "Pink eye"
+    },
+    {
+        "id": "c_174",
+        "type": "condition",
+        "name": "Corneal abrasion",
+        "common_name": "Scratched eye"
+    },
+    {
+        "id": "c_175",
+        "type": "condition",
+        "name": "Corneal ulceration",
+        "common_name": "Corneal ulceration"
+    },
+    {
+        "id": "c_176",
+        "type": "condition",
+        "name": "Cataract",
+        "common_name": "Cataract"
+    },
+    {
+        "id": "c_179",
+        "type": "condition",
+        "name": "Multiple myeloma",
+        "common_name": "Multiple myeloma"
+    },
+    {
+        "id": "c_180",
+        "type": "condition",
+        "name": "Chronic kidney disease",
+        "common_name": "Chronic kidney disease"
+    },
+    {
+        "id": "c_181",
+        "type": "condition",
+        "name": "Hodgkin lymphoma",
+        "common_name": "Hodgkin's disease"
+    },
+    {
+        "id": "c_183",
+        "type": "condition",
+        "name": "Anxiety disorder with panic attacks",
+        "common_name": "Anxiety disorder with panic attacks"
+    },
+    {
+        "id": "c_184",
+        "type": "condition",
+        "name": "Acute cystitis",
+        "common_name": "Bladder infection"
+    },
+    {
+        "id": "c_185",
+        "type": "condition",
+        "name": "Bladder cancer",
+        "common_name": "Bladder cancer"
+    },
+    {
+        "id": "c_186",
+        "type": "condition",
+        "name": "Diverticulitis",
+        "common_name": "Diverticulitis"
+    },
+    {
+        "id": "c_187",
+        "type": "condition",
+        "name": "Acute cholinergic syndrome",
+        "common_name": "Acute cholinergic syndrome"
+    },
+    {
+        "id": "c_188",
+        "type": "condition",
+        "name": "Cystic fibrosis",
+        "common_name": "Cystic fibrosis"
+    },
+    {
+        "id": "c_189",
+        "type": "condition",
+        "name": "Rubella",
+        "common_name": "Rubella"
+    },
+    {
+        "id": "c_190",
+        "type": "condition",
+        "name": "Disulfiram-like reaction",
+        "common_name": "Disulfiram-like reaction"
+    },
+    {
+        "id": "c_191",
+        "type": "condition",
+        "name": "Acute hypnotic toxicity",
+        "common_name": "Poisoning by hypnotics"
+    },
+    {
+        "id": "c_192",
+        "type": "condition",
+        "name": "Mumps",
+        "common_name": "Inflammation of parotid salivary glands"
+    },
+    {
+        "id": "c_193",
+        "type": "condition",
+        "name": "Acute opioid toxicity",
+        "common_name": "Acute opioid toxicity"
+    },
+    {
+        "id": "c_194",
+        "type": "condition",
+        "name": "Acute stimulant overdose",
+        "common_name": "Acute stimulant overdose"
+    },
+    {
+        "id": "c_195",
+        "type": "condition",
+        "name": "Improper use of sleeping pills and sedatives",
+        "common_name": "Improper use of sleeping pills and sedatives"
+    },
+    {
+        "id": "c_196",
+        "type": "condition",
+        "name": "Hypopituitarism",
+        "common_name": "Hypopituitarism"
+    },
+    {
+        "id": "c_198",
+        "type": "condition",
+        "name": "Antiphospholipid syndrome",
+        "common_name": "Antiphospholipid syndrome"
+    },
+    {
+        "id": "c_200",
+        "type": "condition",
+        "name": "Infectious mononucleosis",
+        "common_name": "Mononucleosis"
+    },
+    {
+        "id": "c_202",
+        "type": "condition",
+        "name": "Type 1 Neurofibromatosis",
+        "common_name": "Type 1 Neurofibromatosis"
+    },
+    {
+        "id": "c_203",
+        "type": "condition",
+        "name": "M\u00e9ni\u00e8re's disease",
+        "common_name": "M\u00e9ni\u00e8re's disease"
+    },
+    {
+        "id": "c_205",
+        "type": "condition",
+        "name": "Wilson's disease",
+        "common_name": "Wilson's disease"
+    },
+    {
+        "id": "c_206",
+        "type": "condition",
+        "name": "Infective endocarditis",
+        "common_name": "Infective endocarditis"
+    },
+    {
+        "id": "c_207",
+        "type": "condition",
+        "name": "Pheochromocytoma",
+        "common_name": "Pheochromocytoma"
+    },
+    {
+        "id": "c_208",
+        "type": "condition",
+        "name": "Tetany",
+        "common_name": "Tetany"
+    },
+    {
+        "id": "c_209",
+        "type": "condition",
+        "name": "Raynaud's phenomenon",
+        "common_name": "Raynaud disease"
+    },
+    {
+        "id": "c_210",
+        "type": "condition",
+        "name": "Myocarditis",
+        "common_name": "Inflammation of heart muscle"
+    },
+    {
+        "id": "c_212",
+        "type": "condition",
+        "name": "Carpal tunnel syndrome",
+        "common_name": "Carpal tunnel syndrome"
+    },
+    {
+        "id": "c_213",
+        "type": "condition",
+        "name": "Zollinger-Ellison syndrome",
+        "common_name": "Zollinger-Ellison syndrome"
+    },
+    {
+        "id": "c_214",
+        "type": "condition",
+        "name": "Visceral leishmaniasis",
+        "common_name": "Visceral leishmaniasis"
+    },
+    {
+        "id": "c_215",
+        "type": "condition",
+        "name": "Cholecystitis",
+        "common_name": "Inflammation of the gallbladder"
+    },
+    {
+        "id": "c_216",
+        "type": "condition",
+        "name": "Uveitis",
+        "common_name": "Uveitis"
+    },
+    {
+        "id": "c_218",
+        "type": "condition",
+        "name": "Spinal osteoarthritis",
+        "common_name": "Degenerative arthritis of the spine"
+    },
+    {
+        "id": "c_219",
+        "type": "condition",
+        "name": "Hand osteoarthritis",
+        "common_name": "Hand osteoarthritis"
+    },
+    {
+        "id": "c_220",
+        "type": "condition",
+        "name": "Knee osteoarthritis",
+        "common_name": "Knee osteoarthritis"
+    },
+    {
+        "id": "c_221",
+        "type": "condition",
+        "name": "Hip osteoarthritis",
+        "common_name": "Hip osteoarthritis"
+    },
+    {
+        "id": "c_222",
+        "type": "condition",
+        "name": "Ankle osteoarthritis",
+        "common_name": "Ankle osteoarthritis"
+    },
+    {
+        "id": "c_223",
+        "type": "condition",
+        "name": "Foot osteoarthritis",
+        "common_name": "Foot osteoarthritis"
+    },
+    {
+        "id": "c_225",
+        "type": "condition",
+        "name": "Generalized anxiety disorder",
+        "common_name": "Generalized anxiety disorder"
+    },
+    {
+        "id": "c_227",
+        "type": "condition",
+        "name": "Alcohol withdrawal syndrome",
+        "common_name": "Alcohol withdrawal syndrome"
+    },
+    {
+        "id": "c_234",
+        "type": "condition",
+        "name": "Typhoid fever",
+        "common_name": "Typhoid fever"
+    },
+    {
+        "id": "c_235",
+        "type": "condition",
+        "name": "Brucellosis",
+        "common_name": "Brucellosis"
+    },
+    {
+        "id": "c_236",
+        "type": "condition",
+        "name": "Tularemia",
+        "common_name": "Tularemia"
+    },
+    {
+        "id": "c_237",
+        "type": "condition",
+        "name": "Relapsing fever",
+        "common_name": "Relapsing fever"
+    },
+    {
+        "id": "c_238",
+        "type": "condition",
+        "name": "Exanthematic typhus",
+        "common_name": "Exanthematic typhus"
+    },
+    {
+        "id": "c_239",
+        "type": "condition",
+        "name": "Rocky Mountain spotted fever",
+        "common_name": "Rocky Mountain spotted fever"
+    },
+    {
+        "id": "c_241",
+        "type": "condition",
+        "name": "Q fever",
+        "common_name": "Q fever"
+    },
+    {
+        "id": "c_242",
+        "type": "condition",
+        "name": "Cat-scratch disease",
+        "common_name": "Cat-scratch disease"
+    },
+    {
+        "id": "c_243",
+        "type": "condition",
+        "name": "American trypanosomiasis",
+        "common_name": "Chagas disease"
+    },
+    {
+        "id": "c_244",
+        "type": "condition",
+        "name": "Yellow fever",
+        "common_name": "Yellow fever"
+    },
+    {
+        "id": "c_245",
+        "type": "condition",
+        "name": "Dengue fever",
+        "common_name": "Dengue"
+    },
+    {
+        "id": "c_246",
+        "type": "condition",
+        "name": "Lassa fever",
+        "common_name": "Lassa fever"
+    },
+    {
+        "id": "c_247",
+        "type": "condition",
+        "name": "Glossitis",
+        "common_name": "Tongue inflammation"
+    },
+    {
+        "id": "c_248",
+        "type": "condition",
+        "name": "Obstructive jaundice",
+        "common_name": "Obstructive jaundice"
+    },
+    {
+        "id": "c_249",
+        "type": "condition",
+        "name": "Acute streptococcal pharyngitis",
+        "common_name": "Acute streptococcal pharyngitis"
+    },
+    {
+        "id": "c_251",
+        "type": "condition",
+        "name": "Polycythemia vera",
+        "common_name": "Erythremia"
+    },
+    {
+        "id": "c_252",
+        "type": "condition",
+        "name": "Rift Valley fever",
+        "common_name": "Rift Valley fever"
+    },
+    {
+        "id": "c_254",
+        "type": "condition",
+        "name": "Cholera",
+        "common_name": "Cholera"
+    },
+    {
+        "id": "c_255",
+        "type": "condition",
+        "name": "Tetanus",
+        "common_name": "Tetanus"
+    },
+    {
+        "id": "c_256",
+        "type": "condition",
+        "name": "Leptospirosis",
+        "common_name": "Leptospirosis"
+    },
+    {
+        "id": "c_257",
+        "type": "condition",
+        "name": "Scrub typhus",
+        "common_name": "Scrub typhus"
+    },
+    {
+        "id": "c_259",
+        "type": "condition",
+        "name": "Acquired immunodeficiency syndrome",
+        "common_name": "AIDS"
+    },
+    {
+        "id": "c_260",
+        "type": "condition",
+        "name": "Dementia",
+        "common_name": "Dementia"
+    },
+    {
+        "id": "c_263",
+        "type": "condition",
+        "name": "Psittacosis",
+        "common_name": "Psittacosis"
+    },
+    {
+        "id": "c_264",
+        "type": "condition",
+        "name": "Granulomatosis with polyangiitis",
+        "common_name": "Granulomatosis with polyangiitis"
+    },
+    {
+        "id": "c_265",
+        "type": "condition",
+        "name": "Nephrotic syndrome",
+        "common_name": "Nephrotic syndrome"
+    },
+    {
+        "id": "c_267",
+        "type": "condition",
+        "name": "Churg-Strauss syndrome",
+        "common_name": "Churg-Strauss syndrome"
+    },
+    {
+        "id": "c_268",
+        "type": "condition",
+        "name": "Wiskott-Aldrich syndrome",
+        "common_name": "Wiskott-Aldrich syndrome"
+    },
+    {
+        "id": "c_269",
+        "type": "condition",
+        "name": "Chronic sinusitis",
+        "common_name": "Chronic sinusitis"
+    },
+    {
+        "id": "c_270",
+        "type": "condition",
+        "name": "Adjustment disorder",
+        "common_name": "Adjustment disorder"
+    },
+    {
+        "id": "c_271",
+        "type": "condition",
+        "name": "Plague",
+        "common_name": "Plague"
+    },
+    {
+        "id": "c_272",
+        "type": "condition",
+        "name": "Legionellosis",
+        "common_name": "Legionellosis"
+    },
+    {
+        "id": "c_273",
+        "type": "condition",
+        "name": "Bipolar disorder",
+        "common_name": "Bipolar disorder"
+    },
+    {
+        "id": "c_274",
+        "type": "condition",
+        "name": "Manic syndrome",
+        "common_name": "Mania"
+    },
+    {
+        "id": "c_275",
+        "type": "condition",
+        "name": "Anal fissure",
+        "common_name": "Anal fissure"
+    },
+    {
+        "id": "c_276",
+        "type": "condition",
+        "name": "Anal cancer",
+        "common_name": "Anal cancer"
+    },
+    {
+        "id": "c_278",
+        "type": "condition",
+        "name": "Sedatives withdrawal syndrome",
+        "common_name": "Sedatives withdrawal syndrome"
+    },
+    {
+        "id": "c_282",
+        "type": "condition",
+        "name": "Chronic cannabinoid use",
+        "common_name": "Chronic cannabinoid use"
+    },
+    {
+        "id": "c_284",
+        "type": "condition",
+        "name": "Pyelonephritis",
+        "common_name": "Pyelonephritis"
+    },
+    {
+        "id": "c_286",
+        "type": "condition",
+        "name": "Measles",
+        "common_name": "Measles"
+    },
+    {
+        "id": "c_287",
+        "type": "condition",
+        "name": "Horner's syndrome",
+        "common_name": "Horner's syndrome"
+    },
+    {
+        "id": "c_288",
+        "type": "condition",
+        "name": "Pulmonary edema",
+        "common_name": "Pulmonary edema"
+    },
+    {
+        "id": "c_289",
+        "type": "condition",
+        "name": "Ascariasis",
+        "common_name": "Ascariasis"
+    },
+    {
+        "id": "c_290",
+        "type": "condition",
+        "name": "Hookworm infection",
+        "common_name": "Hookworm disease"
+    },
+    {
+        "id": "c_291",
+        "type": "condition",
+        "name": "Amyloidosis",
+        "common_name": "Amyloidosis"
+    },
+    {
+        "id": "c_292",
+        "type": "condition",
+        "name": "Urethritis",
+        "common_name": "Inflammation of the urethra"
+    },
+    {
+        "id": "c_294",
+        "type": "condition",
+        "name": "Herbicide poisoning",
+        "common_name": "Herbicide poisoning"
+    },
+    {
+        "id": "c_295",
+        "type": "condition",
+        "name": "Insecticide poisoning",
+        "common_name": "Insecticide poisoning"
+    },
+    {
+        "id": "c_296",
+        "type": "condition",
+        "name": "Acute anticholinergic syndrome",
+        "common_name": "Acute anticholinergic syndrome"
+    },
+    {
+        "id": "c_298",
+        "type": "condition",
+        "name": "Dehydration",
+        "common_name": "Dehydration"
+    },
+    {
+        "id": "c_299",
+        "type": "condition",
+        "name": "Post-traumatic stress disorder",
+        "common_name": "Post-traumatic stress syndrome"
+    },
+    {
+        "id": "c_303",
+        "type": "condition",
+        "name": "Death cap poisoning",
+        "common_name": "Mushroom poisoning"
+    },
+    {
+        "id": "c_306",
+        "type": "condition",
+        "name": "Acetaminophen poisoning",
+        "common_name": "Paracetamol poisoning"
+    },
+    {
+        "id": "c_307",
+        "type": "condition",
+        "name": "Salicylate poisoning",
+        "common_name": "Aspirin poisoning"
+    },
+    {
+        "id": "c_308",
+        "type": "condition",
+        "name": "Social anxiety disorder",
+        "common_name": "Social anxiety disorder"
+    },
+    {
+        "id": "c_309",
+        "type": "condition",
+        "name": "Postpartum depression",
+        "common_name": "Post-pregnancy depression"
+    },
+    {
+        "id": "c_310",
+        "type": "condition",
+        "name": "Paranoid schizophrenia",
+        "common_name": "Paranoid schizophrenia"
+    },
+    {
+        "id": "c_311",
+        "type": "condition",
+        "name": "Schizoaffective disorder - depressive type",
+        "common_name": "Schizoaffective disorder - depressive type"
+    },
+    {
+        "id": "c_312",
+        "type": "condition",
+        "name": "Schizoaffective disorder - manic type",
+        "common_name": "Schizoaffective disorder - manic type"
+    },
+    {
+        "id": "c_313",
+        "type": "condition",
+        "name": "Leriche's syndrome",
+        "common_name": "Leriche's syndrome"
+    },
+    {
+        "id": "c_314",
+        "type": "condition",
+        "name": "Guillain-Barr\u00e9 syndrome",
+        "common_name": "Guillain-Barr\u00e9 syndrome"
+    },
+    {
+        "id": "c_315",
+        "type": "condition",
+        "name": "Dermatomyositis",
+        "common_name": "Dermatomyositis"
+    },
+    {
+        "id": "c_316",
+        "type": "condition",
+        "name": "Vasculitis",
+        "common_name": "Vasculitis"
+    },
+    {
+        "id": "c_317",
+        "type": "condition",
+        "name": "Polymyositis",
+        "common_name": "Polymyositis"
+    },
+    {
+        "id": "c_320",
+        "type": "condition",
+        "name": "Seasonal affective disorder",
+        "common_name": "Seasonal affective disorder"
+    },
+    {
+        "id": "c_321",
+        "type": "condition",
+        "name": "Paget's disease of bone",
+        "common_name": "Paget's disease of bone"
+    },
+    {
+        "id": "c_323",
+        "type": "condition",
+        "name": "Milk-alkali syndrome",
+        "common_name": "Milk-alkali syndrome"
+    },
+    {
+        "id": "c_324",
+        "type": "condition",
+        "name": "Pernicious anemia",
+        "common_name": "Pernicious anemia"
+    },
+    {
+        "id": "c_326",
+        "type": "condition",
+        "name": "Rotor syndrome",
+        "common_name": "Rotor syndrome"
+    },
+    {
+        "id": "c_328",
+        "type": "condition",
+        "name": "Hemochromatosis",
+        "common_name": "Hemochromatosis"
+    },
+    {
+        "id": "c_330",
+        "type": "condition",
+        "name": "Tumor lysis syndrome",
+        "common_name": "Tumor lysis syndrome"
+    },
+    {
+        "id": "c_331",
+        "type": "condition",
+        "name": "Acute rheumatic fever",
+        "common_name": "Acute rheumatic fever"
+    },
+    {
+        "id": "c_332",
+        "type": "condition",
+        "name": "Increased intracranial pressure",
+        "common_name": "Increased intracranial pressure"
+    },
+    {
+        "id": "c_333",
+        "type": "condition",
+        "name": "Brain tumour",
+        "common_name": "Brain tumour"
+    },
+    {
+        "id": "c_334",
+        "type": "condition",
+        "name": "Pituitary tumor",
+        "common_name": "Pituitary tumor"
+    },
+    {
+        "id": "c_335",
+        "type": "condition",
+        "name": "Prostate cancer",
+        "common_name": "Prostate cancer"
+    },
+    {
+        "id": "c_336",
+        "type": "condition",
+        "name": "Rickets",
+        "common_name": "Rickets"
+    },
+    {
+        "id": "c_337",
+        "type": "condition",
+        "name": "Osteomalacia",
+        "common_name": "Osteomalacia"
+    },
+    {
+        "id": "c_347",
+        "type": "condition",
+        "name": "Korsakoff's syndrome",
+        "common_name": "Korsakoff's syndrome"
+    },
+    {
+        "id": "c_350",
+        "type": "condition",
+        "name": "Organic mental disorder",
+        "common_name": "Organic mental disorder"
+    },
+    {
+        "id": "c_351",
+        "type": "condition",
+        "name": "Post-concussion syndrome",
+        "common_name": "Post-concussion syndrome"
+    },
+    {
+        "id": "c_366",
+        "type": "condition",
+        "name": "Agoraphobia",
+        "common_name": "Agoraphobia"
+    },
+    {
+        "id": "c_369",
+        "type": "condition",
+        "name": "Pre-eclampsia",
+        "common_name": "Pre-eclampsia"
+    },
+    {
+        "id": "c_370",
+        "type": "condition",
+        "name": "Specific phobia",
+        "common_name": "Specific phobia"
+    },
+    {
+        "id": "c_371",
+        "type": "condition",
+        "name": "Hemorrhagic anemia",
+        "common_name": "Acute anemia"
+    },
+    {
+        "id": "c_372",
+        "type": "condition",
+        "name": "Anemia of chronic disease",
+        "common_name": "Anemia of chronic disease"
+    },
+    {
+        "id": "c_374",
+        "type": "condition",
+        "name": "Glomerulonephritis",
+        "common_name": "Glomerulonephritis"
+    },
+    {
+        "id": "c_375",
+        "type": "condition",
+        "name": "Neurasthenia",
+        "common_name": "Neurasthenia"
+    },
+    {
+        "id": "c_376",
+        "type": "condition",
+        "name": "Wernicke's encephalopathy",
+        "common_name": "Wernicke's encephalopathy"
+    },
+    {
+        "id": "c_378",
+        "type": "condition",
+        "name": "Transient ischemic attack",
+        "common_name": "Transient ischemic attack"
+    },
+    {
+        "id": "c_379",
+        "type": "condition",
+        "name": "Cerebellar stroke",
+        "common_name": "Cerebellar stroke"
+    },
+    {
+        "id": "c_381",
+        "type": "condition",
+        "name": "Carotid artery dissection",
+        "common_name": "Carotid artery dissection"
+    },
+    {
+        "id": "c_382",
+        "type": "condition",
+        "name": "Aplastic anemia",
+        "common_name": "Aplastic anemia"
+    },
+    {
+        "id": "c_384",
+        "type": "condition",
+        "name": "Vertebrobasilar insufficiency",
+        "common_name": "Vertebrobasilar insufficiency"
+    },
+    {
+        "id": "c_388",
+        "type": "condition",
+        "name": "Von Willebrand disease",
+        "common_name": "Von Willebrand disease"
+    },
+    {
+        "id": "c_390",
+        "type": "condition",
+        "name": "Pseudobulbar palsy",
+        "common_name": "Pseudobulbar palsy"
+    },
+    {
+        "id": "c_391",
+        "type": "condition",
+        "name": "Vascular hemorrhagic diathesis",
+        "common_name": "Vascular hemorrhagic diathesis"
+    },
+    {
+        "id": "c_392",
+        "type": "condition",
+        "name": "Thrombocytopathy",
+        "common_name": "Thrombocytopathy"
+    },
+    {
+        "id": "c_396",
+        "type": "condition",
+        "name": "Amyotrophic lateral sclerosis",
+        "common_name": "Amyotrophic lateral sclerosis"
+    },
+    {
+        "id": "c_397",
+        "type": "condition",
+        "name": "Progressive supranuclear palsy",
+        "common_name": "Progressive supranuclear palsy"
+    },
+    {
+        "id": "c_400",
+        "type": "condition",
+        "name": "Waldenstr\u00f6m's macroglobulinemia",
+        "common_name": "Waldenstr\u00f6m's macroglobulinemia"
+    },
+    {
+        "id": "c_404",
+        "type": "condition",
+        "name": "Diabetes mellitus type 1",
+        "common_name": "Autoimmune diabetes"
+    },
+    {
+        "id": "c_405",
+        "type": "condition",
+        "name": "Diabetes mellitus type 2",
+        "common_name": "Diabetes mellitus type 2"
+    },
+    {
+        "id": "c_407",
+        "type": "condition",
+        "name": "Diabetes insipidus",
+        "common_name": "Diabetes insipidus"
+    },
+    {
+        "id": "c_408",
+        "type": "condition",
+        "name": "Insulinoma",
+        "common_name": "Insulinoma"
+    },
+    {
+        "id": "c_413",
+        "type": "condition",
+        "name": "Malaria",
+        "common_name": "Malaria"
+    },
+    {
+        "id": "c_415",
+        "type": "condition",
+        "name": "Carcinoid syndrome",
+        "common_name": "Carcinoid syndrome"
+    },
+    {
+        "id": "c_420",
+        "type": "condition",
+        "name": "Kl\u00fcver-Bucy bitemporal syndrome",
+        "common_name": "Kl\u00fcver-Bucy bitemporal syndrome"
+    },
+    {
+        "id": "c_421",
+        "type": "condition",
+        "name": "Essential thrombocytosis",
+        "common_name": "Essential thrombocythemia"
+    },
+    {
+        "id": "c_423",
+        "type": "condition",
+        "name": "Myelofibrosis",
+        "common_name": "Replacement of bone marrow with scar tissue"
+    },
+    {
+        "id": "c_424",
+        "type": "condition",
+        "name": "Heat and sun-related illness",
+        "common_name": "Heat and sun-related illness"
+    },
+    {
+        "id": "c_426",
+        "type": "condition",
+        "name": "Fasciolosis",
+        "common_name": "Fascioliasis"
+    },
+    {
+        "id": "c_427",
+        "type": "condition",
+        "name": "Graves' disease",
+        "common_name": "Graves' disease"
+    },
+    {
+        "id": "c_428",
+        "type": "condition",
+        "name": "Hashimoto's thyroiditis",
+        "common_name": "Hashimoto\u2019s disease"
+    },
+    {
+        "id": "c_429",
+        "type": "condition",
+        "name": "Thyrotoxic crisis with thyrotoxicosis",
+        "common_name": "Thyrotoxic crisis with thyrotoxicosis"
+    },
+    {
+        "id": "c_430",
+        "type": "condition",
+        "name": "Acute thyroiditis",
+        "common_name": "Acute thyroiditis"
+    },
+    {
+        "id": "c_431",
+        "type": "condition",
+        "name": "De Quervain's thyroiditis",
+        "common_name": "De Quervain's thyroiditis"
+    },
+    {
+        "id": "c_432",
+        "type": "condition",
+        "name": "Botulism",
+        "common_name": "Botulism"
+    },
+    {
+        "id": "c_433",
+        "type": "condition",
+        "name": "Trichinosis",
+        "common_name": "Trichinosis"
+    },
+    {
+        "id": "c_434",
+        "type": "condition",
+        "name": "Cysticercosis",
+        "common_name": "Cysticercosis"
+    },
+    {
+        "id": "c_435",
+        "type": "condition",
+        "name": "Echinococcosis",
+        "common_name": "Echinococcosis"
+    },
+    {
+        "id": "c_436",
+        "type": "condition",
+        "name": "Toxocariasis",
+        "common_name": "Toxocariasis"
+    },
+    {
+        "id": "c_437",
+        "type": "condition",
+        "name": "Taeniasis",
+        "common_name": "Tapeworm infection"
+    },
+    {
+        "id": "c_438",
+        "type": "condition",
+        "name": "Trichuriasis",
+        "common_name": "Whipworm infection"
+    },
+    {
+        "id": "c_439",
+        "type": "condition",
+        "name": "Diabetic neuropathy",
+        "common_name": "Diabetic neuropathy"
+    },
+    {
+        "id": "c_443",
+        "type": "condition",
+        "name": "Hepatic encephalopathy",
+        "common_name": "Hepatic encephalopathy"
+    },
+    {
+        "id": "c_445",
+        "type": "condition",
+        "name": "Paroxysmal nocturnal hemoglobinuria",
+        "common_name": "Paroxysmal nocturnal hemoglobinuria"
+    },
+    {
+        "id": "c_447",
+        "type": "condition",
+        "name": "Gitelman syndrome",
+        "common_name": "Gitelman syndrome"
+    },
+    {
+        "id": "c_449",
+        "type": "condition",
+        "name": "Conn's syndrome",
+        "common_name": "Conn's syndrome"
+    },
+    {
+        "id": "c_452",
+        "type": "condition",
+        "name": "Takayasu's disease",
+        "common_name": "Takayasu's disease"
+    },
+    {
+        "id": "c_453",
+        "type": "condition",
+        "name": "Seborrheic dermatitis",
+        "common_name": "Seborrheic dermatitis"
+    },
+    {
+        "id": "c_458",
+        "type": "condition",
+        "name": "Polyarteritis nodosa",
+        "common_name": "Polyarteritis nodosa"
+    },
+    {
+        "id": "c_459",
+        "type": "condition",
+        "name": "Temporal giant cell arteritis",
+        "common_name": "Temporal giant cell arteritis"
+    },
+    {
+        "id": "c_461",
+        "type": "condition",
+        "name": "Hypertensive crisis",
+        "common_name": "Hypertensive crisis"
+    },
+    {
+        "id": "c_462",
+        "type": "condition",
+        "name": "Hypertensive encephalopathy",
+        "common_name": "Hypertensive encephalopathy"
+    },
+    {
+        "id": "c_463",
+        "type": "condition",
+        "name": "IgA vasculitis",
+        "common_name": "Henoch-Sch\u00f6nlein vasculitis"
+    },
+    {
+        "id": "c_464",
+        "type": "condition",
+        "name": "Goodpasture's syndrome",
+        "common_name": "Goodpasture's syndrome"
+    },
+    {
+        "id": "c_465",
+        "type": "condition",
+        "name": "High altitude sickness",
+        "common_name": "High altitude sickness"
+    },
+    {
+        "id": "c_466",
+        "type": "condition",
+        "name": "Small intestinal bacterial overgrowth",
+        "common_name": "Small intestinal bacterial overgrowth"
+    },
+    {
+        "id": "c_467",
+        "type": "condition",
+        "name": "Facial nerve palsy",
+        "common_name": "Facial nerve palsy"
+    },
+    {
+        "id": "c_468",
+        "type": "condition",
+        "name": "Ramsay Hunt syndrome type II",
+        "common_name": "Ramsay Hunt syndrome type II"
+    },
+    {
+        "id": "c_469",
+        "type": "condition",
+        "name": "Mediastinitis",
+        "common_name": "Inflammation of mediastinum"
+    },
+    {
+        "id": "c_470",
+        "type": "condition",
+        "name": "Vestibulocochlear nerve damage",
+        "common_name": "Vestibulocochlear nerve damage"
+    },
+    {
+        "id": "c_471",
+        "type": "condition",
+        "name": "Cerebellopontine angle syndrome",
+        "common_name": "Acoustic neuroma"
+    },
+    {
+        "id": "c_477",
+        "type": "condition",
+        "name": "Hepatitis A",
+        "common_name": "Hepatitis A"
+    },
+    {
+        "id": "c_478",
+        "type": "condition",
+        "name": "Acute hepatitis B",
+        "common_name": "Hepatitis B"
+    },
+    {
+        "id": "c_480",
+        "type": "condition",
+        "name": "VIPoma",
+        "common_name": "VIPoma"
+    },
+    {
+        "id": "c_485",
+        "type": "condition",
+        "name": "Autoimmune hepatitis",
+        "common_name": "Autoimmune hepatitis"
+    },
+    {
+        "id": "c_486",
+        "type": "condition",
+        "name": "Primary biliary cholangitis",
+        "common_name": "Primary biliary cholangitis"
+    },
+    {
+        "id": "c_489",
+        "type": "condition",
+        "name": "Idiopathic pulmonary fibrosis",
+        "common_name": "Idiopathic pulmonary fibrosis"
+    },
+    {
+        "id": "c_493",
+        "type": "condition",
+        "name": "Pulmonary hypertension",
+        "common_name": "Pulmonary hypertension"
+    },
+    {
+        "id": "c_494",
+        "type": "condition",
+        "name": "Chronic intestinal ischemia",
+        "common_name": "Chronic intestinal ischemia"
+    },
+    {
+        "id": "c_496",
+        "type": "condition",
+        "name": "Esophageal diverticula",
+        "common_name": "Esophageal diverticula"
+    },
+    {
+        "id": "c_497",
+        "type": "condition",
+        "name": "Prinzmetal's angina",
+        "common_name": "Prinzmetal's angina"
+    },
+    {
+        "id": "c_503",
+        "type": "condition",
+        "name": "Cirrhosis of the liver",
+        "common_name": "Cirrhosis of the liver"
+    },
+    {
+        "id": "c_505",
+        "type": "condition",
+        "name": "Syndrome of inappropriate antidiuretic hormone secretion",
+        "common_name": "Syndrome of inappropriate antidiuretic hormone secretion"
+    },
+    {
+        "id": "c_507",
+        "type": "condition",
+        "name": "Acute liver failure",
+        "common_name": "Acute liver failure"
+    },
+    {
+        "id": "c_508",
+        "type": "condition",
+        "name": "Prerenal acute renal failure",
+        "common_name": "Prerenal acute renal failure"
+    },
+    {
+        "id": "c_510",
+        "type": "condition",
+        "name": "Microscopic polyangiitis",
+        "common_name": "Microscopic artery inflammation"
+    },
+    {
+        "id": "c_511",
+        "type": "condition",
+        "name": "Mixed connective tissue disease",
+        "common_name": "Mixed connective tissue disease"
+    },
+    {
+        "id": "c_513",
+        "type": "condition",
+        "name": "Mastocytosis",
+        "common_name": "Mastocytosis"
+    },
+    {
+        "id": "c_514",
+        "type": "condition",
+        "name": "Hemophagocytic lymphohistiocytosis",
+        "common_name": "Hemophagocytic lymphohistiocytosis"
+    },
+    {
+        "id": "c_515",
+        "type": "condition",
+        "name": "Gastritis",
+        "common_name": "Gastritis"
+    },
+    {
+        "id": "c_519",
+        "type": "condition",
+        "name": "Testicular cancer",
+        "common_name": "Testicular cancer"
+    },
+    {
+        "id": "c_520",
+        "type": "condition",
+        "name": "Intercostal neuralgia",
+        "common_name": "Intercostal neuralgia"
+    },
+    {
+        "id": "c_521",
+        "type": "condition",
+        "name": "Shigellosis",
+        "common_name": "Shigellosis"
+    },
+    {
+        "id": "c_522",
+        "type": "condition",
+        "name": "Amebiasis",
+        "common_name": "Amebiasis"
+    },
+    {
+        "id": "c_523",
+        "type": "condition",
+        "name": "Testicular torsion",
+        "common_name": "Testicular torsion"
+    },
+    {
+        "id": "c_524",
+        "type": "condition",
+        "name": "Budd-Chiari syndrome",
+        "common_name": "Budd-Chiari syndrome"
+    },
+    {
+        "id": "c_525",
+        "type": "condition",
+        "name": "Hydrocele testis",
+        "common_name": "Hydrocele testis"
+    },
+    {
+        "id": "c_526",
+        "type": "condition",
+        "name": "Acute mastoiditis",
+        "common_name": "Acute mastoiditis"
+    },
+    {
+        "id": "c_529",
+        "type": "condition",
+        "name": "Paronychia",
+        "common_name": "Nail fold infection"
+    },
+    {
+        "id": "c_531",
+        "type": "condition",
+        "name": "Beh\u00e7et's disease",
+        "common_name": "Beh\u00e7et's disease"
+    },
+    {
+        "id": "c_532",
+        "type": "condition",
+        "name": "Gestational diabetes",
+        "common_name": "Diabetes in pregnancy"
+    },
+    {
+        "id": "c_533",
+        "type": "condition",
+        "name": "Osteomyelitis",
+        "common_name": "Bone infection"
+    },
+    {
+        "id": "c_534",
+        "type": "condition",
+        "name": "Genital herpes",
+        "common_name": "Genital herpes"
+    },
+    {
+        "id": "c_535",
+        "type": "condition",
+        "name": "African trypanosomiasis",
+        "common_name": "Sleeping sickness"
+    },
+    {
+        "id": "c_540",
+        "type": "condition",
+        "name": "Pure hypercholesterolemia",
+        "common_name": "Pure hypercholesterolemia"
+    },
+    {
+        "id": "c_541",
+        "type": "condition",
+        "name": "Pure hypertriglyceridemia",
+        "common_name": "Pure hypertriglyceridemia"
+    },
+    {
+        "id": "c_543",
+        "type": "condition",
+        "name": "Pituitary prolactin releasing adenoma",
+        "common_name": "Pituitary prolactin releasing adenoma"
+    },
+    {
+        "id": "c_546",
+        "type": "condition",
+        "name": "Thyrotropin releasing pituitary adenoma",
+        "common_name": "Thyrotropin releasing pituitary adenoma"
+    },
+    {
+        "id": "c_547",
+        "type": "condition",
+        "name": "Abducens nerve palsy",
+        "common_name": "Sixth nerve palsy"
+    },
+    {
+        "id": "c_548",
+        "type": "condition",
+        "name": "Trochlear nerve palsy",
+        "common_name": "Trochlear nerve palsy"
+    },
+    {
+        "id": "c_549",
+        "type": "condition",
+        "name": "Oculomotor nerve palsy",
+        "common_name": "Oculomotor nerve palsy"
+    },
+    {
+        "id": "c_550",
+        "type": "condition",
+        "name": "Inguinal hernia",
+        "common_name": "Inguinal hernia"
+    },
+    {
+        "id": "c_551",
+        "type": "condition",
+        "name": "Incarcerated inguinal hernia",
+        "common_name": "Incarcerated inguinal hernia"
+    },
+    {
+        "id": "c_553",
+        "type": "condition",
+        "name": "Lateral medullary syndrome",
+        "common_name": "Lateral medullary syndrome"
+    },
+    {
+        "id": "c_554",
+        "type": "condition",
+        "name": "Vagus nerve palsy",
+        "common_name": "Vagus nerve palsy"
+    },
+    {
+        "id": "c_562",
+        "type": "condition",
+        "name": "Viral meningitis",
+        "common_name": "Viral meningitis"
+    },
+    {
+        "id": "c_563",
+        "type": "condition",
+        "name": "Bacterial meningitis",
+        "common_name": "Bacterial meningitis"
+    },
+    {
+        "id": "c_569",
+        "type": "condition",
+        "name": "Whitlow",
+        "common_name": "Whitlow"
+    },
+    {
+        "id": "c_571",
+        "type": "condition",
+        "name": "Pseudo-tetany",
+        "common_name": "Pseudo-tetany"
+    },
+    {
+        "id": "c_574",
+        "type": "condition",
+        "name": "Type 2 Neurofibromatosis",
+        "common_name": "Type 2 Neurofibromatosis"
+    },
+    {
+        "id": "c_575",
+        "type": "condition",
+        "name": "Mononeuritis multiplex",
+        "common_name": "Inflammation of multiple individual nerves"
+    },
+    {
+        "id": "c_576",
+        "type": "condition",
+        "name": "Degenerative disc disease of the cervical spine",
+        "common_name": "Degenerative disc disease of the cervical spine"
+    },
+    {
+        "id": "c_577",
+        "type": "condition",
+        "name": "Degenerative disc disease of the thoracic spine",
+        "common_name": "Degenerative disc disease of the thoracic spine"
+    },
+    {
+        "id": "c_578",
+        "type": "condition",
+        "name": "Allergic bronchopulmonary aspergillosis",
+        "common_name": "Allergic bronchopulmonary aspergillosis"
+    },
+    {
+        "id": "c_579",
+        "type": "condition",
+        "name": "Rabies",
+        "common_name": "Rabies"
+    },
+    {
+        "id": "c_580",
+        "type": "condition",
+        "name": "West Nile Virus infection",
+        "common_name": "West Nile Virus infection"
+    },
+    {
+        "id": "c_581",
+        "type": "condition",
+        "name": "Attention deficit hyperactivity disorder",
+        "common_name": "Attention deficit hyperactivity disorder"
+    },
+    {
+        "id": "c_583",
+        "type": "condition",
+        "name": "Non-Hodgkin lymphoma",
+        "common_name": "Non-Hodgkin lymphoma"
+    },
+    {
+        "id": "c_585",
+        "type": "condition",
+        "name": "Limbic encephalitis",
+        "common_name": "Limbic encephalitis"
+    },
+    {
+        "id": "c_587",
+        "type": "condition",
+        "name": "Pseudo gout",
+        "common_name": "Pseudo gout"
+    },
+    {
+        "id": "c_588",
+        "type": "condition",
+        "name": "Sickle cell anemia",
+        "common_name": "Sickle cell anemia"
+    },
+    {
+        "id": "c_589",
+        "type": "condition",
+        "name": "Scabies",
+        "common_name": "Scabies"
+    },
+    {
+        "id": "c_590",
+        "type": "condition",
+        "name": "Hepatic abscess",
+        "common_name": "Hepatic abscess"
+    },
+    {
+        "id": "c_592",
+        "type": "condition",
+        "name": "Folate-deficiency anemia",
+        "common_name": "Folate-deficiency anemia"
+    },
+    {
+        "id": "c_593",
+        "type": "condition",
+        "name": "Retinopathy",
+        "common_name": "Retinopathy"
+    },
+    {
+        "id": "c_596",
+        "type": "condition",
+        "name": "Retinal detachment",
+        "common_name": "Retinal detachment"
+    },
+    {
+        "id": "c_597",
+        "type": "condition",
+        "name": "Thrombotic thrombocytopenic purpura",
+        "common_name": "Thrombotic thrombocytopenic purpura"
+    },
+    {
+        "id": "c_598",
+        "type": "condition",
+        "name": "Fibromyalgia",
+        "common_name": "Fibromyalgia"
+    },
+    {
+        "id": "c_599",
+        "type": "condition",
+        "name": "Vestibular neuronitis",
+        "common_name": "Vestibular neuronitis"
+    },
+    {
+        "id": "c_606",
+        "type": "condition",
+        "name": "Hemolytic-uremic syndrome",
+        "common_name": "Hemolytic-uremic syndrome"
+    },
+    {
+        "id": "c_614",
+        "type": "condition",
+        "name": "Cavernous sinus thrombosis",
+        "common_name": "Cavernous sinus thrombosis"
+    },
+    {
+        "id": "c_616",
+        "type": "condition",
+        "name": "Superior vena cava syndrome",
+        "common_name": "Superior vena cava syndrome"
+    },
+    {
+        "id": "c_617",
+        "type": "condition",
+        "name": "Pancoast tumor",
+        "common_name": "Pancoast tumor"
+    },
+    {
+        "id": "c_618",
+        "type": "condition",
+        "name": "Thoracic outlet syndrome",
+        "common_name": "Thoracic outlet syndrome"
+    },
+    {
+        "id": "c_619",
+        "type": "condition",
+        "name": "Methanol poisoning",
+        "common_name": "Methyl alcohol poisoning"
+    },
+    {
+        "id": "c_620",
+        "type": "condition",
+        "name": "Medulloblastoma",
+        "common_name": "Medulloblastoma"
+    },
+    {
+        "id": "c_622",
+        "type": "condition",
+        "name": "Alcoholic cerebellar degeneration",
+        "common_name": "Alcoholic cerebellar degeneration"
+    },
+    {
+        "id": "c_627",
+        "type": "condition",
+        "name": "Ectopic pregnancy",
+        "common_name": "Ectopic pregnancy"
+    },
+    {
+        "id": "c_628",
+        "type": "condition",
+        "name": "Immune thrombocytopenia",
+        "common_name": "Immune thrombocytopenia"
+    },
+    {
+        "id": "c_633",
+        "type": "condition",
+        "name": "Pediculosis capitis",
+        "common_name": "Head lice"
+    },
+    {
+        "id": "c_634",
+        "type": "condition",
+        "name": "Diabetic ketoacidosis",
+        "common_name": "Diabetic ketoacidosis"
+    },
+    {
+        "id": "c_644",
+        "type": "condition",
+        "name": "Non-alcoholic fatty liver disease",
+        "common_name": "Non-alcoholic fatty liver disease"
+    },
+    {
+        "id": "c_645",
+        "type": "condition",
+        "name": "Sepsis",
+        "common_name": "Sepsis"
+    },
+    {
+        "id": "c_648",
+        "type": "condition",
+        "name": "Tick-borne encephalitis",
+        "common_name": "Tick-borne encephalitis"
+    },
+    {
+        "id": "c_649",
+        "type": "condition",
+        "name": "Cardiac tamponade",
+        "common_name": "Cardiac tamponade"
+    },
+    {
+        "id": "c_660",
+        "type": "condition",
+        "name": "Peritonitis",
+        "common_name": "Inflammation of the peritoneum"
+    },
+    {
+        "id": "c_661",
+        "type": "condition",
+        "name": "Pneumothorax",
+        "common_name": "Pneumothorax"
+    },
+    {
+        "id": "c_663",
+        "type": "condition",
+        "name": "Stable angina pectoris",
+        "common_name": "Stable angina pectoris"
+    },
+    {
+        "id": "c_664",
+        "type": "condition",
+        "name": "Unstable angina pectoris",
+        "common_name": "Unstable angina pectoris"
+    },
+    {
+        "id": "c_665",
+        "type": "condition",
+        "name": "Acute HIV infection",
+        "common_name": "Possible early HIV infection"
+    },
+    {
+        "id": "c_666",
+        "type": "condition",
+        "name": "Non-allergic non-infectious rhinitis",
+        "common_name": "Nonallergic rhinitis"
+    },
+    {
+        "id": "c_667",
+        "type": "condition",
+        "name": "Alcohol poisoning",
+        "common_name": "Alcohol poisoning"
+    },
+    {
+        "id": "c_668",
+        "type": "condition",
+        "name": "Chronic fatigue syndrome",
+        "common_name": "Chronic fatigue syndrome"
+    },
+    {
+        "id": "c_669",
+        "type": "condition",
+        "name": "Chronic tonsillitis",
+        "common_name": "Chronic tonsillitis"
+    },
+    {
+        "id": "c_670",
+        "type": "condition",
+        "name": "Contact dermatitis",
+        "common_name": "Contact dermatitis"
+    },
+    {
+        "id": "c_671",
+        "type": "condition",
+        "name": "Encephalitis",
+        "common_name": "Inflammation of the brain"
+    },
+    {
+        "id": "c_672",
+        "type": "condition",
+        "name": "Concussion",
+        "common_name": "Concussion"
+    },
+    {
+        "id": "c_673",
+        "type": "condition",
+        "name": "Sudden sensorineural hearing loss",
+        "common_name": "Sudden idiopathic hearing loss"
+    },
+    {
+        "id": "c_674",
+        "type": "condition",
+        "name": "Chronic constipation",
+        "common_name": "Chronic constipation"
+    },
+    {
+        "id": "c_675",
+        "type": "condition",
+        "name": "Scoliosis",
+        "common_name": "Scoliosis"
+    },
+    {
+        "id": "c_676",
+        "type": "condition",
+        "name": "Scarlet fever",
+        "common_name": "Scarlet fever"
+    },
+    {
+        "id": "c_677",
+        "type": "condition",
+        "name": "Cardiogenic shock",
+        "common_name": "Cardiogenic shock"
+    },
+    {
+        "id": "c_680",
+        "type": "condition",
+        "name": "Brain abscess",
+        "common_name": "Brain abscess"
+    },
+    {
+        "id": "c_681",
+        "type": "condition",
+        "name": "Presbycusis",
+        "common_name": "Age-related hearing loss"
+    },
+    {
+        "id": "c_684",
+        "type": "condition",
+        "name": "Varicose veins of lower extremities",
+        "common_name": "Varicose veins of lower extremities"
+    },
+    {
+        "id": "c_685",
+        "type": "condition",
+        "name": "Subarachnoid hemorrhage",
+        "common_name": "Subarachnoid intracranial hemorrhage"
+    },
+    {
+        "id": "c_686",
+        "type": "condition",
+        "name": "Peritonsillar abscess",
+        "common_name": "Quinsy"
+    },
+    {
+        "id": "c_687",
+        "type": "condition",
+        "name": "Respiratory diphtheria",
+        "common_name": "Respiratory diphtheria"
+    },
+    {
+        "id": "c_688",
+        "type": "condition",
+        "name": "Ear barotrauma",
+        "common_name": "Ear barotrauma"
+    },
+    {
+        "id": "c_689",
+        "type": "condition",
+        "name": "Sprained ankle",
+        "common_name": "Sprained ankle"
+    },
+    {
+        "id": "c_694",
+        "type": "condition",
+        "name": "Intestinal obstruction",
+        "common_name": "Intestinal obstruction"
+    },
+    {
+        "id": "c_695",
+        "type": "condition",
+        "name": "Portal hypertension",
+        "common_name": "Portal hypertension"
+    },
+    {
+        "id": "c_697",
+        "type": "condition",
+        "name": "Acute intestinal ischemia",
+        "common_name": "Acute intestinal ischemia"
+    },
+    {
+        "id": "c_698",
+        "type": "condition",
+        "name": "Oral candidiasis",
+        "common_name": "Oral thrush"
+    },
+    {
+        "id": "c_700",
+        "type": "condition",
+        "name": "Anaphylaxis",
+        "common_name": "Severe allergic reaction"
+    },
+    {
+        "id": "c_703",
+        "type": "condition",
+        "name": "Acute upper gastrointestinal bleeding",
+        "common_name": "Acute upper gastrointestinal bleeding"
+    },
+    {
+        "id": "c_704",
+        "type": "condition",
+        "name": "Clostridium difficile-associated disease",
+        "common_name": "Clostridium difficile-associated disease"
+    },
+    {
+        "id": "c_705",
+        "type": "condition",
+        "name": "Acute lower gastrointestinal hemorrhage",
+        "common_name": "Acute lower gastrointestinal bleeding"
+    },
+    {
+        "id": "c_708",
+        "type": "condition",
+        "name": "Antibiotic associated diarrhea",
+        "common_name": "Antibiotic associated diarrhea"
+    },
+    {
+        "id": "c_709",
+        "type": "condition",
+        "name": "Hemorrhagic stroke",
+        "common_name": "Hemorrhagic stroke"
+    },
+    {
+        "id": "c_710",
+        "type": "condition",
+        "name": "Nausea and vomiting in pregnancy",
+        "common_name": "Morning sickness"
+    },
+    {
+        "id": "c_711",
+        "type": "condition",
+        "name": "Obstructive sleep apnea",
+        "common_name": "Sleep apnea"
+    },
+    {
+        "id": "c_712",
+        "type": "condition",
+        "name": "Bursitis",
+        "common_name": "Bursitis"
+    },
+    {
+        "id": "c_715",
+        "type": "condition",
+        "name": "Angioedema",
+        "common_name": "Angioedema"
+    },
+    {
+        "id": "c_720",
+        "type": "condition",
+        "name": "Knee bursitis",
+        "common_name": "Knee bursitis"
+    },
+    {
+        "id": "c_721",
+        "type": "condition",
+        "name": "Insomnia",
+        "common_name": "Insomnia"
+    },
+    {
+        "id": "c_723",
+        "type": "condition",
+        "name": "Furuncles, carbuncles and cutaneous abscesses",
+        "common_name": "Skin abscess"
+    },
+    {
+        "id": "c_724",
+        "type": "condition",
+        "name": "Pertussis",
+        "common_name": "Pertussis"
+    },
+    {
+        "id": "c_727",
+        "type": "condition",
+        "name": "Lactational mastitis",
+        "common_name": "Breast inflammation associated with lactation"
+    },
+    {
+        "id": "c_728",
+        "type": "condition",
+        "name": "Proctitis",
+        "common_name": "Inflammation of the rectum"
+    },
+    {
+        "id": "c_729",
+        "type": "condition",
+        "name": "Toxoplasmosis",
+        "common_name": "Toxoplasmosis"
+    },
+    {
+        "id": "c_732",
+        "type": "condition",
+        "name": "Vulvovaginal candidiasis",
+        "common_name": "Vaginal thrush"
+    },
+    {
+        "id": "c_734",
+        "type": "condition",
+        "name": "Goiter",
+        "common_name": "Goiter"
+    },
+    {
+        "id": "c_735",
+        "type": "condition",
+        "name": "Lactose intolerance",
+        "common_name": "Lactose intolerance"
+    },
+    {
+        "id": "c_739",
+        "type": "condition",
+        "name": "Fibrocystic breasts",
+        "common_name": "Fibrocystic breasts"
+    },
+    {
+        "id": "c_743",
+        "type": "condition",
+        "name": "Vitiligo",
+        "common_name": "Vitiligo"
+    },
+    {
+        "id": "c_746",
+        "type": "condition",
+        "name": "Costochondritis",
+        "common_name": "Costochondritis"
+    },
+    {
+        "id": "c_748",
+        "type": "condition",
+        "name": "Restless legs syndrome",
+        "common_name": "Restless legs syndrome"
+    },
+    {
+        "id": "c_751",
+        "type": "condition",
+        "name": "Bartholin's abscess",
+        "common_name": "Bartholin's abscess"
+    },
+    {
+        "id": "c_753",
+        "type": "condition",
+        "name": "Diabetic nephropathy",
+        "common_name": "Diabetic kidney disease"
+    },
+    {
+        "id": "c_754",
+        "type": "condition",
+        "name": "Depersonalization-derealization disorder",
+        "common_name": "Depersonalization-derealization disorder"
+    },
+    {
+        "id": "c_755",
+        "type": "condition",
+        "name": "Splenic injury",
+        "common_name": "Splenic injury"
+    },
+    {
+        "id": "c_759",
+        "type": "condition",
+        "name": "Dilated cardiomyopathy",
+        "common_name": "Dilated cardiomyopathy"
+    },
+    {
+        "id": "c_764",
+        "type": "condition",
+        "name": "Abdominal aortic aneurysm",
+        "common_name": "Abdominal aortic aneurysm"
+    },
+    {
+        "id": "c_765",
+        "type": "condition",
+        "name": "Thoracic aortic aneurysm",
+        "common_name": "Thoracic aortic aneurysm"
+    },
+    {
+        "id": "c_766",
+        "type": "condition",
+        "name": "Secondary syphilis",
+        "common_name": "Secondary syphilis"
+    },
+    {
+        "id": "c_767",
+        "type": "condition",
+        "name": "Varicocele",
+        "common_name": "Varicocele"
+    },
+    {
+        "id": "c_769",
+        "type": "condition",
+        "name": "Blepharitis",
+        "common_name": "Eyelid inflammation"
+    },
+    {
+        "id": "c_771",
+        "type": "condition",
+        "name": "Diabetic retinopathy",
+        "common_name": "Diabetic retinopathy"
+    },
+    {
+        "id": "c_772",
+        "type": "condition",
+        "name": "Perimenopause",
+        "common_name": "Perimenopause"
+    },
+    {
+        "id": "c_774",
+        "type": "condition",
+        "name": "Tertiary syphilis",
+        "common_name": "Tertiary syphilis"
+    },
+    {
+        "id": "c_775",
+        "type": "condition",
+        "name": "Primary syphilis",
+        "common_name": "Primary syphilis"
+    },
+    {
+        "id": "c_778",
+        "type": "condition",
+        "name": "Fibroadenoma of breast",
+        "common_name": "Fibroadenoma of breast"
+    },
+    {
+        "id": "c_780",
+        "type": "condition",
+        "name": "Nose injury",
+        "common_name": "Nose injury"
+    },
+    {
+        "id": "c_784",
+        "type": "condition",
+        "name": "Adrenal cancer",
+        "common_name": "Adrenal cancer"
+    },
+    {
+        "id": "c_786",
+        "type": "condition",
+        "name": "Tinea versicolor",
+        "common_name": "Tinea versicolor"
+    },
+    {
+        "id": "c_797",
+        "type": "condition",
+        "name": "Non-melanoma skin cancer",
+        "common_name": "Non-melanoma skin carcinoma"
+    },
+    {
+        "id": "c_798",
+        "type": "condition",
+        "name": "Pneumocystis jirovecii pneumonia",
+        "common_name": "Pneumocystis jirovecii pneumonia"
+    },
+    {
+        "id": "c_799",
+        "type": "condition",
+        "name": "Nasolacrimal duct obstruction",
+        "common_name": "Blocked tear duct"
+    },
+    {
+        "id": "c_801",
+        "type": "condition",
+        "name": "Non-lactational mastitis",
+        "common_name": "Inflammation of the breast"
+    },
+    {
+        "id": "c_802",
+        "type": "condition",
+        "name": "Alopecia",
+        "common_name": "Baldness"
+    },
+    {
+        "id": "c_803",
+        "type": "condition",
+        "name": "Achilles tendinitis",
+        "common_name": "Achilles tendinitis"
+    },
+    {
+        "id": "c_806",
+        "type": "condition",
+        "name": "Achilles tendon rupture",
+        "common_name": "Achilles tendon rupture"
+    },
+    {
+        "id": "c_808",
+        "type": "condition",
+        "name": "Earwax blockage",
+        "common_name": "Clogged ear"
+    },
+    {
+        "id": "c_810",
+        "type": "condition",
+        "name": "Nasal septum deviation",
+        "common_name": "Nasal septum deviation"
+    },
+    {
+        "id": "c_811",
+        "type": "condition",
+        "name": "Cruciate ligament injury",
+        "common_name": "Cruciate ligament injury"
+    },
+    {
+        "id": "c_812",
+        "type": "condition",
+        "name": "Rotavirus infection",
+        "common_name": "Rotavirus infection"
+    },
+    {
+        "id": "c_814",
+        "type": "condition",
+        "name": "Flatfoot",
+        "common_name": "Flat feet"
+    },
+    {
+        "id": "c_815",
+        "type": "condition",
+        "name": "Functional dyspepsia",
+        "common_name": "Indigestion"
+    },
+    {
+        "id": "c_817",
+        "type": "condition",
+        "name": "Sprained elbow",
+        "common_name": "Sprained elbow"
+    },
+    {
+        "id": "c_818",
+        "type": "condition",
+        "name": "Sprained wrist",
+        "common_name": "Sprained wrist"
+    },
+    {
+        "id": "c_819",
+        "type": "condition",
+        "name": "Sun allergy",
+        "common_name": "Sun allergy"
+    },
+    {
+        "id": "c_820",
+        "type": "condition",
+        "name": "Cutaneous cyst",
+        "common_name": "Skin cyst"
+    },
+    {
+        "id": "c_824",
+        "type": "condition",
+        "name": "Granuloma annulare",
+        "common_name": "Granuloma annulare"
+    },
+    {
+        "id": "c_826",
+        "type": "condition",
+        "name": "Solar lentigo",
+        "common_name": "Age spots"
+    },
+    {
+        "id": "c_828",
+        "type": "condition",
+        "name": "Sprained hip",
+        "common_name": "Sprained hip"
+    },
+    {
+        "id": "c_829",
+        "type": "condition",
+        "name": "Sprained knee",
+        "common_name": "Sprained knee"
+    },
+    {
+        "id": "c_830",
+        "type": "condition",
+        "name": "Sprained shoulder",
+        "common_name": "Sprained shoulder"
+    },
+    {
+        "id": "c_832",
+        "type": "condition",
+        "name": "Food allergy",
+        "common_name": "Food allergy"
+    },
+    {
+        "id": "c_833",
+        "type": "condition",
+        "name": "Tinea corporis",
+        "common_name": "Fungal skin infection"
+    },
+    {
+        "id": "c_834",
+        "type": "condition",
+        "name": "Lipoma",
+        "common_name": "Lipoma"
+    },
+    {
+        "id": "c_835",
+        "type": "condition",
+        "name": "Tinea capitis",
+        "common_name": "Fungal infection of the scalp"
+    },
+    {
+        "id": "c_836",
+        "type": "condition",
+        "name": "Ingrown fingernail",
+        "common_name": "Ingrown fingernail"
+    },
+    {
+        "id": "c_837",
+        "type": "condition",
+        "name": "Cold urticaria",
+        "common_name": "Cold urticaria"
+    },
+    {
+        "id": "c_841",
+        "type": "condition",
+        "name": "Leukoplakia",
+        "common_name": "Leukoplakia"
+    },
+    {
+        "id": "c_844",
+        "type": "condition",
+        "name": "Diaper dermatitis",
+        "common_name": "Nappy rash"
+    },
+    {
+        "id": "c_845",
+        "type": "condition",
+        "name": "Burn",
+        "common_name": "Burn"
+    },
+    {
+        "id": "c_847",
+        "type": "condition",
+        "name": "Corns and callosities",
+        "common_name": "Corns and callosities"
+    },
+    {
+        "id": "c_848",
+        "type": "condition",
+        "name": "Milia",
+        "common_name": "Milk spots"
+    },
+    {
+        "id": "c_849",
+        "type": "condition",
+        "name": "Rosacea",
+        "common_name": "Rosacea"
+    },
+    {
+        "id": "c_857",
+        "type": "condition",
+        "name": "Tinea pedis",
+        "common_name": "Athlete's foot"
+    },
+    {
+        "id": "c_863",
+        "type": "condition",
+        "name": "Autism spectrum disorder",
+        "common_name": "Autism spectrum disorder"
+    },
+    {
+        "id": "c_866",
+        "type": "condition",
+        "name": "Anal fistula",
+        "common_name": "Anal fistula"
+    },
+    {
+        "id": "c_868",
+        "type": "condition",
+        "name": "Adenomyosis",
+        "common_name": "Adenomyosis"
+    },
+    {
+        "id": "c_871",
+        "type": "condition",
+        "name": "Benign paroxysmal positional vertigo",
+        "common_name": "Benign paroxysmal positional vertigo"
+    },
+    {
+        "id": "c_874",
+        "type": "condition",
+        "name": "Ampullary cancer",
+        "common_name": "Ampullary cancer"
+    },
+    {
+        "id": "c_880",
+        "type": "condition",
+        "name": "Pelvic organ prolapse",
+        "common_name": "Uterine prolapse"
+    },
+    {
+        "id": "c_884",
+        "type": "condition",
+        "name": "Thoracic aortic dissection",
+        "common_name": "Thoracic aortic dissection"
+    },
+    {
+        "id": "c_885",
+        "type": "condition",
+        "name": "Abdominal aortic dissection",
+        "common_name": "Abdominal aortic dissection"
+    },
+    {
+        "id": "c_887",
+        "type": "condition",
+        "name": "Foreign body aspiration",
+        "common_name": "Foreign body aspiration"
+    },
+    {
+        "id": "c_888",
+        "type": "condition",
+        "name": "Onychomycosis",
+        "common_name": "Fungal nail infection"
+    },
+    {
+        "id": "c_889",
+        "type": "condition",
+        "name": "Rib fracture",
+        "common_name": "Broken rib"
+    },
+    {
+        "id": "c_891",
+        "type": "condition",
+        "name": "Decompression sickness",
+        "common_name": "Decompression sickness"
+    },
+    {
+        "id": "c_892",
+        "type": "condition",
+        "name": "Keratitis",
+        "common_name": "Keratitis"
+    },
+    {
+        "id": "c_894",
+        "type": "condition",
+        "name": "Epicondylitis",
+        "common_name": "Epicondylitis"
+    },
+    {
+        "id": "c_897",
+        "type": "condition",
+        "name": "Heart valve disease",
+        "common_name": "Heart valve disease"
+    },
+    {
+        "id": "c_899",
+        "type": "condition",
+        "name": "Cervical acceleration-deceleration syndrome",
+        "common_name": "Whiplash injury"
+    },
+    {
+        "id": "c_902",
+        "type": "condition",
+        "name": "Chikungunya virus infection",
+        "common_name": "Chikungunya virus infection"
+    },
+    {
+        "id": "c_906",
+        "type": "condition",
+        "name": "Zika virus infection",
+        "common_name": "Zika virus disease"
+    },
+    {
+        "id": "c_910",
+        "type": "condition",
+        "name": "Baker's cyst",
+        "common_name": "Baker's cyst of knee"
+    },
+    {
+        "id": "c_912",
+        "type": "condition",
+        "name": "Tinea cruris",
+        "common_name": "Jock itch"
+    },
+    {
+        "id": "c_915",
+        "type": "condition",
+        "name": "Functional ovarian cyst",
+        "common_name": "Cyst of an ovary"
+    },
+    {
+        "id": "c_917",
+        "type": "condition",
+        "name": "Ganglion cyst",
+        "common_name": "Ganglion cyst"
+    },
+    {
+        "id": "c_920",
+        "type": "condition",
+        "name": "Hyperprolactinemia",
+        "common_name": "Hyperprolactinemia"
+    },
+    {
+        "id": "c_921",
+        "type": "condition",
+        "name": "Hyperemesis gravidarum",
+        "common_name": "Hyperemesis gravidarum"
+    },
+    {
+        "id": "c_922",
+        "type": "condition",
+        "name": "Postinfectious cough",
+        "common_name": "Postinfectious cough"
+    },
+    {
+        "id": "c_923",
+        "type": "condition",
+        "name": "Painful ovulation",
+        "common_name": "Painful ovulation"
+    },
+    {
+        "id": "c_924",
+        "type": "condition",
+        "name": "Placenta previa",
+        "common_name": "Placenta previa"
+    },
+    {
+        "id": "c_925",
+        "type": "condition",
+        "name": "Threatened miscarriage",
+        "common_name": "Threatened miscarriage"
+    },
+    {
+        "id": "c_926",
+        "type": "condition",
+        "name": "ACE inhibitor-induced cough",
+        "common_name": "ACE inhibitor-induced cough"
+    },
+    {
+        "id": "c_927",
+        "type": "condition",
+        "name": "De Quervain syndrome",
+        "common_name": "De Quervain syndrome"
+    },
+    {
+        "id": "c_928",
+        "type": "condition",
+        "name": "Atrophic vaginitis",
+        "common_name": "Atrophy of vagina"
+    },
+    {
+        "id": "c_931",
+        "type": "condition",
+        "name": "Rotator cuff syndrome",
+        "common_name": "Rotator cuff syndrome"
+    },
+    {
+        "id": "c_932",
+        "type": "condition",
+        "name": "Shoulder bursitis",
+        "common_name": "Shoulder bursitis"
+    },
+    {
+        "id": "c_937",
+        "type": "condition",
+        "name": "Olecranon bursitis",
+        "common_name": "Olecranon bursitis"
+    },
+    {
+        "id": "c_938",
+        "type": "condition",
+        "name": "Greater trochanteric pain syndrome",
+        "common_name": "Hip bursitis"
+    },
+    {
+        "id": "c_939",
+        "type": "condition",
+        "name": "Patellofemoral pain syndrome",
+        "common_name": "Runner's knee"
+    },
+    {
+        "id": "c_940",
+        "type": "condition",
+        "name": "Endometrial polyp",
+        "common_name": "Endometrial polyp"
+    },
+    {
+        "id": "c_946",
+        "type": "condition",
+        "name": "Ulnar nerve syndrome",
+        "common_name": "Ulnar nerve syndrome"
+    },
+    {
+        "id": "c_947",
+        "type": "condition",
+        "name": "Adhesive capsulitis of shoulder",
+        "common_name": "Frozen shoulder"
+    },
+    {
+        "id": "c_948",
+        "type": "condition",
+        "name": "Shoulder impingement syndrome",
+        "common_name": "Shoulder impingement syndrome"
+    },
+    {
+        "id": "c_949",
+        "type": "condition",
+        "name": "Peroneal mononeuropathy",
+        "common_name": "Peroneal neuropathy"
+    },
+    {
+        "id": "c_950",
+        "type": "condition",
+        "name": "Radial nerve neuropathy",
+        "common_name": "Radial nerve neuropathy"
+    },
+    {
+        "id": "c_952",
+        "type": "condition",
+        "name": "Choledocholithiasis",
+        "common_name": "Bile duct stones"
+    },
+    {
+        "id": "c_953",
+        "type": "condition",
+        "name": "Psoriatic arthritis",
+        "common_name": "Psoriatic arthritis"
+    },
+    {
+        "id": "c_954",
+        "type": "condition",
+        "name": "Piriformis syndrome",
+        "common_name": "Piriformis syndrome"
+    },
+    {
+        "id": "c_956",
+        "type": "condition",
+        "name": "Hypovolemic shock",
+        "common_name": "Hypovolemic shock"
+    },
+    {
+        "id": "c_957",
+        "type": "condition",
+        "name": "Periorbital cellulitis",
+        "common_name": "Periorbital cellulitis"
+    },
+    {
+        "id": "c_959",
+        "type": "condition",
+        "name": "Eye injury",
+        "common_name": "Injured eye"
+    },
+    {
+        "id": "c_960",
+        "type": "condition",
+        "name": "Genital injury",
+        "common_name": "Crotch injury"
+    },
+    {
+        "id": "c_962",
+        "type": "condition",
+        "name": "Sunburn",
+        "common_name": "Sunburn"
+    },
+    {
+        "id": "c_963",
+        "type": "condition",
+        "name": "Dental trauma",
+        "common_name": "Tooth injury"
+    },
+    {
+        "id": "c_965",
+        "type": "condition",
+        "name": "Diarrhea, unspecified",
+        "common_name": "Unspecific diarrhea"
+    },
+    {
+        "id": "c_966",
+        "type": "condition",
+        "name": "Vomiting, unspecified",
+        "common_name": "Unspecific vomiting"
+    },
+    {
+        "id": "c_967",
+        "type": "condition",
+        "name": "Disorder of the skin and subcutaneous tissue, unspecified",
+        "common_name": "Unspecific skin disorder"
+    },
+    {
+        "id": "c_969",
+        "type": "condition",
+        "name": "Abdominal pain, unspecified",
+        "common_name": "Unspecific abdominal pain"
+    },
+    {
+        "id": "c_970",
+        "type": "condition",
+        "name": "Suspicious mole",
+        "common_name": "Suspicious mole"
+    },
+    {
+        "id": "c_971",
+        "type": "condition",
+        "name": "Cough, unspecified",
+        "common_name": "Unspecific cough"
+    },
+    {
+        "id": "c_972",
+        "type": "condition",
+        "name": "Asthma exacerbation",
+        "common_name": "Asthma exacerbation"
+    },
+    {
+        "id": "c_973",
+        "type": "condition",
+        "name": "Chronic obstructive pulmonary disease exacerbation",
+        "common_name": "Chronic obstructive pulmonary disease exacerbation"
+    },
+    {
+        "id": "c_975",
+        "type": "condition",
+        "name": "Cervical strain",
+        "common_name": "Neck strain"
+    },
+    {
+        "id": "c_976",
+        "type": "condition",
+        "name": "Chest pain, unspecified",
+        "common_name": "Unspecific chest pain"
+    },
+    {
+        "id": "c_978",
+        "type": "condition",
+        "name": "Ingrown toenail",
+        "common_name": "Ingrown toenail"
+    },
+    {
+        "id": "c_979",
+        "type": "condition",
+        "name": "Nail injury",
+        "common_name": "Nail injury"
+    },
+    {
+        "id": "c_980",
+        "type": "condition",
+        "name": "Reflex syncope",
+        "common_name": "Reflex syncope"
+    },
+    {
+        "id": "c_981",
+        "type": "condition",
+        "name": "Mechanical back pain",
+        "common_name": "Back strain"
+    },
+    {
+        "id": "c_982",
+        "type": "condition",
+        "name": "Labour",
+        "common_name": "Labour"
+    },
+    {
+        "id": "c_983",
+        "type": "condition",
+        "name": "Epistaxis",
+        "common_name": "Nosebleed"
+    },
+    {
+        "id": "c_984",
+        "type": "condition",
+        "name": "Minor head injury, unspecified",
+        "common_name": "Mild head injury"
+    },
+    {
+        "id": "c_985",
+        "type": "condition",
+        "name": "Eclampsia",
+        "common_name": "Eclampsia"
+    },
+    {
+        "id": "c_986",
+        "type": "condition",
+        "name": "HELLP syndrome",
+        "common_name": "HELLP syndrome"
+    },
+    {
+        "id": "c_988",
+        "type": "condition",
+        "name": "Anorectal abscess",
+        "common_name": "Anorectal abscess"
+    },
+    {
+        "id": "c_989",
+        "type": "condition",
+        "name": "Placental abruption",
+        "common_name": "Premature separation of placenta"
+    },
+    {
+        "id": "c_990",
+        "type": "condition",
+        "name": "Intra-amniotic infection",
+        "common_name": "Intra-amniotic infection"
+    },
+    {
+        "id": "c_991",
+        "type": "condition",
+        "name": "Edema in pregnancy",
+        "common_name": "Edema in pregnancy"
+    },
+    {
+        "id": "c_992",
+        "type": "condition",
+        "name": "Gambling addiction",
+        "common_name": "Pathological gambling"
+    },
+    {
+        "id": "c_996",
+        "type": "condition",
+        "name": "Acute angle-closure glaucoma",
+        "common_name": "Acute angle-closure glaucoma"
+    },
+    {
+        "id": "c_997",
+        "type": "condition",
+        "name": "Open-angle glaucoma",
+        "common_name": "Open-angle glaucoma"
+    },
+    {
+        "id": "c_998",
+        "type": "condition",
+        "name": "Dry eye disease",
+        "common_name": "Dry eye syndrome"
+    },
+    {
+        "id": "c_999",
+        "type": "condition",
+        "name": "Bruxism",
+        "common_name": "Teeth grinding"
+    },
+    {
+        "id": "c_1000",
+        "type": "condition",
+        "name": "Cryptorchidism",
+        "common_name": "Undescended testicle"
+    },
+    {
+        "id": "c_1003",
+        "type": "condition",
+        "name": "Chronic heart failure",
+        "common_name": "Chronic heart failure"
+    },
+    {
+        "id": "c_1004",
+        "type": "condition",
+        "name": "Erythema infectiosum",
+        "common_name": "Erythema infectiosum"
+    },
+    {
+        "id": "c_1005",
+        "type": "condition",
+        "name": "Acute heart failure",
+        "common_name": "Acute heart failure"
+    },
+    {
+        "id": "c_1006",
+        "type": "condition",
+        "name": "Hemangioma",
+        "common_name": "Strawberry mark"
+    },
+    {
+        "id": "c_1007",
+        "type": "condition",
+        "name": "Umbilical hernia",
+        "common_name": "Umbilical hernia"
+    },
+    {
+        "id": "c_1008",
+        "type": "condition",
+        "name": "Miliaria",
+        "common_name": "Sweat rash"
+    },
+    {
+        "id": "c_1012",
+        "type": "condition",
+        "name": "Finger fracture",
+        "common_name": "Broken finger"
+    },
+    {
+        "id": "c_1013",
+        "type": "condition",
+        "name": "Patella fracture",
+        "common_name": "Broken kneecap"
+    },
+    {
+        "id": "c_1014",
+        "type": "condition",
+        "name": "Tibiofibular fracture",
+        "common_name": "Broken calf bones"
+    },
+    {
+        "id": "c_1015",
+        "type": "condition",
+        "name": "Facial bones fracture",
+        "common_name": "Broken facial bones"
+    },
+    {
+        "id": "c_1016",
+        "type": "condition",
+        "name": "Hand bones fracture",
+        "common_name": "Broken hand bones"
+    },
+    {
+        "id": "c_1018",
+        "type": "condition",
+        "name": "Braincase fracture",
+        "common_name": "Broken skull"
+    },
+    {
+        "id": "c_1019",
+        "type": "condition",
+        "name": "Foot bones fracture",
+        "common_name": "Broken foot"
+    },
+    {
+        "id": "c_1020",
+        "type": "condition",
+        "name": "Pelvis fracture",
+        "common_name": "Broken pelvis"
+    },
+    {
+        "id": "c_1021",
+        "type": "condition",
+        "name": "Scapula fracture",
+        "common_name": "Broken shoulder bone"
+    },
+    {
+        "id": "c_1022",
+        "type": "condition",
+        "name": "Lumbar vertebra fracture",
+        "common_name": "Broken lumbar spine"
+    },
+    {
+        "id": "c_1023",
+        "type": "condition",
+        "name": "Thoracic vertebra fracture",
+        "common_name": "Broken thoracic spine"
+    },
+    {
+        "id": "c_1024",
+        "type": "condition",
+        "name": "Cervical vertebra fracture",
+        "common_name": "Neck fracture"
+    },
+    {
+        "id": "c_1025",
+        "type": "condition",
+        "name": "Elbow dislocation",
+        "common_name": "Dislocated elbow"
+    },
+    {
+        "id": "c_1026",
+        "type": "condition",
+        "name": "Ankle joint dislocation",
+        "common_name": "Dislocated ankle"
+    },
+    {
+        "id": "c_1027",
+        "type": "condition",
+        "name": "Wrist dislocation",
+        "common_name": "Dislocated wrist"
+    },
+    {
+        "id": "c_1028",
+        "type": "condition",
+        "name": "Shoulder dislocation",
+        "common_name": "Dislocated shoulder"
+    },
+    {
+        "id": "c_1029",
+        "type": "condition",
+        "name": "Finger dislocation",
+        "common_name": "Dislocated finger"
+    },
+    {
+        "id": "c_1030",
+        "type": "condition",
+        "name": "Knee dislocation",
+        "common_name": "Dislocated knee"
+    },
+    {
+        "id": "c_1031",
+        "type": "condition",
+        "name": "Hip dislocation",
+        "common_name": "Dislocated hip"
+    },
+    {
+        "id": "c_1032",
+        "type": "condition",
+        "name": "Toe dislocation",
+        "common_name": "Toe dislocation"
+    },
+    {
+        "id": "c_1034",
+        "type": "condition",
+        "name": "Sprained finger",
+        "common_name": "Sprained finger"
+    },
+    {
+        "id": "c_1035",
+        "type": "condition",
+        "name": "Forearm contusion",
+        "common_name": "Forearm contusion"
+    },
+    {
+        "id": "c_1036",
+        "type": "condition",
+        "name": "Upper limb injury, unspecified location",
+        "common_name": "Upper limb injury of unspecified location"
+    },
+    {
+        "id": "c_1037",
+        "type": "condition",
+        "name": "Shoulder contusion",
+        "common_name": "Shoulder contusion"
+    },
+    {
+        "id": "c_1038",
+        "type": "condition",
+        "name": "Lower limb injury, unspecified location",
+        "common_name": "Lower limb injury of unspecified location"
+    },
+    {
+        "id": "c_1039",
+        "type": "condition",
+        "name": "Arm contusion",
+        "common_name": "Arm bruise"
+    },
+    {
+        "id": "c_1040",
+        "type": "condition",
+        "name": "Head and neck unspecified injury",
+        "common_name": "Unspecified head and neck injury"
+    },
+    {
+        "id": "c_1041",
+        "type": "condition",
+        "name": "Elbow contusion",
+        "common_name": "Elbow contusion"
+    },
+    {
+        "id": "c_1043",
+        "type": "condition",
+        "name": "Wrist and hand contusion",
+        "common_name": "Wrist and hand contusion"
+    },
+    {
+        "id": "c_1044",
+        "type": "condition",
+        "name": "Finger contusion",
+        "common_name": "Bruised finger"
+    },
+    {
+        "id": "c_1045",
+        "type": "condition",
+        "name": "Toe contusion",
+        "common_name": "Toe contusion"
+    },
+    {
+        "id": "c_1046",
+        "type": "condition",
+        "name": "Facial contusion",
+        "common_name": "Facial bruise"
+    },
+    {
+        "id": "c_1047",
+        "type": "condition",
+        "name": "Hip contusion",
+        "common_name": "Hip contusion"
+    },
+    {
+        "id": "c_1048",
+        "type": "condition",
+        "name": "Thigh contusion",
+        "common_name": "Thigh contusion"
+    },
+    {
+        "id": "c_1049",
+        "type": "condition",
+        "name": "Ankle contusion",
+        "common_name": "Ankle contusion"
+    },
+    {
+        "id": "c_1050",
+        "type": "condition",
+        "name": "Back and pelvis contusion",
+        "common_name": "Back and pelvis contusion"
+    },
+    {
+        "id": "c_1051",
+        "type": "condition",
+        "name": "Clavicle fracture",
+        "common_name": "Broken collarbone"
+    },
+    {
+        "id": "c_1052",
+        "type": "condition",
+        "name": "Trunk injury, unspecified location",
+        "common_name": "Trunk injury of unspecified location"
+    },
+    {
+        "id": "c_1053",
+        "type": "condition",
+        "name": "Limb injury, unspecified location",
+        "common_name": "Limb injury of unspecified location"
+    },
+    {
+        "id": "c_1054",
+        "type": "condition",
+        "name": "External ear injury",
+        "common_name": "Injured ear"
+    },
+    {
+        "id": "c_1055",
+        "type": "condition",
+        "name": "Femur fracture",
+        "common_name": "Broken thigh bone"
+    },
+    {
+        "id": "c_1056",
+        "type": "condition",
+        "name": "Foot contusion",
+        "common_name": "Foot contusion"
+    },
+    {
+        "id": "c_1057",
+        "type": "condition",
+        "name": "Forearm bones fracture",
+        "common_name": "Broken forearm"
+    },
+    {
+        "id": "c_1059",
+        "type": "condition",
+        "name": "Lower leg contusion",
+        "common_name": "Lower leg contusion"
+    },
+    {
+        "id": "c_1060",
+        "type": "condition",
+        "name": "Mandible fracture",
+        "common_name": "Broken jaw"
+    },
+    {
+        "id": "c_1061",
+        "type": "condition",
+        "name": "Thorax contusion",
+        "common_name": "Chest contusion"
+    },
+    {
+        "id": "c_1062",
+        "type": "condition",
+        "name": "Toe fracture",
+        "common_name": "Broken toe"
+    },
+    {
+        "id": "c_1063",
+        "type": "condition",
+        "name": "Minor skin injury",
+        "common_name": "Minor wound"
+    },
+    {
+        "id": "c_1064",
+        "type": "condition",
+        "name": "Major skin injury",
+        "common_name": "Major wound"
+    },
+    {
+        "id": "c_1065",
+        "type": "condition",
+        "name": "Physical injury of unknown location",
+        "common_name": "Physical injury of unknown location"
+    },
+    {
+        "id": "c_1070",
+        "type": "condition",
+        "name": "Humerus fracture",
+        "common_name": "Broken arm"
+    },
+    {
+        "id": "c_1071",
+        "type": "condition",
+        "name": "Cholestasis of pregnancy",
+        "common_name": "Cholestasis of pregnancy"
+    },
+    {
+        "id": "c_1073",
+        "type": "condition",
+        "name": "Visual disturbance, unspecified",
+        "common_name": "Sight defect"
+    },
+    {
+        "id": "c_1074",
+        "type": "condition",
+        "name": "Epilepsy without loss of consciousness",
+        "common_name": "Epilepsy without loss of consciousness"
+    },
+    {
+        "id": "c_1075",
+        "type": "condition",
+        "name": "Epilepsy with loss of consciousness",
+        "common_name": "Epilepsy with loss of consciousness"
+    },
+    {
+        "id": "c_1076",
+        "type": "condition",
+        "name": "Viral gastroenteritis",
+        "common_name": "Stomach flu"
+    },
+    {
+        "id": "c_1077",
+        "type": "condition",
+        "name": "Bacterial gastroenteritis",
+        "common_name": "Bacterial gastroenteritis"
+    },
+    {
+        "id": "c_1078",
+        "type": "condition",
+        "name": "Epiglottitis",
+        "common_name": "Inflammation of the epiglottis"
+    },
+    {
+        "id": "c_1083",
+        "type": "condition",
+        "name": "Joint pain, unspecified",
+        "common_name": "Unspecific joint pain"
+    },
+    {
+        "id": "c_1084",
+        "type": "condition",
+        "name": "Acute bronchiolitis",
+        "common_name": "Acute bronchiolitis"
+    },
+    {
+        "id": "c_1086",
+        "type": "condition",
+        "name": "Febrile seizures",
+        "common_name": "Fever fit"
+    },
+    {
+        "id": "c_1087",
+        "type": "condition",
+        "name": "Hand foot and mouth disease",
+        "common_name": "Hand foot and mouth disease"
+    },
+    {
+        "id": "c_1088",
+        "type": "condition",
+        "name": "Infantile colic",
+        "common_name": "Baby colic"
+    },
+    {
+        "id": "c_1090",
+        "type": "condition",
+        "name": "Teething",
+        "common_name": "Growing new teeth"
+    },
+    {
+        "id": "c_1091",
+        "type": "condition",
+        "name": "Cradle cap",
+        "common_name": "Cradle cap"
+    },
+    {
+        "id": "c_1092",
+        "type": "condition",
+        "name": "Hyperbilirubinemia of the newborn",
+        "common_name": "Jaundice in newborn"
+    },
+    {
+        "id": "c_1093",
+        "type": "condition",
+        "name": "Necrotizing enterocolitis",
+        "common_name": "Necrotizing enterocolitis"
+    },
+    {
+        "id": "c_1094",
+        "type": "condition",
+        "name": "Thalassemia",
+        "common_name": "Thalassemia"
+    },
+    {
+        "id": "c_1095",
+        "type": "condition",
+        "name": "Blunt abdominal trauma",
+        "common_name": "Blunt stomach trauma"
+    },
+    {
+        "id": "c_1096",
+        "type": "condition",
+        "name": "Penetrating abdominal trauma",
+        "common_name": "Penetrating stomach trauma"
+    },
+    {
+        "id": "c_1097",
+        "type": "condition",
+        "name": "Acute lower limb ischemia",
+        "common_name": "Acute lower limb ischemia"
+    },
+    {
+        "id": "c_1098",
+        "type": "condition",
+        "name": "Acute stress reaction",
+        "common_name": "Acute reaction to stress"
+    },
+    {
+        "id": "c_1099",
+        "type": "condition",
+        "name": "Acute upper limb ischemia",
+        "common_name": "Acute upper limb ischemia"
+    },
+    {
+        "id": "c_1100",
+        "type": "condition",
+        "name": "Psoriasis exacerbation",
+        "common_name": "Psoriasis exacerbation"
+    },
+    {
+        "id": "c_1101",
+        "type": "condition",
+        "name": "Chlamydial genitourinary infection",
+        "common_name": "Genital Chlamydia"
+    },
+    {
+        "id": "c_1103",
+        "type": "condition",
+        "name": "Unstable tachyarrhytmia",
+        "common_name": "Severe arrhythmia with fast heart rate"
+    },
+    {
+        "id": "c_1105",
+        "type": "condition",
+        "name": "COVID-19",
+        "common_name": "COVID-19"
+    },
+    {
+        "id": "c_1106",
+        "type": "condition",
+        "name": "Paraphimosis",
+        "common_name": "Paraphimosis"
+    },
+    {
+        "id": "c_1107",
+        "type": "condition",
+        "name": "Phimosis",
+        "common_name": "Phimosis"
+    },
+    {
+        "id": "c_1108",
+        "type": "condition",
+        "name": "Cervical radiculopathy",
+        "common_name": "Cervical neuropathy"
+    },
+    {
+        "id": "c_1109",
+        "type": "condition",
+        "name": "Electrical injury",
+        "common_name": "Electrical injury"
+    },
+    {
+        "id": "c_1111",
+        "type": "condition",
+        "name": "Lip injury",
+        "common_name": "Lip injury"
+    },
+    {
+        "id": "c_1112",
+        "type": "condition",
+        "name": "Chronic urticaria",
+        "common_name": "Chronic hives"
+    },
+    {
+        "id": "c_1114",
+        "type": "condition",
+        "name": "Neonatal conjunctivitis",
+        "common_name": "Neonatal conjunctivitis"
+    },
+    {
+        "id": "c_1115",
+        "type": "condition",
+        "name": "Nursing blister",
+        "common_name": "Nursing tubercle"
+    },
+    {
+        "id": "c_1116",
+        "type": "condition",
+        "name": "Croup",
+        "common_name": "Croup"
+    },
+    {
+        "id": "c_1117",
+        "type": "condition",
+        "name": "Infantile hypertrophic pyloric stenosis",
+        "common_name": "Pyloric stenosis"
+    },
+    {
+        "id": "c_1118",
+        "type": "condition",
+        "name": "Atypical pneumonia",
+        "common_name": "Atypical pneumonia"
+    },
+    {
+        "id": "c_1119",
+        "type": "condition",
+        "name": "Congenital syphilis",
+        "common_name": "Congenital syphilis"
+    },
+    {
+        "id": "c_1120",
+        "type": "condition",
+        "name": "Dysplasia of the hip",
+        "common_name": "Dysplasia of the hip"
+    },
+    {
+        "id": "c_1121",
+        "type": "condition",
+        "name": "Breast asymmetry in adolescence",
+        "common_name": "Asymmetrical breast"
+    },
+    {
+        "id": "c_1122",
+        "type": "condition",
+        "name": "Molluscum contagiosum",
+        "common_name": "Molluscum contagiosum"
+    },
+    {
+        "id": "c_1123",
+        "type": "condition",
+        "name": "Abnormal vaginal bleeding in adolescence",
+        "common_name": "Heavy menstruation in adolescence"
+    },
+    {
+        "id": "c_1124",
+        "type": "condition",
+        "name": "Irregular menstruation in adolescence",
+        "common_name": "Irregular menstruation in adolescence"
+    },
+    {
+        "id": "c_1125",
+        "type": "condition",
+        "name": "Intussusception",
+        "common_name": "Intussusception"
+    },
+    {
+        "id": "c_1126",
+        "type": "condition",
+        "name": "Cauda equina syndrome",
+        "common_name": "Cauda equina syndrome"
+    },
+    {
+        "id": "c_1127",
+        "type": "condition",
+        "name": "Unstable bradyarrhytmia",
+        "common_name": "Severe arrhythmia with slow heart rate"
+    },
+    {
+        "id": "c_1128",
+        "type": "condition",
+        "name": "Stable tachyarrhythmia",
+        "common_name": "Arrhythmia with fast heart rate"
+    },
+    {
+        "id": "c_1130",
+        "type": "condition",
+        "name": "Suicidal tendencies",
+        "common_name": "Suicidal tendencies"
+    },
+    {
+        "id": "c_1131",
+        "type": "condition",
+        "name": "Orbital cellulitis",
+        "common_name": "Inflammation of eye socket"
+    },
+    {
+        "id": "c_1132",
+        "type": "condition",
+        "name": "Kawasaki disease",
+        "common_name": "Kawasaki disease"
+    },
+    {
+        "id": "c_1133",
+        "type": "condition",
+        "name": "Congenital heart disease",
+        "common_name": "Congenital heart disease"
+    },
+    {
+        "id": "c_1134",
+        "type": "condition",
+        "name": "Stable bradyarrhythmia",
+        "common_name": "Arrhythmia with slow heart rate"
+    },
+    {
+        "id": "c_1135",
+        "type": "condition",
+        "name": "Growing pains",
+        "common_name": "Growing pains"
+    },
+    {
+        "id": "c_1136",
+        "type": "condition",
+        "name": "Supracondylar humerus fracture",
+        "common_name": "Supracondylar humerus fracture"
+    },
+    {
+        "id": "c_1137",
+        "type": "condition",
+        "name": "Roseola",
+        "common_name": "Roseola"
+    },
+    {
+        "id": "c_1139",
+        "type": "condition",
+        "name": "Muscular dystrophy",
+        "common_name": "Muscular dystrophy"
+    },
+    {
+        "id": "c_1140",
+        "type": "condition",
+        "name": "Perthes disease",
+        "common_name": "Legg-Calv\u00e9-Perthes disease"
+    },
+    {
+        "id": "c_1141",
+        "type": "condition",
+        "name": "Vitamin A deficiency",
+        "common_name": "Vitamin A deficiency"
+    },
+    {
+        "id": "c_1142",
+        "type": "condition",
+        "name": "Hemolytic disease of the newborn",
+        "common_name": "Hemolytic disease of the newborn"
+    },
+    {
+        "id": "c_1143",
+        "type": "condition",
+        "name": "Nocturnal enuresis",
+        "common_name": "Bedwetting"
+    },
+    {
+        "id": "c_1145",
+        "type": "condition",
+        "name": "Hemophilia",
+        "common_name": "Hemophilia"
+    },
+    {
+        "id": "c_1155",
+        "type": "condition",
+        "name": "Arrhythmia",
+        "common_name": "Irregularities in the heartbeat"
+    },
+    {
+        "id": "c_1156",
+        "type": "condition",
+        "name": "Multisystem inflammatory syndrome in children",
+        "common_name": "Multisystem inflammatory syndrome"
+    },
+    {
+        "id": "c_1164",
+        "type": "condition",
+        "name": "Vitamin K deficiency bleeding",
+        "common_name": "Vitamin K deficiency bleeding"
+    },
+    {
+        "id": "c_1166",
+        "type": "condition",
+        "name": "Acute viral rhinosinusitis",
+        "common_name": "Acute viral sinus infection"
+    },
+    {
+        "id": "c_1167",
+        "type": "condition",
+        "name": "Fetal alcohol syndrome",
+        "common_name": "Fetal alcohol syndrome"
+    },
+    {
+        "id": "c_1168",
+        "type": "condition",
+        "name": "Pilonidal cyst",
+        "common_name": "Pilonidal cyst"
+    },
+    {
+        "id": "c_1170",
+        "type": "condition",
+        "name": "Conduct disorder",
+        "common_name": "Conduct disorder"
+    },
+    {
+        "id": "c_1171",
+        "type": "condition",
+        "name": "Separation anxiety disorder",
+        "common_name": "Separation anxiety"
+    },
+    {
+        "id": "c_1172",
+        "type": "condition",
+        "name": "Acute bacterial rhinosinusitis",
+        "common_name": "Acute bacterial sinusitis"
+    },
+    {
+        "id": "c_1173",
+        "type": "condition",
+        "name": "Primary dysmenorrhoea",
+        "common_name": "Primary dysmenorrhoea"
+    },
+    {
+        "id": "c_1175",
+        "type": "condition",
+        "name": "Stress fracture of foot",
+        "common_name": "Stress fracture of foot"
+    },
+    {
+        "id": "c_1176",
+        "type": "condition",
+        "name": "Stress fracture of lower leg",
+        "common_name": "Stress fracture of lower leg"
+    },
+    {
+        "id": "c_1177",
+        "type": "condition",
+        "name": "Non-traumatic vertebral fracture",
+        "common_name": "Compression fracture of the spine"
+    },
+    {
+        "id": "c_1178",
+        "type": "condition",
+        "name": "Physical abuse",
+        "common_name": "Physical abuse"
+    },
+    {
+        "id": "c_1179",
+        "type": "condition",
+        "name": "Post-traumatic seizures",
+        "common_name": "Post-traumatic epilepsy"
+    },
+    {
+        "id": "c_1180",
+        "type": "condition",
+        "name": "Specific learning disability",
+        "common_name": "Learning disabilities"
+    },
+    {
+        "id": "c_1181",
+        "type": "condition",
+        "name": "Gynecomastia, unspecified",
+        "common_name": "Enlargement of male breast"
+    },
+    {
+        "id": "c_1182",
+        "type": "condition",
+        "name": "Post-COVID-19 syndrome",
+        "common_name": "Post-COVID-19 syndrome"
+    },
+    {
+        "id": "c_1183",
+        "type": "condition",
+        "name": "Herpangina",
+        "common_name": "Herpangina"
+    },
+    {
+        "id": "c_1184",
+        "type": "condition",
+        "name": "Foreign body in nose",
+        "common_name": "Foreign body in nose"
+    },
+    {
+        "id": "c_1185",
+        "type": "condition",
+        "name": "Umbilical granuloma",
+        "common_name": "Umbilical granuloma"
+    },
+    {
+        "id": "c_1186",
+        "type": "condition",
+        "name": "Bone neoplasm",
+        "common_name": "Bone tumor"
+    },
+    {
+        "id": "c_1187",
+        "type": "condition",
+        "name": "Foreign body in ear",
+        "common_name": "Foreign body in ear"
+    },
+    {
+        "id": "c_1188",
+        "type": "condition",
+        "name": "Keloid",
+        "common_name": "Keloid"
+    },
+    {
+        "id": "c_1189",
+        "type": "condition",
+        "name": "Erythema toxicum",
+        "common_name": "Erythema toxicum"
+    },
+    {
+        "id": "c_1191",
+        "type": "condition",
+        "name": "Diabetic foot infection",
+        "common_name": "Diabetic foot infection"
+    },
+    {
+        "id": "c_1192",
+        "type": "condition",
+        "name": "Wound infection",
+        "common_name": "Infected wound"
+    },
+    {
+        "id": "c_1193",
+        "type": "condition",
+        "name": "Wound dehiscence",
+        "common_name": "Wound separation"
+    },
+    {
+        "id": "c_1195",
+        "type": "condition",
+        "name": "Tonsillar hypertrophy",
+        "common_name": "Enlarged tonsils"
+    },
+    {
+        "id": "c_1197",
+        "type": "condition",
+        "name": "Dental fluorosis",
+        "common_name": "Mottled teeth"
+    },
+    {
+        "id": "c_1200",
+        "type": "condition",
+        "name": "Pityriasis rosea",
+        "common_name": "Pityriasis rosea"
+    },
+    {
+        "id": "c_1201",
+        "type": "condition",
+        "name": "Infant dyschezia",
+        "common_name": "Painful defecation"
+    },
+    {
+        "id": "c_1202",
+        "type": "condition",
+        "name": "Heavy metal poisoning",
+        "common_name": "Heavy metal poisoning"
+    },
+    {
+        "id": "c_1204",
+        "type": "condition",
+        "name": "Delayed onset muscle soreness",
+        "common_name": "Muscle fever"
+    },
+    {
+        "id": "c_1205",
+        "type": "condition",
+        "name": "Beeturia",
+        "common_name": "Red urine after eating beets"
+    },
+    {
+        "id": "c_1206",
+        "type": "condition",
+        "name": "Neonatal jitteriness",
+        "common_name": "Jittery newborn"
+    },
+    {
+        "id": "c_1208",
+        "type": "condition",
+        "name": "Crohn's disease exacerbation",
+        "common_name": "Crohn's disease flare-up"
+    },
+    {
+        "id": "c_1209",
+        "type": "condition",
+        "name": "Ulcerative colitis exacerbation",
+        "common_name": "Ulcerative colitis flare-up"
+    },
+    {
+        "id": "c_1210",
+        "type": "condition",
+        "name": "Geographic tongue",
+        "common_name": "Geographic tongue"
+    },
+    {
+        "id": "c_1213",
+        "type": "condition",
+        "name": "Dentin hypersensitivity",
+        "common_name": "Tooth sensitivity"
+    },
+    {
+        "id": "c_1214",
+        "type": "condition",
+        "name": "Psychological abuse",
+        "common_name": "Psychological abuse"
+    },
+    {
+        "id": "c_1216",
+        "type": "condition",
+        "name": "Erythroderma",
+        "common_name": "Erythroderma"
+    },
+    {
+        "id": "c_1217",
+        "type": "condition",
+        "name": "Adverse event following immunization",
+        "common_name": "Post-immunization reaction"
+    },
+    {
+        "id": "c_1218",
+        "type": "condition",
+        "name": "Opioid withdrawal syndrome",
+        "common_name": "Opioid withdrawal syndrome"
+    },
+    {
+        "id": "c_1219",
+        "type": "condition",
+        "name": "Cardiac syncope",
+        "common_name": "Cardiac fainting"
+    },
+    {
+        "id": "c_1220",
+        "type": "condition",
+        "name": "Malnutrition",
+        "common_name": "Poor nutrition"
+    },
+    {
+        "id": "c_1224",
+        "type": "condition",
+        "name": "Erythema nodosum",
+        "common_name": "Erythema nodosum"
+    },
+    {
+        "id": "c_1229",
+        "type": "condition",
+        "name": "Trigeminal neuropathy",
+        "common_name": "Trigeminal nerve damage"
+    },
+    {
+        "id": "c_1230",
+        "type": "condition",
+        "name": "Narcolepsy",
+        "common_name": "Narcolepsy"
+    },
+    {
+        "id": "c_1231",
+        "type": "condition",
+        "name": "Motion sickness",
+        "common_name": "Travel sickness"
+    },
+    {
+        "id": "c_1232",
+        "type": "condition",
+        "name": "Sleep related leg cramps",
+        "common_name": "Nocturnal leg cramps"
+    },
+    {
+        "id": "c_1234",
+        "type": "condition",
+        "name": "Gastrointestinal complaints after iron intake",
+        "common_name": "Gastrointestinal complaints after iron intake"
+    },
+    {
+        "id": "c_1235",
+        "type": "condition",
+        "name": "Transient watery stools of breastfed",
+        "common_name": "Loose stools in breastfed babies"
+    },
+    {
+        "id": "c_1236",
+        "type": "condition",
+        "name": "Meteorosensitivity and meteoropathy",
+        "common_name": "Meteorosensitivity and meteoropathy"
+    },
+    {
+        "id": "c_1240",
+        "type": "condition",
+        "name": "Nevus simplex",
+        "common_name": "Salmon patch"
+    },
+    {
+        "id": "c_1241",
+        "type": "condition",
+        "name": "Frequent sneezing of newborn",
+        "common_name": "Frequent sneezing of a baby"
+    },
+    {
+        "id": "c_1242",
+        "type": "condition",
+        "name": "Bloating after certain types of food",
+        "common_name": "Bloating after certain types of food"
+    },
+    {
+        "id": "c_1243",
+        "type": "condition",
+        "name": "Hypnic jerks",
+        "common_name": "Sleep starts"
+    },
+    {
+        "id": "c_1246",
+        "type": "condition",
+        "name": "Constipation, unspecified",
+        "common_name": "Unspecific constipation"
+    },
+    {
+        "id": "c_1248",
+        "type": "condition",
+        "name": "Aphthous stomatitis",
+        "common_name": "Recurrent oral aphthous ulcers"
+    },
+    {
+        "id": "c_1250",
+        "type": "condition",
+        "name": "Retractile testicle",
+        "common_name": "Retractile testicle"
+    },
+    {
+        "id": "c_1252",
+        "type": "condition",
+        "name": "Nocturnal emission",
+        "common_name": "Wet dreams"
+    },
+    {
+        "id": "c_1253",
+        "type": "condition",
+        "name": "Eyelid twitch, unspecified",
+        "common_name": "Eyelid twitch"
+    },
+    {
+        "id": "c_1254",
+        "type": "condition",
+        "name": "Plugged milk duct",
+        "common_name": "Plugged milk duct"
+    },
+    {
+        "id": "c_1256",
+        "type": "condition",
+        "name": "Severe hypoglycemia",
+        "common_name": "Severe hypoglycemia"
+    },
+    {
+        "id": "c_1257",
+        "type": "condition",
+        "name": "Mild hypoglycemia",
+        "common_name": "Mild hypoglycemia"
+    },
+    {
+        "id": "c_1259",
+        "type": "condition",
+        "name": "Heterochromia",
+        "common_name": "Different eye colours"
+    },
+    {
+        "id": "c_1260",
+        "type": "condition",
+        "name": "Dental abscess",
+        "common_name": "Dental abscess"
+    },
+    {
+        "id": "c_1262",
+        "type": "condition",
+        "name": "Traumatic oral ulcer",
+        "common_name": "Mouth ulcer after an injury"
+    },
+    {
+        "id": "c_1263",
+        "type": "condition",
+        "name": "Hearing loss, unspecified",
+        "common_name": "Unspecific hearing loss"
+    },
+    {
+        "id": "c_1265",
+        "type": "condition",
+        "name": "Complicated ovarian cyst",
+        "common_name": "Complication of ovarian cyst"
+    },
+    {
+        "id": "c_1267",
+        "type": "condition",
+        "name": "Ovarian torsion",
+        "common_name": "Torsion of ovary"
+    },
+    {
+        "id": "c_1272",
+        "type": "condition",
+        "name": "Recent-onset constipation",
+        "common_name": "Recent-onset constipation"
+    },
+    {
+        "id": "c_1275",
+        "type": "condition",
+        "name": "Median rhomboid glossitis",
+        "common_name": "Median rhomboid glossitis"
+    },
+    {
+        "id": "c_1279",
+        "type": "condition",
+        "name": "Acute hepatitis C",
+        "common_name": "Acute hepatitis C"
+    },
+    {
+        "id": "c_1281",
+        "type": "condition",
+        "name": "Snake bite",
+        "common_name": "Snake bite"
+    },
+    {
+        "id": "c_1282",
+        "type": "condition",
+        "name": "Ross River disease",
+        "common_name": "Ross River fever"
+    },
+    {
+        "id": "c_1283",
+        "type": "condition",
+        "name": "Spider bite",
+        "common_name": "Spider bite"
+    },
+    {
+        "id": "c_1285",
+        "type": "condition",
+        "name": "Congenital Zika virus disease",
+        "common_name": "Congenital Zika virus infection"
+    },
+    {
+        "id": "c_1286",
+        "type": "condition",
+        "name": "Sexual abuse",
+        "common_name": "Sexual abuse"
+    },
+    {
+        "id": "c_1288",
+        "type": "condition",
+        "name": "Japanese encephalitis",
+        "common_name": "Japanese encephalitis"
+    },
+    {
+        "id": "c_1291",
+        "type": "condition",
+        "name": "Acute cannabinoid intoxication",
+        "common_name": "Cannabis poisoning"
+    },
+    {
+        "id": "c_1292",
+        "type": "condition",
+        "name": "Adenoviral respiratory disease",
+        "common_name": "Adenoviral respiratory disease"
+    },
+    {
+        "id": "c_1293",
+        "type": "condition",
+        "name": "Herpetic gingivostomatitis",
+        "common_name": "Herpetic mouth infection"
+    },
+    {
+        "id": "c_1294",
+        "type": "condition",
+        "name": "Trachoma",
+        "common_name": "Trachoma"
+    },
+    {
+        "id": "c_1295",
+        "type": "condition",
+        "name": "Chronic heart failure exacerbation",
+        "common_name": "Exacerbation of chronic heart failure"
+    },
+    {
+        "id": "c_1296",
+        "type": "condition",
+        "name": "Monkeypox",
+        "common_name": "Monkeypox"
+    },
+    {
+        "id": "c_1298",
+        "type": "condition",
+        "name": "Adenoviral enteritis",
+        "common_name": "Adenovirus food poisoning"
+    },
+    {
+        "id": "c_1303",
+        "type": "condition",
+        "name": "Acute cholangitis",
+        "common_name": "Acute cholangitis"
+    },
+    {
+        "id": "c_1304",
+        "type": "condition",
+        "name": "Laryngopharyngeal reflux",
+        "common_name": "Laryngopharyngeal reflux"
+    },
+    {
+        "id": "c_1305",
+        "type": "condition",
+        "name": "Local allergic reactions to insect bite or sting",
+        "common_name": "Local allergic reactions to insect bite or sting"
+    },
+    {
+        "id": "c_1306",
+        "type": "condition",
+        "name": "Poorly controlled hypertension",
+        "common_name": "Poorly controlled hypertension"
+    },
+    {
+        "id": "c_1308",
+        "type": "condition",
+        "name": "Marine injury",
+        "common_name": "Injury caused by a sea animal"
+    },
+    {
+        "id": "c_1311",
+        "type": "condition",
+        "name": "Tick bite",
+        "common_name": "Tick bite"
+    },
+    {
+        "id": "c_1315",
+        "type": "condition",
+        "name": "Postpartum blues",
+        "common_name": "Baby blues"
+    },
+    {
+        "id": "c_1316",
+        "type": "condition",
+        "name": "Postpartum psychosis",
+        "common_name": "Postpartum psychosis"
+    },
+    {
+        "id": "c_1318",
+        "type": "condition",
+        "name": "Nasal cavity and sinus tumour",
+        "common_name": "Nasal cavity and sinus tumour"
+    },
+    {
+        "id": "c_1319",
+        "type": "condition",
+        "name": "Intracranial hematoma",
+        "common_name": "Intracranial hematoma"
+    },
+    {
+        "id": "c_1321",
+        "type": "condition",
+        "name": "Early disseminated Lyme disease",
+        "common_name": "Early disseminated Lyme disease"
+    },
+    {
+        "id": "c_1322",
+        "type": "condition",
+        "name": "Cholesteatoma",
+        "common_name": "Cholesteatoma"
+    },
+    {
+        "id": "c_1323",
+        "type": "condition",
+        "name": "Early localized Lyme disease",
+        "common_name": "Erythema migrans"
+    },
+    {
+        "id": "c_1325",
+        "type": "condition",
+        "name": "Binge eating disorder",
+        "common_name": "Binge eating disorder"
+    },
+    {
+        "id": "c_1328",
+        "type": "condition",
+        "name": "Late Lyme disease",
+        "common_name": "Late borreliosis"
+    },
+    {
+        "id": "c_1337",
+        "type": "condition",
+        "name": "Respiratory Syncytial Virus infection",
+        "common_name": "RSV infection"
+    },
+    {
+        "id": "c_1339",
+        "type": "condition",
+        "name": "Substance-induced psychological disturbances",
+        "common_name": "Substance-induced psychological disturbances"
+    },
+    {
+        "id": "c_1340",
+        "type": "condition",
+        "name": "Mood disorder, unspecified",
+        "common_name": "Unspecific mood disorder"
+    }
+]
