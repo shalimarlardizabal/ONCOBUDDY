@@ -9,14 +9,23 @@
 <p>Please fill out the following information to get started:
     <form action="/intake">
         <label for="cancer-type">Cancer Type:</label>
-        <input type="search" name="cancer-type" id="cancer-type">
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age">
-        <label for="sex">Sex</label>
-        <input type="radio" name="sex" id="sex" value="Female">Female
-        <input type="radio" name="sex" id="sex" value="Male">Male     
+        <select id="cancer-type" name="cancer-type">
+            {%for cancer in cancer_types%}
+            <option value="{{cancer.common_name}}">{{cancer.common_name}}</option>
+            {%endfor%}
+        </select>
+        <label for="conditions">Other conditions:</label>
+        <input type="search" name="conditions" id="conditions">   
     </form>
 </p>
+</div>
+<div class="user-medications">
+    <h2>Please add current medications and treatments:</h2>
+    <form action="/intake" id="user-medications">
+        <label for="user-medication">Add current medications</label>
+        <input type="text" name="medication" id="medication">
+    </form>
+
 </div>
 <a href="/profile">Go to profile</a>
 {% endblock %}

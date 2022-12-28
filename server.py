@@ -2,6 +2,7 @@
 
 from flask import (Flask, render_template, request, flash, session, redirect)
 from model import connect_to_db, db
+import requests
 import crud
 from jinja2 import StrictUndefined
 
@@ -51,14 +52,16 @@ def create_account():
 
     email = request.form.get("email")
     password = request.form.get("password")
-    user_name= request.form.get("name")
+    user_name = request.form.get("name")
+    age = request.form.get("age")
+    sex = request.form.get("sex")
 
     user = crud.get_user_by_email(email)
     
     if user:
         flash("Account with that email already exists. Please log in.")
     else:
-        user = crud.create_user(email, password, user_name)
+        user = crud.create_user(email, password, user_name, age, sex)
         db.session.add(user)
         db.session.commit()
 
@@ -76,14 +79,17 @@ def show_intake_form():
     user_id= session["user_id"]
     user= crud.get_user_by_id(user_id)
 
-    return render_template('welcomepage.html', user = user)
+    cancer_types= crud.get_oncologic_diagnoses()
+    
+
+    return render_template('welcomepage.html', user = user, cancer_types=cancer_types)
 
 @app.route("/profile")
 def show_daily_questionnaire():
     """Shows page with daily questionnaire"""
 
     user_id= session["user_id"]
-    user= crud.get_user_by_id(hon)
+    user= crud.get_user_by_id(user_id)
 
     return render_template("userpage.html", user=user)
 

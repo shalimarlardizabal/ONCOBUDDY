@@ -125,7 +125,7 @@ class Drug (db.Model):
     drug_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String)
     description = db.Column(db.Text)
-    side_effect_id= db.Column(db.Integer, db.ForeignKey("side_effects.side_effect_id"))
+    # side_effect_id= db.Column(db.Integer, db.ForeignKey("side_effects.side_effect_id"))
     
     users = db.relationship("User", secondary= "user_drugs", back_populates= "drugs")
     # administered_drugs= db.relationship("User", secondary= "user_administered_drugs", back_populates="drugs")

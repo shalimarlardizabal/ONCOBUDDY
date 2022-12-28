@@ -1,5 +1,5 @@
 """OncoBuddy CRUD operations"""
-from model import connect_to_db, db, User, UserSymptom, UserAdministeredDrug, UserDrug, UserDiagnosis, Diagnosis, Symptom, Drug, SideEffect
+from model import connect_to_db, db, User, UserSymptom, UserAdministeredDrug, UserDrug, UserDiagnosis, Diagnosis, Symptom, Drug
 
 def create_user(email, password, user_name, age, sex):
     """create and return a new user"""

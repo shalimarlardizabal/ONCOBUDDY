@@ -4,7 +4,7 @@
 
 {% block body%}
 <h1> ONCO BUDDY</h1>
-
+<p>An app that will assist you in managing your health.</p>
 <h2>Create an account.</h2>
 <form action="/createaccount" method="POST">
     <label for="email">Email</label>
@@ -12,8 +12,12 @@
     <label for="password">Password</label>
     <input type="password" name="password" id="password">
     <label for="name">Name</label>
-    <input type="text" name="name" id="name"> 
-
+    <input type="text" name="name" id="name">
+    <label for="age">Age</label>
+    <input type="integer" name="age" id="age">
+    <label for="sex">Sex</label>
+    <input type="radio" name="sex" id="sex" value="Female">Female
+    <input type="radio" name="sex" id="sex" value="Male">Male  
     <button type="submit">create account</button>
 </form>
 
