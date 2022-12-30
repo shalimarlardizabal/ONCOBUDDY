@@ -53,15 +53,13 @@ def create_account():
     email = request.form.get("email")
     password = request.form.get("password")
     user_name = request.form.get("name")
-    age = request.form.get("age")
-    sex = request.form.get("sex")
 
     user = crud.get_user_by_email(email)
     
     if user:
         flash("Account with that email already exists. Please log in.")
     else:
-        user = crud.create_user(email, password, user_name, age, sex)
+        user = crud.create_user(email, password, user_name)
         db.session.add(user)
         db.session.commit()
 
@@ -113,7 +111,7 @@ def show_intake_form():
 
     return render_template('welcomepage.html', user = user, cancer_types=cancer_types, conditions=conditions, drugs= drugs)
 
-@app.route("/profile")
+@app.route("/dailylog")
 def show_daily_questionnaire():
     """Shows page with daily questionnaire"""
 
@@ -131,14 +129,19 @@ def show_daily_questionnaire():
     appetite_level= request.args.get("appetite")
     symptom_id= request.args.get("daily-symptoms")
     date= request.args.get("date")
-
+    
     if symptom_id:
-        symptom_name= symptom_id.name
-        symptom_log= crud.add_user_symptom(user_id, symptom_id, symptom_name, pain_level, pain_location_id, sleep_level, fatigue_level, appetite_level, date)
-        db.session.add(symptom_log)
+        symptom= crud.get_symptom_by_id(symptom_id)
+        symptom_name= symptom.name
+        symptom_in_db= crud.add_user_symptom(user_id, symptom_id, symptom_name, date)
+        db.session.add(symptom_in_db)
         db.session.commit()
-
-    return render_template("userpage.html", user=user, symptoms= symptoms, medications=medications, pain=pain)
+    
+    db_daily_log= crud.add_user_daily_log(user_id, pain_level, pain_location_id, sleep_level, fatigue_level, appetite_level, date)
+    db.session.add(db_daily_log)
+    db.session.commit()
+    
+    return render_template("dailylog.html", user=user, symptoms= symptoms, medications=medications, pain=pain)
 
 
 @app.route('/profile/<user_id>')

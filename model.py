@@ -23,13 +23,11 @@ class User(db.Model):
     user_name = db.Column(db.String)
     email = db.Column(db.String, unique = True)
     password = db.Column(db.String)
-    age= db.Column(db.Integer)
-    sex= db.Column(db.String)
 
     drugs= db.relationship("Drug", secondary="user_drugs", back_populates= "users")
     symptoms = db.relationship("Symptom", secondary = "user_symptoms", back_populates= "users")
     diagnoses = db.relationship("Diagnosis", secondary= "user_diagnoses", back_populates= "users")
-    # administered_drugs = db.relationship("Drug", secondary="user_administered_drugs", back_populates="users")
+    daily_logs= db.relationship("UserDailyLog", back_populates="users")
     
     def __repr__(self):
         return f'<User user_id={self.user_id} email={self.email}>'
@@ -43,16 +41,29 @@ class UserSymptom(db.Model):
     user_id= db.Column(db.Integer, db.ForeignKey("users.user_id"))
     symptom_id= db.Column(db.Integer, db.ForeignKey("symptoms.symptom_id"))
     symptom_name= db.Column(db.String)
+    date= db.Column(db.DateTime)
+    
+    
+    def __repr__(self):
+        return f'<UserSymptoms user_symptom_id={self.user_symptom_id} symptom_id = {self.symptom_id} date = {self.date}>'
+
+class UserDailyLog(db.Model):
+
+    __tablename__= "daily_logs"
+
+    daily_log_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
+    user_id= db.Column(db.Integer, db.ForeignKey("users.user_id"))
     pain_level= db.Column(db.Integer)
     pain_location_id=db.Column(db.Integer)
     sleep_level= db.Column(db.Integer)
     fatigue_level= db.Column(db.Integer)
     appetite_level= db.Column(db.Integer)
     date= db.Column(db.DateTime)
-    
-    
+
+    users = db.relationship("User", back_populates= "daily_logs")
+
     def __repr__(self):
-        return f'<UserSymptoms user_symptom_id={self.user_symptom_id} symptom_id = {self.symptom_id} date = {self.date}>'
+        return f'<UserDailyLog daily_log_id={self.daily_log_id} user_id={self.user_id}>'
 
 class UserDrug(db.Model):
     """Drugs specific user is prescribed"""
@@ -104,7 +115,6 @@ class Diagnosis(db.Model):
     diagnosis_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
     name= db.Column(db.String)
     common_name= db.Column(db.String)
-    # description= db.Column(db.Text)
 
     users = db.relationship("User", secondary= "user_diagnoses", back_populates= "diagnoses")
 
@@ -119,7 +129,6 @@ class Symptom (db.Model):
     symptom_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
     name= db.Column(db.String)
     common_name= db.Column(db.String)
-    # description= db.Column(db.Text)
     
     users = db.relationship("User", secondary= "user_symptoms", back_populates= "symptoms")
 
@@ -134,35 +143,14 @@ class Drug (db.Model):
     drug_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String)
     description = db.Column(db.Text)
-    # side_effect_id= db.Column(db.Integer, db.ForeignKey("side_effects.side_effect_id"))
     
     users = db.relationship("User", secondary= "user_drugs", back_populates= "drugs")
-    # administered_drugs= db.relationship("User", secondary= "user_administered_drugs", back_populates="drugs")
-    # side_effects= db.relationship("SideEffect", back_populates= "drugs")
+
     
     def __repr__ (self):
         return f'<Drugs drug_id {self.drug_id} name= {self.name}>'
 
-# class SideEffect(db.Model):
-#     """All possible side effects"""
-
-#     __tablename__= "side_effects"
-
-#     side_effect_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
-#     name = db.Column(db.String)
-#     description = db.Column(db.Text)
-    
-#     drugs = db.relationship("Drug", back_populates= "side_effects")
-
-#     def __repr__(self):
-#         return f'<Side Effects side_effect_id= {self.side_effect_id} name = {self.name}>'
 
 if __name__ == "__main__":
     from server import app
     connect_to_db(app)
-    # with app.app_context():
-    #     db.create_all()
-    #     test_user= User(email='test@test.test', password= 'test', user_name= 'Test Test')
-    #     db.session.add(test_user)
-    #     db.session.commit()
-    #     print(test_user)

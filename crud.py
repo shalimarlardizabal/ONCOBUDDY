@@ -1,9 +1,9 @@
 """OncoBuddy CRUD operations"""
-from model import connect_to_db, db, User, UserSymptom, UserAdministeredDrug, UserDrug, UserDiagnosis, Diagnosis, Symptom, Drug
+from model import connect_to_db, db, User, UserSymptom, UserAdministeredDrug, UserDrug, UserDiagnosis, Diagnosis, Symptom, Drug, UserDailyLog
 
-def create_user(email, password, user_name, age, sex):
+def create_user(email, password, user_name):
     """create and return a new user"""
-    user = User(email= email, password=password, user_name= user_name, age=age, sex= sex)
+    user = User(email= email, password=password, user_name= user_name)
 
     return user
 
@@ -61,11 +61,20 @@ def add_user_diagnosis(user_id, diagnosis_id, diagnosis_name):
     
     return user_diagnosis
 
+def get_symptom_by_id(symptom_id):
 
-def add_user_symptom(user_id, symptom_id, symptom_name, pain_level, pain_location_id, sleep_level,fatigue_level, appetite_level, date):
-    user_symptom= UserSymptom(user_id=user_id, symptom_id=symptom_id, symptom_name=symptom_name, pain_level=pain_level,pain_location_id= pain_location_id, sleep_level=sleep_level, fatigue_level=fatigue_level, appetite_level=appetite_level, date=date)
+    return Symptom.query.get(symptom_id)
+
+def add_user_symptom(user_id, symptom_id, symptom_name, date):
+    user_symptom= UserSymptom(user_id=user_id, symptom_id=symptom_id, symptom_name=symptom_name,  date=date)
 
     return user_symptom
+
+def add_user_daily_log(user_id, pain_level,pain_location_id, sleep_level, fatigue_level, appetite_level, date):
+
+    user_daily_log= UserDailyLog(user_id=user_id, pain_level=pain_level, pain_location_id=pain_location_id, sleep_level=sleep_level, fatigue_level=fatigue_level, appetite_level=appetite_level, date=date)
+
+    return user_daily_log
 
 def get_pain_symptoms():
     return Symptom.query.filter(Symptom.common_name.contains('pain')).all()
