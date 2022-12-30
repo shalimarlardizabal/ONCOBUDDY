@@ -50,13 +50,36 @@ def get_diagnosis_by_id(diagnosis_id):
 
     return Diagnosis.query.get(diagnosis_id)
 
+
 def get_diagnosis_by_common_name(common_name):
 
     return Diagnosis.query.get(common_name)
 
-def add_user_diagnosis(user_id, diagnosis_id):
+def add_user_diagnosis(user_id, diagnosis_id, diagnosis_name):
     
-    user_diagnosis = UserDiagnosis(user_id= user_id, diagnosis_id=diagnosis_id)
+    user_diagnosis = UserDiagnosis(user_id= user_id, diagnosis_id=diagnosis_id, diagnosis_name= diagnosis_name)
+    
+    return user_diagnosis
+
+
+def add_user_symptom(user_id, symptom_id, symptom_name, pain_level, pain_location_id, sleep_level,fatigue_level, appetite_level, date):
+    user_symptom= UserSymptom(user_id=user_id, symptom_id=symptom_id, symptom_name=symptom_name, pain_level=pain_level,pain_location_id= pain_location_id, sleep_level=sleep_level, fatigue_level=fatigue_level, appetite_level=appetite_level, date=date)
+
+    return user_symptom
+
+def get_pain_symptoms():
+    return Symptom.query.filter(Symptom.common_name.contains('pain')).all()
+
+def add_user_drug(user_id, drug_id, drug_name):
+    
+    user_drug= UserDrug(user_id= user_id, drug_id= drug_id, drug_name=drug_name)
+
+    return user_drug
+
+
+def add_user_administered_drug(user_drug_id, drug_name, administration_date):
+    user_administered_drug= UserAdministeredDrug(user_drug_id=user_drug_id, drug_name=drug_name, administration_date=administration_date)
+    return user_administered_drug
 
 def create_drugs(name, description):
 
@@ -68,13 +91,19 @@ def show_all_drugs():
     
     return Drug.query.all()
 
+def get_drug_by_id(drug_id):
+    return Drug.query.get(drug_id)
+
 def get_drug_by_name(name):
 
     return Drug.query.get(name)
 
-def add_user_drugs(user_id, drug_id):
+def get_user_drugs(user_id):
+    return UserDrug.query.filter(UserDrug.user_id==user_id).all()
 
-    user_drug= UserDrug(user_id, drug_id)
+def add_user_drugs(user_id, drug_id, drug_name):
+
+    user_drug= UserDrug(user_id, drug_id, drug_name)
 
     return user_drug
 

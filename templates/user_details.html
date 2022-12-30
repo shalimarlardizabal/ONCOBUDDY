@@ -7,7 +7,13 @@
 
 
 <div id="daily questionaire" class="daily">
-    <div class="symptoms"><p>This is where the calendar goes</p></div>
-    <div class="medications"><p>page of a specific user</p></div>
+    <div class="symptoms"><p>This is where the calendar goes</p>
+    </div>
+    <div class="medications">
+        <h2>current medications:</h2>
+        <p>{%for medication in medications%}
+        <li>{{medication.drug_name}}</li>
+        {%endfor%}</p>
+    </div>
 </div> </div>
 {%endblock%}

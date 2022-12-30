@@ -42,9 +42,15 @@ class UserSymptom(db.Model):
     user_symptom_id= db.Column(db.Integer, primary_key= True, autoincrement=True)
     user_id= db.Column(db.Integer, db.ForeignKey("users.user_id"))
     symptom_id= db.Column(db.Integer, db.ForeignKey("symptoms.symptom_id"))
-    severity_level= db.Column(db.Integer)
+    symptom_name= db.Column(db.String)
+    pain_level= db.Column(db.Integer)
+    pain_location_id=db.Column(db.Integer)
+    sleep_level= db.Column(db.Integer)
+    fatigue_level= db.Column(db.Integer)
+    appetite_level= db.Column(db.Integer)
     date= db.Column(db.DateTime)
-
+    
+    
     def __repr__(self):
         return f'<UserSymptoms user_symptom_id={self.user_symptom_id} symptom_id = {self.symptom_id} date = {self.date}>'
 
@@ -56,6 +62,7 @@ class UserDrug(db.Model):
     user_drug_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
     user_id= db.Column(db.Integer, db.ForeignKey("users.user_id"))
     drug_id= db.Column(db.Integer, db.ForeignKey("drugs.drug_id"))
+    drug_name= db.Column(db.String)
 
     user_administered_drugs = db.relationship("UserAdministeredDrug", back_populates="user_drugs")
     
@@ -69,6 +76,7 @@ class UserAdministeredDrug(db.Model):
 
     administered_drug_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
     user_drug_id= db.Column(db.Integer, db.ForeignKey("user_drugs.user_drug_id"))
+    drug_name= db.Column(db.String)
     administration_date= db.Column(db.DateTime)
 
     user_drugs = db.relationship("UserDrug", back_populates="user_administered_drugs")
@@ -84,9 +92,10 @@ class UserDiagnosis(db.Model):
     user_diagnosis_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
     user_id= db.Column(db.Integer, db.ForeignKey("users.user_id"))
     diagnosis_id= db.Column(db.Integer, db.ForeignKey("diagnoses.diagnosis_id"))
+    diagnosis_name= db.Column(db.String)
 
     def __repr__ (self):
-        return f'<UserDiagnosis user_diagnosis_id= {self.user_diagnosis_id}>'
+        return f'<UserDiagnosis user_diagnosis_id= {self.user_diagnosis_id}, user_id={self.user_id}>'
 
 class Diagnosis(db.Model):
     """Diagnosis"""

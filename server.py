@@ -80,9 +80,38 @@ def show_intake_form():
     user= crud.get_user_by_id(user_id)
 
     cancer_types= crud.get_oncologic_diagnoses()
-    
+    conditions = crud.get_diagnoses()
+    drugs= crud.show_all_drugs()
 
-    return render_template('welcomepage.html', user = user, cancer_types=cancer_types)
+    cancer_diagnosis_id= request.args.get("cancer-type")
+    other_diagnosis_id= request.args.get("other-conditions")
+    drug_id= request.args.get("user-medications")
+    
+    cancer_diagnosis= crud.get_diagnosis_by_id(cancer_diagnosis_id)
+
+    if cancer_diagnosis:
+        diagnosis_name= cancer_diagnosis.name
+        user_cancer_diagnosis= crud.add_user_diagnosis(user_id, cancer_diagnosis_id, diagnosis_name)
+        db.session.add(user_cancer_diagnosis)
+        db.session.commit()
+
+    other_diagnosis= crud.get_diagnosis_by_id(other_diagnosis_id)
+    
+    if other_diagnosis:
+        diagnosis_name= other_diagnosis.name
+        user_diagnosis=crud.add_user_diagnosis(user_id, other_diagnosis_id, diagnosis_name)
+        db.session.add(user_diagnosis)
+        db.session.commit()
+  
+    drug = crud.get_drug_by_id(drug_id)
+    
+    if drug:
+        drug_name= drug.name
+        user_drug= crud.add_user_drug(user_id, drug_id, drug_name)
+        db.session.add(user_drug)
+        db.session.commit()
+
+    return render_template('welcomepage.html', user = user, cancer_types=cancer_types, conditions=conditions, drugs= drugs)
 
 @app.route("/profile")
 def show_daily_questionnaire():
@@ -91,7 +120,25 @@ def show_daily_questionnaire():
     user_id= session["user_id"]
     user= crud.get_user_by_id(user_id)
 
-    return render_template("userpage.html", user=user)
+    symptoms = crud.get_symptoms()
+    medications= crud.get_user_drugs(user_id)
+    pain= crud.get_pain_symptoms()
+
+    pain_level= request.args.get("pain")
+    pain_location_id= request.args.get("pain-location")
+    fatigue_level= request.args.get("fatigue")
+    sleep_level= request.args.get("sleep")
+    appetite_level= request.args.get("appetite")
+    symptom_id= request.args.get("daily-symptoms")
+    date= request.args.get("date")
+
+    if symptom_id:
+        symptom_name= symptom_id.name
+        symptom_log= crud.add_user_symptom(user_id, symptom_id, symptom_name, pain_level, pain_location_id, sleep_level, fatigue_level, appetite_level, date)
+        db.session.add(symptom_log)
+        db.session.commit()
+
+    return render_template("userpage.html", user=user, symptoms= symptoms, medications=medications, pain=pain)
 
 
 @app.route('/profile/<user_id>')
@@ -101,7 +148,9 @@ def show_user_page(user_id):
     user_id= session["user_id"]
     user= crud.get_user_by_id(user_id)
 
-    return render_template("user_details.html", user = user )
+    medications= crud.get_user_drugs(user_id)
+
+    return render_template("user_details.html", user = user, medications=medications)
 
 
 if __name__ == "__main__":

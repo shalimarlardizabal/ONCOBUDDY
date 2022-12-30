@@ -7,15 +7,25 @@
 <h2>Intake form for first-time users:</h2>
 <div class="user-information">
 <p>Please fill out the following information to get started:
-    <form action="/intake">
+    <form action="/intake" id="cancer-type">
         <label for="cancer-type">Cancer Type:</label>
         <select id="cancer-type" name="cancer-type">
             {%for cancer in cancer_types%}
-            <option value="{{cancer.common_name}}">{{cancer.common_name}}</option>
+            <option value="{{cancer.diagnosis_id}}">{{cancer.common_name}}</option>
             {%endfor%}
         </select>
+        <button type="submit">submit</button>
+    </form>
+        <br>
+    <form action="/intake" id="other-conditions">
         <label for="conditions">Other conditions:</label>
-        <input type="search" name="conditions" id="conditions">   
+        <select id="other-conditions" name="other-conditions">
+            {%for condition in conditions%}
+            <option value="{{condition.diagnosis_id}}">{{condition.common_name}}</option>
+            {%endfor%}
+        </select> 
+
+        <button type="submit">submit</button>
     </form>
 </p>
 </div>
@@ -23,9 +33,14 @@
     <h2>Please add current medications and treatments:</h2>
     <form action="/intake" id="user-medications">
         <label for="user-medication">Add current medications</label>
-        <input type="text" name="medication" id="medication">
+        <select id="user-medications" name="user-medications">
+            {%for drug in drugs%}
+            <option value="{{drug.drug_id}}">{{drug.name}}</option>
+            {%endfor%}
+        </select> 
+        <button type="submit">submit</button>
     </form>
 
 </div>
-<a href="/profile">Go to profile</a>
+<a href="/profile/{{user.user_id}}">Go to profile</a>
 {% endblock %}
