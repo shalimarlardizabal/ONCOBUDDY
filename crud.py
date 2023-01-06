@@ -85,7 +85,6 @@ def add_user_drug(user_id, drug_id, drug_name):
 
     return user_drug
 
-
 def add_user_administered_drug(user_drug_id, drug_name, administration_date):
     user_administered_drug= UserAdministeredDrug(user_drug_id=user_drug_id, drug_name=drug_name, administration_date=administration_date)
     return user_administered_drug
@@ -107,20 +106,107 @@ def get_drug_by_name(name):
 
     return Drug.query.get(name)
 
+def get_all_user_drugs(user_id):
+    user= User.query.get(user_id)
+    user_drug= user.drugs
+
+    user_drugs=[]
+    
+    for drug in user_drug:
+        user_drugs.append({'drug_name': drug.name, 'description': drug.description})
+    
+    return user_drugs
+
 def get_user_drugs(user_id):
+    
     return UserDrug.query.filter(UserDrug.user_id==user_id).all()
 
+def get_user_drugs_by_id(user_drug_id):
+    return UserDrug.query.filter(UserDrug.user_drug_id==user_drug_id).first()
+
+def get_user_symptoms(user_id):
+    return UserSymptom.query.filter(UserSymptom.user_id==user_id).all()
+
+def get_user_symptom_with_date(user_id):
+    symptoms= UserSymptom.query.filter(UserSymptom.user_id==user_id)
+    symptom_date=[]
+
+    for symptom in symptoms:
+        symptom_date.append({'symptom':symptom.symptom_name, 'date': symptom.date})
+    
+    return symptom_date
+    
 def add_user_drugs(user_id, drug_id, drug_name):
 
     user_drug= UserDrug(user_id, drug_id, drug_name)
 
     return user_drug
 
-def add_administered_drug(user_drug_id, administration_date):
+def add_administered_drug(user_drug_id, drug_name, administration_date):
 
-    administered_drug= UserAdministeredDrug(user_drug_id, administration_date)
+    administered_drug= UserAdministeredDrug(user_drug_id=user_drug_id, drug_name=drug_name, administration_date=administration_date)
     
     return administered_drug
+
+def get_painlog_by_user(user_id):
+    """Get all pain log by user"""
+    pain_level=[]
+    date=[]
+
+    dailylogs= UserDailyLog.query.filter_by(user_id=user_id).all()
+
+    for user in dailylogs:
+        pain_level.append(user.pain_level)
+        date.append(user.date)
+
+    pain_log= zip(pain_level, date)
+
+    return pain_log
+
+def get_sleeplog_by_user(user_id):
+    """Gett all sleep log by user"""
+    sleep_level=[]
+    date=[]
+
+    dailylogs= UserDailyLog.query.filter_by(user_id=user_id).all()
+
+    for user in dailylogs:
+        sleep_level.append(user.sleep_level)
+        date.append(user.date)
+
+    sleep_log= zip(sleep_level, date)
+
+    return sleep_log
+
+def get_appetitelog_by_user(user_id):
+    """Gett all appetite log by user"""
+    appetite_level=[]
+    date=[]
+
+    dailylogs= UserDailyLog.query.filter_by(user_id=user_id).all()
+
+    for user in dailylogs:
+        appetite_level.append(user.appetite_level)
+        date.append(user.date)
+
+    appetite_log= zip(appetite_level, date)
+
+    return appetite_log
+
+def get_fatiguelog_by_user(user_id):
+    """Gett all fatigue log by user"""
+    fatigue_level=[]
+    date=[]
+
+    dailylogs= UserDailyLog.query.filter_by(user_id=user_id).all()
+
+    for user in dailylogs:
+        fatigue_level.append(user.fatigue_level)
+        date.append(user.date)
+
+    fatigue_log= zip(fatigue_level, date)
+
+    return fatigue_log
 
 if __name__ == "__main__":
     from server import app

@@ -1,10 +1,11 @@
 """OncoBuddy Server by Shalimar Lardizabal"""
 
-from flask import (Flask, render_template, request, flash, session, redirect)
+from flask import (Flask, render_template, request, flash, session, redirect, jsonify)
 from model import connect_to_db, db
 import requests
 import crud
 from jinja2 import StrictUndefined
+from datetime import datetime
 
 app = Flask(__name__)
 app.app_context().push()
@@ -38,7 +39,7 @@ def user_login():
 
         flash(f"Welcome back, {user.user_name}")
 
-        return render_template('userpage.html', user= user)
+        return redirect("/dailylog")
 
 @app.route("/createaccount")
 def creat_account():
@@ -128,19 +129,30 @@ def show_daily_questionnaire():
     sleep_level= request.args.get("sleep")
     appetite_level= request.args.get("appetite")
     symptom_id= request.args.get("daily-symptoms")
-    date= request.args.get("date")
+    date= datetime.now()
+    
+    if pain_level:
+        db_daily_log= crud.add_user_daily_log(user_id, pain_level, pain_location_id, sleep_level, fatigue_level, appetite_level, date)
+        db.session.add(db_daily_log)
+        db.session.commit()
     
     if symptom_id:
         symptom= crud.get_symptom_by_id(symptom_id)
-        symptom_name= symptom.name
+        symptom_name= symptom.common_name
         symptom_in_db= crud.add_user_symptom(user_id, symptom_id, symptom_name, date)
         db.session.add(symptom_in_db)
         db.session.commit()
     
-    db_daily_log= crud.add_user_daily_log(user_id, pain_level, pain_location_id, sleep_level, fatigue_level, appetite_level, date)
-    db.session.add(db_daily_log)
-    db.session.commit()
+    user_drug_id= request.args.get("administered-medications")
     
+    if user_drug_id:
+        date= datetime.now()
+        drug= crud.get_user_drugs_by_id(user_drug_id)
+        drug_name= drug.drug_name
+        administered_medications=crud.add_administered_drug(user_drug_id, drug_name, date)
+        db.session.add(administered_medications)
+        db.session.commit()
+
     return render_template("dailylog.html", user=user, symptoms= symptoms, medications=medications, pain=pain)
 
 
@@ -151,9 +163,61 @@ def show_user_page(user_id):
     user_id= session["user_id"]
     user= crud.get_user_by_id(user_id)
 
-    medications= crud.get_user_drugs(user_id)
+    medications= crud.get_all_user_drugs(user_id)
+    symptoms= crud.get_user_symptoms(user_id)
 
-    return render_template("user_details.html", user = user, medications=medications)
+    return render_template("user_details.html", user = user, medications=medications, symptoms=symptoms)
+
+
+@app.route('/logs.json')
+def get_daily_log():
+    """Get daily log as json"""
+
+    user_id= session["user_id"]
+    pain_log= crud.get_painlog_by_user(user_id)
+    sleep_log= crud.get_sleeplog_by_user(user_id)
+    appetite_log= crud.get_appetitelog_by_user(user_id)
+    fatigue_log= crud.get_fatiguelog_by_user(user_id)
+
+    pain_log_data=[]
+    sleep_log_data=[]
+    appetite_log_data=[]
+    fatigue_log_data=[]
+
+    for log in pain_log:
+        date= log[1]
+        pain_log_data.append({'pain_level':log[0],'date': date.isoformat()})
+    
+    for log in sleep_log:
+        date= log[1]
+        sleep_log_data.append({'sleep_level':log[0], 'date': date.isoformat()})
+
+    for log in appetite_log:
+        date= log[1]
+        appetite_log_data.append({'appetite_level':log[0], 'date': date.isoformat()})
+    
+    for log in fatigue_log:
+        date= log[1]
+        fatigue_log_data.append({'fatigue_level': log[0], 'date': date.isoformat()})
+
+    return jsonify({'pain_data': pain_log_data, 'sleep_data': sleep_log_data, 'appetite_data': appetite_log_data, 'fatigue_data': fatigue_log_data})
+
+@app.route('/medications.json')
+def get_user_medications():
+    user_id= session["user_id"]
+    user_drugs= crud.get_all_user_drugs(user_id)
+
+    return jsonify({"medications": user_drugs})
+
+@app.route('/calendar')
+def show_user_calendar():
+    user_id= session["user_id"]
+    symptoms= crud.get_user_symptom_with_date(user_id)
+    
+    return render_template('calendar.html', symptoms=symptoms)
+
+
+    
 
 
 if __name__ == "__main__":

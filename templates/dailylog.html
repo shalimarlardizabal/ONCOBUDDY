@@ -10,13 +10,13 @@
     document.write(`Todays date: ${date}`);
     </script>
     </div>
-<div id="daily questionaire" class="daily">
-    <div class="symptoms">
-        <h2>Log symptoms</h2>
+
+    <div class="dailies">
+        <h2>Dailies:</h2>
         <form action="/dailylog" id="daily-symptoms">
             <label for="pain">Level of pain:</label>
             {% for n in range(11) %}
-            <input type="submit" value="{{n}}" name="pain">
+            <input type="radio" value="{{n}}" name="pain">{{n}}
             {%endfor%}
             <br>
             <label for="pain-location">Location of pain:</label>
@@ -27,43 +27,42 @@
             </select><br>
             <label for="fatigue">Level of fatigue:</label>
             {% for n in range(11) %}
-            <input type="button" value="{{n}}" name="fatigue">
+            <input type="radio" value="{{n}}" name="fatigue">{{n}}
             {%endfor%}
             <br>
             <label for="sleep">Amount of sleep:</label>
             {% for n in range(11) %}
-            <input type="button" value="{{n}}" name="sleep">
+            <input type="radio" value="{{n}}" name="sleep">{{n}}
             {%endfor%}<br>
             <label for="appetite">Appetite:</label>
             {% for n in range(11) %}
-            <input type="button" value="{{n}}" name="appetite">
+            <input type="radio" value="{{n}}" name="appetite">{{n}}
             {%endfor%}
-            <br>
+            <button type="submit">Enter dailies</button>
+            </form></div>
+
+            <div class="other-symptoms">
+            <form action="/dailylog">
             <label for="daily-symptoms">Other symptoms:</label>
             <select id="daily-symptoms" name="daily-symptoms">
                 {%for symptom in symptoms%}
                 <option value="{{symptom.symptom_id}}">{{symptom.common_name}}</option>
                 {%endfor%}
             </select><br>
-
-            <input type="hidden" id="date" name="date">
-            <script type="text/javascript">
-            document.getElementById('date').value = Date();
-            </script>
             
             <button type="submit">LOG SYMPTOMS</button>
-        </form>
-    </div>
+        </form></div>
     <div class="medications">
         <h2>Log treatments</h2>
-        <label for="daily-medications">Treatments administered today:</label><br>
+        <form action="/dailylog">
+        <label for="administered-medications">Treatments administered today:</label><br>
         {%for medication in medications%}
-        <input type="radio" id={{medication.drug_name}} name={{medication.drug_name}} value={{medication.drug_id}}>
-        <label for="{{medication.drug_name}}">{{medication.drug_name}}</label>
+        <input type="radio" id="administered-medications" name="administered-medications" value={{medication.user_drug_id}}>
+        <label for="administered-medications">{{medication.drug_name}}</label>
         {%endfor%}
         <button type="submit">LOG TREATMENTS</button>
+    </form>
     </div>
-</div> </div>
 {%endblock%}
 
 {% block after_body %}

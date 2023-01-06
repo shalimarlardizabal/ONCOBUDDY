@@ -1,19 +1,46 @@
 {% extends 'base.html'%}
 
-{%block title %}Hello, {{user.user_name}}{% endblock %}
+{%block title %}{{user.user_name}}'s profile{% endblock %}
+
+{% block head %}
+<!-- JS Code for Charts -->
+  {# ChartJS #}
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+
+  {# If you want to use time scales, you have to import a date library and the Chart.js adapter #}
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.1.0/dist/chartjs-adapter-luxon.min.js"></script>
+
+  {# randomColor: generate random colors #}
+  <script src="https://cdn.jsdelivr.net/npm/randomcolor@0.6.2/randomColor.js"></script>
+{% endblock %}
 
 {%block body%}
-<h1>These are your logged symptoms so far, {{user.user_name}}</h1>
+<h1>{{user.user_name}}'s Profile</h1>
+<p>See your progress below. </p>
+
+<div class="medications">
+    <h2>current medications:</h2>
+    <p>{%for medication in medications%}
+    <li><a href="{{medication.description}}">{{medication.drug_name}}</a></li>
+    {%endfor%}</p>
+
+    <button id="medications">SHOW ALL MEDICATIONS</button>
+</div>
+<div class="symptoms">
+    {%for symptom in symptoms%}
+    <li>{{symptom.date}} {{symptom.symptom_name}}</li>
+    {%endfor%}
+</div>
+<div>
+    <h2>Daily Progression</h2>
+    <canvas id="logchart"></canvas>
+</div>
 
 
-<div id="daily questionaire" class="daily">
-    <div class="symptoms"><p>This is where the calendar goes</p>
-    </div>
-    <div class="medications">
-        <h2>current medications:</h2>
-        <p>{%for medication in medications%}
-        <li>{{medication.drug_name}}</li>
-        {%endfor%}</p>
-    </div>
-</div> </div>
+
 {%endblock%}
+
+{% block js %}
+  <script src="/static/js/chart.js"></script>
+{% endblock %}

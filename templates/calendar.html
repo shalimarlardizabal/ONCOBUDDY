@@ -1,0 +1,45 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<meta charset='utf-8' />
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.0.2/index.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@6.0.2/index.global.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.0.2/index.global.min.js"></script>
+<!-- <script src="/static/JS/calendar.js"></script> -->
+
+{% endblock %}
+
+{% block body %}
+  
+  <div id='calendar-container'>
+    <div id='calendar'></div>
+    <script>
+        let calendarEl= document.getElementById('calendar')
+
+        let calendar = new FullCalendar.Calendar(calendarEl,{
+            headerToolbar: {
+                left: "prev,next today",
+                center: "title",
+                right: "dayGridMonth,dayGridWeek,dayGridDay"
+                },
+            initialView: 'dayGridMonth',
+            events: [
+                {% for symptom in symptoms%}
+                {
+                    title : '{{symptom.symptom}}',
+                    start : '{{symptom.date}}'
+                }, 
+                {% endfor %}
+            ]
+        })
+
+        calendar.render();
+    </script>
+  </div>
+
+{% endblock %}
+
+{% block js %}  
+
+{%endblock%}
+    
