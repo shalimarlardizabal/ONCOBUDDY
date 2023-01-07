@@ -5,12 +5,29 @@
 <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.0.2/index.global.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@6.0.2/index.global.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.0.2/index.global.min.js"></script>
-<!-- <script src="/static/JS/calendar.js"></script> -->
+
+<link rel="stylesheet" href="/static/CSS/calendar.css">
 
 {% endblock %}
 
 {% block body %}
+
+<div id='external-events'>
+    <p>
+      <strong>Treatments</strong>
+    </p>
+    {% for treatment in treatments %}
+    <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
+        <div class='fc-event-main'>{{treatment.drug_name}}</div>
+    </div>
+    {%endfor%}
+   
+  </div>
   
+  <div id='calendar-container'>
+    <div id='calendar'></div>
+  </div>
+<!--   
   <div id='calendar-container'>
     <div id='calendar'></div>
     <script>
@@ -24,7 +41,8 @@
                 },
             initialView: 'dayGridMonth',
             events: [
-                {% for symptom in symptoms%}
+                {% for symptom in symptoms %}
+
                 {
                     title : '{{symptom.symptom}}',
                     start : '{{symptom.date}}'
@@ -35,11 +53,11 @@
 
         calendar.render();
     </script>
-  </div>
+  </div> -->
 
 {% endblock %}
 
 {% block js %}  
-
+<script src="/static/JS/calendar.js"></script>
 {%endblock%}
     

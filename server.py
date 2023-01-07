@@ -213,11 +213,15 @@ def get_user_medications():
 def show_user_calendar():
     user_id= session["user_id"]
     symptoms= crud.get_user_symptom_with_date(user_id)
-    
-    return render_template('calendar.html', symptoms=symptoms)
+    treatments= crud.get_user_drugs(user_id)
+    return render_template('calendar.html', treatments= treatments, symptoms=symptoms)
 
-
+@app.route('/events.json')
+def add_events_to_calendar():
+    user_id= session["user_id"]
+    symptoms=crud.get_user_symptom_with_date(user_id)
     
+    return jsonify({'symptoms': symptoms})
 
 
 if __name__ == "__main__":
