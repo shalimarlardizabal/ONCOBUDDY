@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    fetch('/events.json')
-    .then((response) => response.json())
-    .then((responseJson) => {
-        const eventdata = responseJson.symptoms});
+    // fetch('/events.json')
+    // .then((response) => response.json())
+    // .then((responseJson) => {
+    //     const eventdata = responseJson.symptoms});
 
     // initialize the calendar
     // -----------------------------------------------------------------
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       editable: true,
       droppable: true, // this allows things to be dropped onto the calendar
-      events: eventdata
+      // events: eventdata
     });
   
     calendar.render();

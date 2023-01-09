@@ -6,6 +6,7 @@ import requests
 import crud
 from jinja2 import StrictUndefined
 from datetime import datetime
+from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 app.app_context().push()
@@ -15,7 +16,7 @@ app.jinja_env.undefined = StrictUndefined
 @app.route("/")
 def homepage():
     """View Homepage"""
-
+    
     return render_template('homepage.html')
 
 @app.route("/users", methods= ["POST"])
@@ -40,6 +41,15 @@ def user_login():
         flash(f"Welcome back, {user.user_name}")
 
         return redirect("/dailylog")
+
+@app.route("/logout")
+def logout():
+    """logout user"""
+
+    del session["name"]
+    del session["user_id"]
+
+    return redirect("/")
 
 @app.route("/createaccount")
 def creat_account():
@@ -78,19 +88,19 @@ def show_intake_form():
     user_id= session["user_id"]
     user= crud.get_user_by_id(user_id)
 
-    cancer_types= crud.get_oncologic_diagnoses()
+    cancer_types= crud.show_all_cancer()
     conditions = crud.get_diagnoses()
     drugs= crud.show_all_drugs()
 
-    cancer_diagnosis_id= request.args.get("cancer-type")
+    cancer_id= request.args.get("cancer-type")
     other_diagnosis_id= request.args.get("other-conditions")
     drug_id= request.args.get("user-medications")
     
-    cancer_diagnosis= crud.get_diagnosis_by_id(cancer_diagnosis_id)
+    cancer_diagnosis= crud.get_cancer_by_id(cancer_id)
 
     if cancer_diagnosis:
-        diagnosis_name= cancer_diagnosis.name
-        user_cancer_diagnosis= crud.add_user_diagnosis(user_id, cancer_diagnosis_id, diagnosis_name)
+        cancer_name= cancer_diagnosis.name
+        user_cancer_diagnosis= crud.add_user_cancer(user_id, cancer_id, cancer_name)
         db.session.add(user_cancer_diagnosis)
         db.session.commit()
 
@@ -165,8 +175,15 @@ def show_user_page(user_id):
 
     medications= crud.get_all_user_drugs(user_id)
     symptoms= crud.get_user_symptoms(user_id)
+    cancer= crud.get_user_cancer(user_id)
 
-    return render_template("user_details.html", user = user, medications=medications, symptoms=symptoms)
+    for element in cancer:
+        url= element['description']+ '/about'
+        data= requests.get(url)
+        html= BeautifulSoup(data.text, 'html.parser')
+        content= html.select('.main-container')
+        
+    return render_template("user_details.html", user = user, medications=medications, symptoms=symptoms, cancer=cancer, content=content)
 
 
 @app.route('/logs.json')

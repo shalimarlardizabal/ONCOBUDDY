@@ -44,6 +44,7 @@ for diagnosis in diagnoses:
 model.db.session.add_all(diagnoses_in_db)
 model.db.session.commit()
 
+# webscrape data for oncologic drugs
 
 url = "https://www.cancerresearchuk.org/about-cancer/cancer-in-general/treatment/cancer-drugs/drugs"
 data= requests.get(url)
@@ -57,14 +58,33 @@ for link in links:
     link_url= [a['href'] for a in link.select('a[href]')]
     medication_name= link.select('a')[0].get_text()
     content_url= link_url[0]
-    # content= requests.get(content_url)
-    # soup = BeautifulSoup(data.text, 'html.parser')
-    # description = soup.get_text()
     
     db_drugs= crud.create_drugs(medication_name, content_url)
     drugs_in_db.append(db_drugs)
 
 model.db.session.add_all(drugs_in_db)
+model.db.session.commit()
+
+#webscrape data for oncologic diagnoses
+
+url = "https://www.cancerresearchuk.org/about-cancer/type"
+data= requests.get(url)
+
+cancer_in_db=[]
+
+html= BeautifulSoup(data.text, 'html.parser')
+
+links= html.select('.child-index-item')
+
+for link in links:
+    link_url= [a['href'] for a in link.select('a[href]')]
+    cancer_name= link.select('a')[0].get_text()
+    content_url= link_url[0]
+    
+    db_cancer= crud.create_cancer_diagnoses(cancer_name, content_url)
+    cancer_in_db.append(db_cancer)
+
+model.db.session.add_all(cancer_in_db)
 model.db.session.commit()
 
 

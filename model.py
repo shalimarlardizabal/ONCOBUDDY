@@ -28,6 +28,8 @@ class User(db.Model):
     symptoms = db.relationship("Symptom", secondary = "user_symptoms", back_populates= "users")
     diagnoses = db.relationship("Diagnosis", secondary= "user_diagnoses", back_populates= "users")
     daily_logs= db.relationship("UserDailyLog", back_populates="users")
+    diagnoses = db.relationship("Diagnosis", secondary= "user_diagnoses", back_populates= "users")
+    oncology_diagnoses= db.relationship("CancerDiagnosis", secondary= "user_cancer", back_populates= "users")
     
     def __repr__(self):
         return f'<User user_id={self.user_id} email={self.email}>'
@@ -120,6 +122,31 @@ class Diagnosis(db.Model):
 
     def __repr__(self):
         return f'<Diagnosis diagnosis_id= {self.diagnosis_id} name= {self.name}>'
+class UserCancerDiagnosis(db.Model):
+    """Cancer Diagnosis of Specific User"""
+
+    __tablename__= "user_cancer"
+
+    user_cancer_diagnosis_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
+    user_id= db.Column(db.Integer, db.ForeignKey("users.user_id"))
+    cancer_id= db.Column(db.Integer, db.ForeignKey("oncology_diagnoses.cancer_id"))
+    cancer_name= db.Column(db.String)
+    
+    def __repr__ (self):
+        return f'<UserCancer user_cancer_id= {self.user_cancer_diagnosis_id}, cancer_id={self.cancer_id}>'
+
+class CancerDiagnosis(db.Model):
+    """Oncology Diagnosis"""
+    __tablename__= "oncology_diagnoses"
+
+    cancer_id= db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name= db.Column(db.String)
+    description= db.Column(db.Text)
+
+    users = db.relationship("User", secondary= "user_cancer", back_populates= "oncology_diagnoses")
+    
+    def __repr__ (self):
+        return f'<Cancer Diagnosis cancer_id {self.cancer_id} name= {self.name}>'
 
 class Symptom (db.Model):
     """All symptoms"""
@@ -146,7 +173,6 @@ class Drug (db.Model):
     
     users = db.relationship("User", secondary= "user_drugs", back_populates= "drugs")
 
-    
     def __repr__ (self):
         return f'<Drugs drug_id {self.drug_id} name= {self.name}>'
 

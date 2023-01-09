@@ -1,5 +1,5 @@
 """OncoBuddy CRUD operations"""
-from model import connect_to_db, db, User, UserSymptom, UserAdministeredDrug, UserDrug, UserDiagnosis, Diagnosis, Symptom, Drug, UserDailyLog
+from model import connect_to_db, db, User, UserSymptom, UserAdministeredDrug, UserDrug, UserDiagnosis, Diagnosis, Symptom, Drug, UserDailyLog, CancerDiagnosis, UserCancerDiagnosis
 
 def create_user(email, password, user_name):
     """create and return a new user"""
@@ -95,9 +95,29 @@ def create_drugs(name, description):
 
     return drug
 
+def create_cancer_diagnoses(name, description):
+
+    cancer= CancerDiagnosis(name=name, description= description)
+
+    return cancer
+
+def get_cancer_by_id(cancer_id):
+
+    return CancerDiagnosis.query.get(cancer_id)
+
 def show_all_drugs():
     
     return Drug.query.all()
+
+def show_all_cancer():
+
+    return CancerDiagnosis.query.all()
+
+def add_user_cancer(user_id, cancer_id, cancer_name):
+    
+    user_cancer = UserCancerDiagnosis(user_id= user_id, cancer_id=cancer_id, cancer_name= cancer_name)
+    
+    return user_cancer
 
 def get_drug_by_id(drug_id):
     return Drug.query.get(drug_id)
@@ -116,6 +136,17 @@ def get_all_user_drugs(user_id):
         user_drugs.append({'drug_name': drug.name, 'description': drug.description})
     
     return user_drugs
+    
+def get_user_cancer(user_id):
+    user= User.query.get(user_id)
+    user_cancer= user.oncology_diagnoses
+
+    cancer_list=[]
+
+    for cancer in user_cancer:
+        cancer_list.append({'cancer': cancer.name, 'description': cancer.description})
+    
+    return cancer_list
 
 def get_user_drugs(user_id):
     

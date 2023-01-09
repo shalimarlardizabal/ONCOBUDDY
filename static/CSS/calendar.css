@@ -6,11 +6,11 @@ html, body {
   }
   
   #external-events {
-    position: fixed;
+    position: relative;
     z-index: 2;
     top: 20px;
     left: 20px;
-    width: 200px;
+    width: 150px;
     padding: 0 10px;
     border: 1px solid #ccc;
     background: #eee;
@@ -24,7 +24,8 @@ html, body {
   #calendar-container {
     position: relative;
     z-index: 1;
-    margin-left: 250px;
+    margin-left: 200px;
+    margin-right: 50px;
   }
   
   #calendar {

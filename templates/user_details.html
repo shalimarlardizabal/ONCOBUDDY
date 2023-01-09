@@ -17,8 +17,15 @@
 
 {%block body%}
 <h1>{{user.user_name}}'s Profile</h1>
-<p>See your progress below. </p>
 
+<p>See your progress below. </p>
+<div class="cancer">
+  <h2>Oncologic Diagnosis:</h2>
+  <p>{% for element in cancer%}
+    <li><a href="{{element.description}}">{{element.cancer}}</a></li>
+      {%endfor%}
+    {{content[0]|safe}}</p>
+</div>
 <div class="medications">
     <h2>current medications:</h2>
     <p>{%for medication in medications%}
