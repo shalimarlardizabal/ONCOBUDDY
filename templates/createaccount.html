@@ -3,19 +3,51 @@
 {%block title %}Create an accont.{% endblock %}
 
 {% block body%}
-<h1> ONCO BUDDY</h1>
-<p>An app that will assist you in managing your health.</p>
-<h2>Create an account.</h2>
-<form action="/createaccount" method="POST">
-    <label for="email">Email</label>
-    <input type="text" name="email" id="email">
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name"> 
-    <button type="submit">create account</button>
-</form>
-
-
-<a href="/">Return to homepage</a>
+<section class="vh-50" style="background-color: #fff4bd;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-md-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img src="/static/Images/Onco Buddy (500 × 1000 px).svg"
+                  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+              </div>
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+                  <form action="/createaccount" method="POST">
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Let's beat cancer together.</h5>
+                    
+                    <div class="form-outline mb-4">
+                        <input type="text" name="name" id="name" class="form-control form-control-md" />
+                        <label class="form-label" for="name">Name</label>
+                      </div>
+                    <div class="form-outline mb-4">
+                      <input type="email" name="email" id="email" class="form-control form-control-md" />
+                      <label class="form-label" for="email">Email address</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <input type="password" name="password" id="password" class="form-control form-control-md" />
+                      <label class="form-label" for="password">Password</label>
+                    </div>
+                    <div class="pt-1 mb-4">
+                      <button class="btn btn-dark btn-md btn-block" type="submit">Register</button>
+                    </div>
+                  </form>
+                  <br>
+                  {% for msg in get_flashed_messages() %}
+                      <p class="flash-msg" style="color: red; font-weight: bold;">
+                        {{msg}}
+                      </p>
+                    {% endfor %}
+                  <p class="mb-5 pb-lg-2" style="color: #5d9ad8;">Already have an account? <a href="/"
+                    style="color: #5d9ad8;">Sign-in</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}

@@ -16,7 +16,7 @@ app.jinja_env.undefined = StrictUndefined
 @app.route("/")
 def homepage():
     """View Homepage"""
-    
+
     return render_template('homepage.html')
 
 @app.route("/users", methods= ["POST"])
@@ -31,14 +31,14 @@ def user_login():
     # print(f'user {user}')
 
     if not user or user.password != password:
-        flash ('Incorrect email or password')
+        flash ('Incorrect email or password :(')
         return redirect('/')
 
     elif user.email == email or user.password == password:
         session["name"] = user.user_name
         session["user_id"] = user.user_id
 
-        flash(f"Welcome back, {user.user_name}")
+        flash(f"Welcome back! How are we feeling today?")
 
         return redirect("/dailylog")
 
@@ -231,12 +231,15 @@ def show_user_calendar():
     user_id= session["user_id"]
     symptoms= crud.get_user_symptom_with_date(user_id)
     treatments= crud.get_user_drugs(user_id)
-    return render_template('calendar.html', treatments= treatments, symptoms=symptoms)
+    user= crud.get_user_by_id(user_id)
+    return render_template('calendar.html', treatments= treatments, symptoms=symptoms, user=user)
 
-@app.route('/events.json')
+@app.route('/symptoms.json')
 def add_events_to_calendar():
     user_id= session["user_id"]
     symptoms=crud.get_user_symptom_with_date(user_id)
+    for symptom in symptoms:
+        symptom['start']=symptom['start'].isoformat()
     
     return jsonify({'symptoms': symptoms})
 

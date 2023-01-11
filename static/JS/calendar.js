@@ -1,8 +1,5 @@
 "use strict";
 
-// import { Calendar } from '@fullcalendar/core';
-// import interactionPlugin, { Draggable } from '@fullcalendar/interaction';
-
 document.addEventListener('DOMContentLoaded', function() {
     let Calendar = FullCalendar.Calendar;
   
@@ -20,27 +17,30 @@ document.addEventListener('DOMContentLoaded', function() {
         };
       }
     });
-
-    // fetch('/events.json')
-    // .then((response) => response.json())
-    // .then((responseJson) => {
-    //     const eventdata = responseJson.symptoms});
-
-    // initialize the calendar
+// initialize the calendar
     // -----------------------------------------------------------------
+    fetch('/symptoms.json')
+    .then((response) => response.json())
+    .then((responseJson) => {
+        let eventdata = responseJson.symptoms
+
+        let calendar = new Calendar(calendarEl, {
+          headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,dayGridWeek,dayGridDay'
+          },
+          editable: true,
+          droppable: true, 
+          events: eventdata
+        });
+        calendar.render();
+        
+      });
+      });
+
     
-    var calendar = new Calendar(calendarEl, {
-      headerToolbar: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,dayGridWeek,dayGridDay'
-      },
-      editable: true,
-      droppable: true, // this allows things to be dropped onto the calendar
-      // events: eventdata
-    });
+    
   
-    calendar.render();
-  });
 
 

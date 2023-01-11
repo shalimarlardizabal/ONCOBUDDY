@@ -163,7 +163,7 @@ def get_user_symptom_with_date(user_id):
     symptom_date=[]
 
     for symptom in symptoms:
-        symptom_date.append({'symptom':symptom.symptom_name, 'date': symptom.date})
+        symptom_date.append({'title':symptom.symptom_name, 'start': symptom.date})
     
     return symptom_date
     
