@@ -5,3 +5,13 @@ body{
 .form-group {
     margin-bottom: 10px;
 }
+
+p {
+    font-family: 'Cerebri Sans', sans-serif;                                             
+    font-size: small;
+}
+
+h1, h2, h3 {
+    font-family: 'Cerebri Sans', sans-serif;
+    font-size: medium;
+}
