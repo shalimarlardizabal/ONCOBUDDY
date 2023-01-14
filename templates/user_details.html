@@ -49,18 +49,48 @@
 {%endfor%}
 
 </div>
-<div class="medications">
-    <h2>current medications:</h2>
-    <p>{%for medication in medications%}
-    <li><a href="{{medication.description}}">{{medication.drug_name}}</a></li>
-    {%endfor%}</p>
 
-    <button id="medications">SHOW ALL MEDICATIONS</button>
+<div class="medications">
+  <h2>Current Treatments</h2>
+  {% for name, info in user_medication%}
+  <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#treatments-{{name}}">{{name}}</button>
+
+<!-- Modal -->
+<div id="treatments-{{name}}" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-dialog-scrollable">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{name}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>{{info | safe}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </div>
+    
+</div>
+{%endfor%}
+
 <div class="symptoms">
+  <h2>Logged symptoms:</h2>
     {%for symptom in symptoms%}
-    <li>{{symptom.date}} {{symptom.symptom_name}}</li>
+    <li>{{symptom.start}} {{symptom.title}}</li>
     {%endfor%}
+</div>
+
+<div class="user-medications">
+  <h2>Administered treatments:</h2>
+  {% for drug in administered_drugs%}
+  <li>{{drug.date}} {{drug.name}} </li>
+  {%endfor%}
 </div>
 <div>
     <h2>Daily Progression</h2>

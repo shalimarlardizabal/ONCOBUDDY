@@ -52,9 +52,9 @@
             {%endfor%}<br>
             <label for="appetite">Appetite:</label>
             {% for n in range(11) %}
-            <input type="radio" value="{{n}}" name="appetite">{{n}}
+            <input type="radio" value="{{n}}" name="appetite" id="dailylog">{{n}}
             {%endfor%}
-            <button type="submit">Enter dailies</button>
+            <button type="submit" id="dailylog">Enter dailies</button>
             </form></div>
             </div>
             </div>

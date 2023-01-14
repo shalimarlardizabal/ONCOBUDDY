@@ -173,17 +173,35 @@ def show_user_page(user_id):
     user_id= session["user_id"]
     user= crud.get_user_by_id(user_id)
 
-    medications= crud.get_all_user_drugs(user_id)
-    symptoms= crud.get_user_symptoms(user_id)
+    medications= crud.get_all_user_drugs(user_id) 
     cancer= crud.get_user_cancer(user_id)
+    administered_drugs= crud.get_administered_drug(user_id)
+    
+    for drugs in administered_drugs:
+        drugs['date']=drugs['date'].date()
+    symptoms= crud.get_user_symptom_with_date(user_id)
+    for symptom in symptoms:
+        symptom['start']= symptom['start'].date()
+
 
     for element in cancer:
         url= element['description']+ '/about'
         data= requests.get(url)
         html= BeautifulSoup(data.text, 'html.parser')
-        content= html.select('.main-container')
-        
-    return render_template("user_details.html", user = user, medications=medications, symptoms=symptoms, cancer=cancer, content=content)
+        content= html.select('.region-content')
+
+    user_medication=[]
+
+    for element in medications:
+        name = element['drug_name']
+        url= element['description']
+        data= requests.get(url)
+        html= BeautifulSoup(data.text, 'html.parser')
+        med_content= html.select('.region-content')
+        user_medication.append((name, med_content[0]))
+    
+    
+    return render_template("user_details.html", user = user, medications=medications, symptoms=symptoms, cancer=cancer, content=content, user_medication=user_medication, administered_drugs=administered_drugs)
 
 
 @app.route('/logs.json')

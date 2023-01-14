@@ -179,6 +179,16 @@ def add_administered_drug(user_drug_id, drug_name, administration_date):
     
     return administered_drug
 
+def get_administered_drug(user_id):
+    user_drugs= UserDrug.query.filter(UserDrug.user_id==user_id).all()
+    administered_drugs= []
+    
+    for drug in user_drugs:
+        for administered_drug in drug.user_administered_drugs:
+            administered_drugs.append({'name': administered_drug.drug_name, 'date': administered_drug.administration_date})
+    
+    return administered_drugs
+
 def get_painlog_by_user(user_id):
     """Get all pain log by user"""
     pain_level=[]
