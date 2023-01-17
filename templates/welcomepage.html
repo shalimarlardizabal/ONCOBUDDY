@@ -9,47 +9,55 @@
     <div class="row d-flex justify-content-center align-items-center h-100">
         <div class ="column">
             <h1>Welcome to Onco Buddy {{user.user_name}}</h1>
-        <div class = "row form-group">
-        <div class="card" style="border-radius: 1rem;">
-<h2>Intake form for first-time users:</h2>
-<div class="user-information">
-<p>Please fill out the following information to get started:
-    <form action="/intake" id="cancer-type">
-        <label for="cancer-type">Cancer Type:</label>
-        <select id="cancer-type" name="cancer-type">
-            {%for cancer in cancer_types%}
-            <option value="{{cancer.cancer_id}}">{{cancer.name}}</option>
-            {%endfor%}
-        </select>
-        <button type="submit">submit</button>
-    </form>
-        <br>
-    <form action="/intake" id="other-conditions">
-        <label for="conditions">Other conditions:</label>
-        <select id="other-conditions" name="other-conditions">
-            {%for condition in conditions%}
-            <option value="{{condition.diagnosis_id}}">{{condition.common_name}}</option>
-            {%endfor%}
-        </select> 
-
-        <button type="submit">submit</button>
-    </form>
-</p>
-</div>
-<div class="user-medications">
-    <h2>Please add current medications and treatments:</h2>
-    <form action="/intake" id="user-medications">
-        <label for="user-medication">Add current medications</label>
-        <select id="user-medications" name="user-medications">
-            {%for drug in drugs%}
-            <option value="{{drug.drug_id}}">{{drug.name}}</option>
-            {%endfor%}
-        </select> 
-        <button type="submit">submit</button>
-    </form>
-
-</div>
-</div>
+            <div class = "row form-group">
+            <div class="card" style="border-radius: 1rem;">
+                <h2>Intake form for first-time users:</h2>
+                <div class="user-information">
+                <p>Please fill out the following information to get started:
+                <form action="/intake" id="cancer-type">
+                <label for="cancer-type">What is your cancer diagnosis?</label>
+                <p>select from the following.</p>
+                <select id="cancer-type" name="cancer-type">
+                {%for cancer in cancer_types%}
+                <option value="{{cancer.cancer_id}}">{{cancer.name}}</option>
+                {%endfor%}
+                </select>
+                <button type="submit">submit</button>
+                </form>
+                </div>
+            </div>
+            </div>
+            <div class = "row form-group">
+            <div class="card" style="border-radius: 1rem;">
+                <div class="other-conditions">
+                <form action="/intake" id="other-conditions">
+                <label for="conditions">Other conditions:</label>
+                <select id="other-conditions" name="other-conditions">
+                {%for condition in conditions%}
+                <option value="{{condition.diagnosis_id}}">{{condition.common_name}}</option>
+                {%endfor%}
+                </select> 
+                <button type="submit">submit</button>
+                </form>
+                </div>
+            </div>
+            </div>
+            <div class = "row form-group">
+            <div class="card" style="border-radius: 1rem;">
+                <div class="user-medications">
+                <h2>Please add current medications and treatments:</h2>
+                <form action="/intake" id="user-medications">
+                <label for="user-medication">Add current medications</label>
+                <select id="user-medications" name="user-medications">
+                {%for drug in drugs%}
+                <option value="{{drug.drug_id}}">{{drug.name}}</option>
+                {%endfor%}
+                </select> 
+                <button type="submit">submit</button>
+                </form>
+                </div>
+            </div>
+            </div>
 </div>
 </div>
 </div>

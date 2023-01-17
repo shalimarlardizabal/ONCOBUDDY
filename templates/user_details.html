@@ -19,12 +19,17 @@
 <h1>{{user.user_name}}'s Profile</h1>
 
 <p>See your progress below. </p>
+<div class="row row-cols-2">
+<div class="col">
 <div class="cancer">
-  <h2>Oncologic Diagnosis:</h2>
+  <div class="card text-center" style="width: 15rem;">
+    <img src="/static/Images/DIAGNOSIS.svg" class="card-img-top" alt="...">
+    <div class="card-body">
+  <p style="font-size: 10px;">click below to learn more about your diagnosis</p>
 
   <!-- Trigger the modal with a button -->
   {% for element in cancer%}
-<button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">{{element.cancer}}</button>
+<button type="button" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#myModal">{{element.cancer}}</button>
 
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -43,17 +48,22 @@
         <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
-
+</div>
+</div>
   </div>
 </div>
 {%endfor%}
-
 </div>
-
+</div>
+</div>
+<div class="col">
 <div class="medications">
-  <h2>Current Treatments</h2>
+  <div class="card text-center" style="width: 15rem;">
+    <img src="/static/Images/Treatment.svg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p style="font-size: 10px;">click below to learn more about your treatment</p>
   {% for name, info in user_medication%}
-  <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#treatments-{{name}}">{{name}}</button>
+  <button type="button" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#treatments-{{name}}">{{name}}</button>
 
 <!-- Modal -->
 <div id="treatments-{{name}}" class="modal fade" role="dialog">
@@ -72,25 +82,58 @@
         <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
-
   </div>
+</div>
+  </div>
+</div>
+
+</div>
+{%endfor%}
+</div>
+</div>
+<div class="symptoms">
+  <div class="card" style="width: 35rem;">
+  <table class="table table-hover table-sm caption-top">
+    <caption>Logged symptoms:</caption>
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Symptom</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%for symptom in symptoms%}
+      <tr>
+        <th scope="row">{{symptom.start}}</th>
+        <td>{{symptom.title}}</td>
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>
 </div>
     
 </div>
-{%endfor%}
-
-<div class="symptoms">
-  <h2>Logged symptoms:</h2>
-    {%for symptom in symptoms%}
-    <li>{{symptom.start}} {{symptom.title}}</li>
-    {%endfor%}
-</div>
 
 <div class="user-medications">
-  <h2>Administered treatments:</h2>
-  {% for drug in administered_drugs%}
-  <li>{{drug.date}} {{drug.name}} </li>
-  {%endfor%}
+  <div class="card" style="width: 35rem;">
+  <table class="table table-hover table-sm caption-top">
+    <caption>Administered treatments:</caption>
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Treatments</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for drug in administered_drugs %}
+      <tr>
+        <th scope="row">{{drug.date}}</th>
+        <td>{{drug.name}}</td>
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>
+</div>
 </div>
 <div>
     <h2>Daily Progression</h2>
