@@ -185,7 +185,7 @@ def get_administered_drug(user_id):
     
     for drug in user_drugs:
         for administered_drug in drug.user_administered_drugs:
-            administered_drugs.append({'name': administered_drug.drug_name, 'date': administered_drug.administration_date})
+            administered_drugs.append({'title': administered_drug.drug_name, 'start': administered_drug.administration_date})
     
     return administered_drugs
 
@@ -205,7 +205,7 @@ def get_painlog_by_user(user_id):
     return pain_log
 
 def get_sleeplog_by_user(user_id):
-    """Gett all sleep log by user"""
+    """Get all sleep log by user"""
     sleep_level=[]
     date=[]
 
@@ -220,7 +220,7 @@ def get_sleeplog_by_user(user_id):
     return sleep_log
 
 def get_appetitelog_by_user(user_id):
-    """Gett all appetite log by user"""
+    """Get all appetite log by user"""
     appetite_level=[]
     date=[]
 
@@ -235,7 +235,7 @@ def get_appetitelog_by_user(user_id):
     return appetite_log
 
 def get_fatiguelog_by_user(user_id):
-    """Gett all fatigue log by user"""
+    """Get all fatigue log by user"""
     fatigue_level=[]
     date=[]
 

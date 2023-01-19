@@ -25,20 +25,18 @@ def user_login():
 
     email = request.form.get("email")
     password = request.form.get("password")
-    # print(f'email {email}')
 
     user = crud.get_user_by_email(email)
-    # print(f'user {user}')
 
     if not user or user.password != password:
-        flash ('Incorrect email or password :(')
+        flash ('Incorrect email or password!')
         return redirect('/')
 
     elif user.email == email or user.password == password:
         session["name"] = user.user_name
         session["user_id"] = user.user_id
 
-        flash(f"Welcome back! How are we feeling today?")
+        flash(f"Welcome back {user.user_name}! How are you feeling today?")
 
         return redirect("/dailylog")
 
@@ -99,6 +97,7 @@ def show_intake_form():
     cancer_diagnosis= crud.get_cancer_by_id(cancer_id)
 
     if cancer_diagnosis:
+        flash(f'You have entered {cancer_diagnosis.name} as your diagnosis.')
         cancer_name= cancer_diagnosis.name
         user_cancer_diagnosis= crud.add_user_cancer(user_id, cancer_id, cancer_name)
         db.session.add(user_cancer_diagnosis)
@@ -107,6 +106,7 @@ def show_intake_form():
     other_diagnosis= crud.get_diagnosis_by_id(other_diagnosis_id)
     
     if other_diagnosis:
+        flash(f'Successfully added {other_diagnosis.name}!')
         diagnosis_name= other_diagnosis.name
         user_diagnosis=crud.add_user_diagnosis(user_id, other_diagnosis_id, diagnosis_name)
         db.session.add(user_diagnosis)
@@ -115,6 +115,7 @@ def show_intake_form():
     drug = crud.get_drug_by_id(drug_id)
     
     if drug:
+        flash(f'You have added {drug.name} as your treatment.')
         drug_name= drug.name
         user_drug= crud.add_user_drug(user_id, drug_id, drug_name)
         db.session.add(user_drug)
@@ -178,7 +179,8 @@ def show_user_page(user_id):
     administered_drugs= crud.get_administered_drug(user_id)
     
     for drugs in administered_drugs:
-        drugs['date']=drugs['date'].date()
+        drugs['start']=drugs['start'].date()
+    
     symptoms= crud.get_user_symptom_with_date(user_id)
     for symptom in symptoms:
         symptom['start']= symptom['start'].date()
@@ -237,12 +239,6 @@ def get_daily_log():
 
     return jsonify({'pain_data': pain_log_data, 'sleep_data': sleep_log_data, 'appetite_data': appetite_log_data, 'fatigue_data': fatigue_log_data})
 
-@app.route('/medications.json')
-def get_user_medications():
-    user_id= session["user_id"]
-    user_drugs= crud.get_all_user_drugs(user_id)
-
-    return jsonify({"medications": user_drugs})
 
 @app.route('/calendar')
 def show_user_calendar():
@@ -250,6 +246,7 @@ def show_user_calendar():
     symptoms= crud.get_user_symptom_with_date(user_id)
     treatments= crud.get_user_drugs(user_id)
     user= crud.get_user_by_id(user_id)
+
     return render_template('calendar.html', treatments= treatments, symptoms=symptoms, user=user)
 
 @app.route('/symptoms.json')
@@ -259,7 +256,12 @@ def add_events_to_calendar():
     for symptom in symptoms:
         symptom['start']=symptom['start'].isoformat()
     
-    return jsonify({'symptoms': symptoms})
+    administered_drugs=crud.get_administered_drug(user_id)
+
+    for drug in administered_drugs:
+        drug['start']= drug['start'].isoformat()
+    
+    return jsonify({'symptoms': symptoms, 'administered_drugs': administered_drugs})
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% include 'navbar.html' %}
-{%block title %}{{user.user_name}}'s profile{% endblock %}
+
+{%block title %}{{user.user_name}}'s health profile {% endblock %}
 
 {% block head %}
 <!-- JS Code for Charts -->
@@ -16,83 +17,91 @@
 {% endblock %}
 
 {%block body%}
-<h1>{{user.user_name}}'s Profile</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+      <h1>{{user.user_name}}'s health profile</h1>
 
-<p>See your progress below. </p>
-<div class="row row-cols-2">
-<div class="col">
-<div class="cancer">
-  <div class="card text-center" style="width: 15rem;">
-    <img src="/static/Images/DIAGNOSIS.svg" class="card-img-top" alt="...">
-    <div class="card-body">
-  <p style="font-size: 10px;">click below to learn more about your diagnosis</p>
-
-  <!-- Trigger the modal with a button -->
-  {% for element in cancer%}
-<button type="button" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#myModal">{{element.cancer}}</button>
-
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-dialog-scrollable">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-        <h4 class="modal-title">{{element.cancer}}</h4>
-      </div>
-      <div class="modal-body">
-        <p>{{content[0]|safe}}</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
-      </div>
+      <p>See your progress below. </p>
     </div>
-</div>
-</div>
-  </div>
-</div>
-{%endfor%}
-</div>
-</div>
-</div>
-<div class="col">
-<div class="medications">
-  <div class="card text-center" style="width: 15rem;">
+
+
+    <div class="col-9">
+      <div class="row">
+        
+      <!-- Cards for Column -->
+        <div class="card bg-transparent" style="width: 15rem; border-color: transparent;">
+          <img src="/static/Images/DIAGNOSIS.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p style="font-size: 10px;">click below to learn more about your diagnosis</p>
+
+      <!-- Trigger the modal with a button -->
+            {% for element in cancer%}
+            <button type="button" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#myModal">{{element.cancer}}</button>
+
+      <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-dialog-scrollable">
+
+      <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">{{element.cancer}}</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>{{content[0]|safe}}</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {%endfor%}
+          </div>
+        </div>
+
+
+  
+  <div class="card bg-transparent" style="width: 15rem; border-color: transparent;">
     <img src="/static/Images/Treatment.svg" class="card-img-top" alt="...">
     <div class="card-body">
       <p style="font-size: 10px;">click below to learn more about your treatment</p>
-  {% for name, info in user_medication%}
-  <button type="button" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#treatments-{{name}}">{{name}}</button>
+  <!-- Trigger modal with a button -->
+      {% for name, info in user_medication%}
+      <button type="button" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#treatments-{{name}}">{{name}}</button>
 
 <!-- Modal -->
-<div id="treatments-{{name}}" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-dialog-scrollable">
+      <div id="treatments-{{name}}" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-scrollable">
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-        <h4 class="modal-title">{{name}}</h4>
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+              <h4 class="modal-title">{{name}}</h4>
+            </div>
+            <div class="modal-body">
+              <p>{{info | safe}}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+            </div>   
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>{{info | safe}}</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
-      </div>
+      {%endfor%}
     </div>
   </div>
-</div>
   </div>
 </div>
 
-</div>
-{%endfor%}
-</div>
-</div>
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-9">
 <div class="symptoms">
-  <div class="card" style="width: 35rem;">
+  <div class="card bg-transparent" style="width: 35rem;">
   <table class="table table-hover table-sm caption-top">
     <caption>Logged symptoms:</caption>
     <thead>
@@ -115,7 +124,7 @@
 </div>
 
 <div class="user-medications">
-  <div class="card" style="width: 35rem;">
+  <div class="card bg-transparent" style="width: 35rem;">
   <table class="table table-hover table-sm caption-top">
     <caption>Administered treatments:</caption>
     <thead>
@@ -127,21 +136,28 @@
     <tbody>
       {% for drug in administered_drugs %}
       <tr>
-        <th scope="row">{{drug.date}}</th>
-        <td>{{drug.name}}</td>
+        <th scope="row">{{drug.start}}</th>
+        <td>{{drug.title}}</td>
       </tr>
       {%endfor%}
     </tbody>
   </table>
 </div>
 </div>
+<div class="card bg-transparent" style="width: 35rem;">
 <div>
     <h2>Daily Progression</h2>
     <canvas id="logchart"></canvas>
 </div>
+</div>
+</div>
+</div>
+</div>
 
-
-
+</div>
+</div>
+</div>
+</div>
 {%endblock%}
 
 {% block js %}

@@ -6,82 +6,97 @@
 {%block body%}
 
   <!-- Dailies -->
-<div class="container py-5 h-100">
+<div class="container py-2 h-100">
   <div class="row d-flex justify-content-center align-items-center h-100">
     <div class ="column">
       <div class = "row form-group">
-      <div class="card" style="border-radius: 1rem;">
-<h1>Daily Log</h1>
+      <div class="card text-center" style="border-radius: 1rem; background-color: #5d9ad8;">
+<h1 style="font-size: 30px; font-weight: semi-bold; color:#fff4bd">DAILY LOG</h1>
 {% for msg in get_flashed_messages() %}
-                      <p class="flash-msg" style="color: red; font-weight: bold;">
+                      <p class="flash-msg" style="color: #fff4bd; font-weight: bold;">
                         {{msg}}
                       </p>
                     {% endfor %}
 <div id="current_date">
+    <img src="/static/Images/calendar2-heart.svg">
     <script>
     date = new Date().toLocaleDateString();
-    document.write(`Todays date: ${date}`);
+    document.write(`${date}`);
     </script>
+    <br>
     </div>
     </div>
     </div>
     <div class = "row form-group">
-      <div class="card" style="border-radius: 1rem;">
+      <div class="card text-center bg-transparent" style="border-radius: 1rem;">
     <div class="dailies">
-        <h2>Dailies:</h2>
         <form action="/dailylog" id="daily-symptoms">
-            <label for="pain">Level of pain:</label>
+          <div class="form-group">
+            <label class="daily-label" for="pain"><strong>Rate your pain</strong> </label>
             {% for n in range(11) %}
-            <input type="radio" value="{{n}}" name="pain">{{n}}
+            <input type="radio" value="{{n}}" name="pain"> {{n}}
             {%endfor%}
-            <br>
-            <label for="pain-location">Location of pain:</label>
-            <select id="pain-location" name="pain-location">
+            <p>0 being without pain and 10 with the most pain.</p>
+            <label class="daily-label" for="pain-location"><strong>Where do you feel the pain?</strong></label>
+            <select class= "form-control form-control-sm mx-auto" id="pain-location" name="pain-location" style="width: auto;">
                 {%for location in pain%}
                 <option value="{{location.symptom_id}}">{{location.common_name}}</option>
                 {%endfor%}
-            </select><br>
-            <label for="fatigue">Level of fatigue:</label>
-            {% for n in range(11) %}
-            <input type="radio" value="{{n}}" name="fatigue">{{n}}
-            {%endfor%}
+            </select>
             <br>
-            <label for="sleep">Amount of sleep:</label>
+            <label class="daily-label" for="fatigue"><strong>Rate your fatigue</strong></label>
             {% for n in range(11) %}
-            <input type="radio" value="{{n}}" name="sleep">{{n}}
-            {%endfor%}<br>
-            <label for="appetite">Appetite:</label>
-            {% for n in range(11) %}
-            <input type="radio" value="{{n}}" name="appetite" id="dailylog">{{n}}
+            <input type="radio" value="{{n}}" name="fatigue"> {{n}}
             {%endfor%}
-            <button type="submit" id="dailylog">Enter dailies</button>
+            <p>0 being no fatigue and 10 being you're exhausted.</p>
+            <label class="daily-label" for="sleep"><strong>Enter hours of sleep</strong></label>
+            {% for n in range(11) %}
+            <input type="radio" value="{{n}}" name="sleep"> {{n}}
+            {%endfor%}
+            <p>How many hours of sleep did you get the night before?</p>
+            <label class="daily-label" for="appetite"><strong>What is your appetite level?</strong></label>
+            {% for n in range(11) %}
+            <input type="radio" value="{{n}}" name="appetite" id="dailylog"> {{n}}
+            {%endfor%}
+            <p>How much appetite do you have?</p>
+            <div class="d-grid gap-2">
+              <button class= "btn btn-outline-dark btn-sm" type="submit" id="dailylog" style="border-color:#5d9ad8;">Enter daily log</button>
+            </div>
+          </div>
+
             </form></div>
             </div>
             </div>
             <div class = "row form-group">
-              <div class="card" style="border-radius: 1rem;">
+              <div class="card text-center bg-transparent" style="border-radius: 1rem; ">
             <div class="other-symptoms">
             <form action="/dailylog">
-            <label for="daily-symptoms">Other symptoms:</label>
-            <select id="daily-symptoms" name="daily-symptoms">
+              <div class="form-group">
+            <label for="daily-symptoms"><strong>What symptoms are you currently having?</strong></label><br>
+            <select class="form-control form-control-sm mx-auto" id="daily-symptoms" name="daily-symptoms" style="width: auto;">
                 {%for symptom in symptoms%}
                 <option value="{{symptom.symptom_id}}">{{symptom.common_name}}</option>
                 {%endfor%}
             </select><br>
-            
-            <button type="submit">LOG SYMPTOMS</button>
-        </form></div></div></div>
+            <div class="d-grid gap-2">
+            <button class= "btn btn-outline-dark btn-sm" type="submit" style="border-color:#5d9ad8;">LOG SYMPTOM</button>
+          </div>
+        </form></div></div></div></div>
         <div class = "row form-group">
-          <div class="card" style="border-radius: 1rem;">
+          <div class="card text-center bg-transparent" style="border-radius: 1rem;">
     <div class="medications">
-        <h2>Log treatments</h2>
         <form action="/dailylog">
-        <label for="administered-medications">Treatments administered today:</label><br>
+        <label for="administered-medications"><strong>What treatments were administered today?</strong></label><br>
+        
         {%for medication in medications%}
         <input type="radio" id="administered-medications" name="administered-medications" value={{medication.user_drug_id}}>
-        <label for="administered-medications">{{medication.drug_name}}</label>
+        <label for="administered-medications"> {{medication.drug_name}}</label>
         {%endfor%}
-        <button type="submit">LOG TREATMENTS</button>
+      
+        <br>
+        <div class="d-grid gap-2">
+        <button class= "btn btn-outline-dark btn-sm" type="submit" style="border-color:#5d9ad8;">LOG TREATMENT</button>
+      </div>
     </form>
     </div>
   </div>

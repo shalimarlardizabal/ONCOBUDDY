@@ -30,7 +30,7 @@
                       <button class="btn btn-dark btn-md btn-block" type="submit">Login</button>
                       <br>
                       {% for msg in get_flashed_messages() %}
-                      <p class="flash-msg" style="color: red; font-weight: bold;">
+                      <p class="flash-msg" style="color: red; font-weight: semi-bold;">
                         {{msg}}
                       </p>
                     {% endfor %}
@@ -47,14 +47,4 @@
       </div>
     </div>
   </section>
-  
-<!-- <h2>Log In</h2>
-<form action="/users" method="POST">
-    <label for ="user-email">Email</label>
-    <input type="text" name="email">
-    <label for ="user-password">Password</label>
-    <input type="password" name="password">
-    
-    <button type="submit">Login</button>
-</form> -->
 {% endblock %}

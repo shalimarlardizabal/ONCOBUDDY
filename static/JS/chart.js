@@ -69,16 +69,3 @@ fetch('/logs.json')
       },
     });
   });
-
-function showUserMeds(evt) {
-    evt.preventDefault();
-
-    fetch('/medications.json')
-        .then((response) => response.json())
-        .then((responseJson) => {
-    console.log(responseJson)
-    document.querySelector('.medications').innerHTML=responseJson;
-});
-}
-
-document.querySelector('#medications').addEventListener('click', showUserMeds);

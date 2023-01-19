@@ -22,7 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('/symptoms.json')
     .then((response) => response.json())
     .then((responseJson) => {
-        let eventdata = responseJson.symptoms
+        let symptomdata = responseJson.symptoms;
+        let drugdata= responseJson.administered_drugs;
+        let eventdata= symptomdata.concat(drugdata);
+        
 
         let calendar = new Calendar(calendarEl, {
           headerToolbar: {
