@@ -6,12 +6,12 @@
 {%block body%}
 
   <!-- Dailies -->
-<div class="container py-2 h-100">
+<div class="container-lg mt-5 py-5 h-100">
   <div class="row d-flex justify-content-center align-items-center h-100">
     <div class ="column">
       <div class = "row form-group">
       <div class="card text-center" style="border-radius: 1rem; background-color: #5d9ad8;">
-<h1 style="font-size: 30px; font-weight: semi-bold; color:#fff4bd">DAILY LOG</h1>
+<h1 style="font-size: 30px; font-weight: bold; color:#fff4bd">DAILY LOG</h1>
 {% for msg in get_flashed_messages() %}
                       <p class="flash-msg" style="color: #fff4bd; font-weight: bold;">
                         {{msg}}
@@ -19,7 +19,7 @@
                     {% endfor %}
 <div id="current_date">
     <img src="/static/Images/calendar2-heart.svg">
-    <script>
+    <script style="font-size: 20px;">
     date = new Date().toLocaleDateString();
     document.write(`${date}`);
     </script>
@@ -36,7 +36,7 @@
             {% for n in range(11) %}
             <input type="radio" value="{{n}}" name="pain"> {{n}}
             {%endfor%}
-            <p>0 being without pain and 10 with the most pain.</p>
+            <p style="color:#5d9ad8">0 being without pain and 10 with the most pain.</p>
             <label class="daily-label" for="pain-location"><strong>Where do you feel the pain?</strong></label>
             <select class= "form-control form-control-sm mx-auto" id="pain-location" name="pain-location" style="width: auto;">
                 {%for location in pain%}
@@ -48,17 +48,17 @@
             {% for n in range(11) %}
             <input type="radio" value="{{n}}" name="fatigue"> {{n}}
             {%endfor%}
-            <p>0 being no fatigue and 10 being you're exhausted.</p>
+            <p style="color:#5d9ad8">0 being no fatigue and 10 being you're exhausted.</p>
             <label class="daily-label" for="sleep"><strong>Enter hours of sleep</strong></label>
             {% for n in range(11) %}
             <input type="radio" value="{{n}}" name="sleep"> {{n}}
             {%endfor%}
-            <p>How many hours of sleep did you get the night before?</p>
+            <p style="color:#5d9ad8">How many hours of sleep did you get the night before?</p>
             <label class="daily-label" for="appetite"><strong>What is your appetite level?</strong></label>
             {% for n in range(11) %}
             <input type="radio" value="{{n}}" name="appetite" id="dailylog"> {{n}}
             {%endfor%}
-            <p>How much appetite do you have?</p>
+            <p style="color:#5d9ad8">How much appetite do you have?</p>
             <div class="d-grid gap-2">
               <button class= "btn btn-outline-dark btn-sm" type="submit" id="dailylog" style="border-color:#5d9ad8;">Enter daily log</button>
             </div>
@@ -73,6 +73,7 @@
             <form action="/dailylog">
               <div class="form-group">
             <label for="daily-symptoms"><strong>What symptoms are you currently having?</strong></label><br>
+            <p style="color:#5d9ad8">Leave blank if you're not having any symptoms.</p>
             <select class="form-control form-control-sm mx-auto" id="daily-symptoms" name="daily-symptoms" style="width: auto;">
                 {%for symptom in symptoms%}
                 <option value="{{symptom.symptom_id}}">{{symptom.common_name}}</option>
@@ -87,7 +88,7 @@
     <div class="medications">
         <form action="/dailylog">
         <label for="administered-medications"><strong>What treatments were administered today?</strong></label><br>
-        
+        <p style="color:#5d9ad8">Leave blank if you didn't get any treatments today.</p>
         {%for medication in medications%}
         <input type="radio" id="administered-medications" name="administered-medications" value={{medication.user_drug_id}}>
         <label for="administered-medications"> {{medication.drug_name}}</label>

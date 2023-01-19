@@ -17,20 +17,16 @@
 {% endblock %}
 
 {%block body%}
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-3">
-      <h1>{{user.user_name}}'s health profile</h1>
+
+<div class="container-md py-5 my-5 h-100">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-4">
+      <h1 style="font-size:20px; color:#5d94d8;">{{user.user_name}}'s health profile</h1>
 
       <p>See your progress below. </p>
-    </div>
-
-
-    <div class="col-9">
-      <div class="row">
         
       <!-- Cards for Column -->
-        <div class="card bg-transparent" style="width: 15rem; border-color: transparent;">
+        <div class="card bg-transparent" style="width: 15rem; border-color: #5d94d8;">
           <img src="/static/Images/DIAGNOSIS.svg" class="card-img-top" alt="...">
           <div class="card-body">
             <p style="font-size: 10px;">click below to learn more about your diagnosis</p>
@@ -64,7 +60,7 @@
 
 
   
-  <div class="card bg-transparent" style="width: 15rem; border-color: transparent;">
+  <div class="card bg-transparent" style="width: 15rem; border-color: #5d94d8; margin-top: 10px;">
     <img src="/static/Images/Treatment.svg" class="card-img-top" alt="...">
     <div class="card-body">
       <p style="font-size: 10px;">click below to learn more about your treatment</p>
@@ -94,14 +90,21 @@
       {%endfor%}
     </div>
   </div>
-  </div>
 </div>
-
-<div class="row">
-  <div class="col-3"></div>
-  <div class="col-9">
+<div class="col-8">
+    <div class="card bg-transparent" style="width: 45rem;">
+      <div>
+          <h2 style="font-weight:bold; color: #5d94d8;">Daily Log Progression</h2>
+          <canvas id="logchart"></canvas>
+      </div>
+      </div>
 <div class="symptoms">
-  <div class="card bg-transparent" style="width: 35rem;">
+  <div class="card bg-transparent" style="width: 45rem; margin-top: 10px;">
+    <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSymptoms" aria-expanded="false" aria-controls="collapseSymptoms">
+      Symptoms Logged
+    </button>
+    <div class="collapse" id="collapseSymptoms">
+      <div class="card card-body">
   <table class="table table-hover table-sm caption-top">
     <caption>Logged symptoms:</caption>
     <thead>
@@ -120,12 +123,18 @@
     </tbody>
   </table>
 </div>
-    
+    </div>
+    </div>
 </div>
 
 <div class="user-medications">
-  <div class="card bg-transparent" style="width: 35rem;">
-  <table class="table table-hover table-sm caption-top">
+  <div class="card bg-transparent" style="width: 45rem; margin-top: 10px;">
+    <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTreatments" aria-expanded="false" aria-controls="collapseTreatments">
+     Treatments Logged
+    </button>
+    <div class="collapse" id="collapseTreatments">
+      <div class="card card-body">
+  <table class="table table-hover table-sm caption-top" style="background-color: transparent;">
     <caption>Administered treatments:</caption>
     <thead>
       <tr>
@@ -144,20 +153,13 @@
   </table>
 </div>
 </div>
-<div class="card bg-transparent" style="width: 35rem;">
-<div>
-    <h2>Daily Progression</h2>
-    <canvas id="logchart"></canvas>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 </div>
 </div>
+<!-- Div for container -->
 </div>
 </div>
+</div> 
 {%endblock%}
 
 {% block js %}

@@ -57,6 +57,9 @@ fetch('/logs.json')
         ],
       },
       options: {
+        layout: {
+          padding: 20
+        },
         scales: {
           x: {
             type: 'time',
