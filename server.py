@@ -143,11 +143,13 @@ def show_daily_questionnaire():
     date= datetime.now()
     
     if pain_level:
+        flash("You have entered today's daily log!")
         db_daily_log= crud.add_user_daily_log(user_id, pain_level, pain_location_id, sleep_level, fatigue_level, appetite_level, date)
         db.session.add(db_daily_log)
         db.session.commit()
     
     if symptom_id:
+        flash("You have logged a symptom for today.")
         symptom= crud.get_symptom_by_id(symptom_id)
         symptom_name= symptom.common_name
         symptom_in_db= crud.add_user_symptom(user_id, symptom_id, symptom_name, date)
@@ -157,6 +159,7 @@ def show_daily_questionnaire():
     user_drug_id= request.args.get("administered-medications")
     
     if user_drug_id:
+        flash("You have logged today's treatment!")
         date= datetime.now()
         drug= crud.get_user_drugs_by_id(user_drug_id)
         drug_name= drug.drug_name

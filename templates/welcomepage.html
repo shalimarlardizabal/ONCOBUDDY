@@ -6,9 +6,9 @@
 {% block body %}
 
 <div class="container mt-5 py-5 h-75">
-    <div class="row d-flex justify-content-center align-items-center h-75">
+    <div class="row d-flex justify-content-center align-items-center h-100">
       
-        <div class ="column">
+        <div class ="col-9">
             <h1 style="font-size: 30px; color:#5d9ad8 ">Welcome to Onco Buddy, {{user.user_name}}!</h1>
             <p>Please enter your details to personalize your health profile. </p>
             {% for msg in get_flashed_messages() %}
@@ -20,41 +20,44 @@
             <div class = "row form-group">
             <div class="card bg-transparent" style="border-radius: 1rem;" >
                 <div class="card-header">What is your cancer diagnosis?</div>
-                <form class="form-control-sm" action="/intake" id="cancer-type">
+                <form action="/intake" id="cancer-type">
                 <div class="input-group mb-3">
-                <select class="form-control" id="cancer-type" name="cancer-type">
+                <select class="form-control-sm" id="cancer-type" name="cancer-type" style="margin-top: 10px;">
                 {%for cancer in cancer_types%}
                 <option value="{{cancer.cancer_id}}">{{cancer.name}}</option>
                 {%endfor%}
                 </select>
-                <button class="btn btn-dark" type="submit">submit</button>
+                <button class="btn btn-dark" type="submit" style="margin-top: 10px;">submit</button>
                 </div>
                 </form>
-                
+              
                 <div class="card-header">Add current treatments</div>
-                <form class="form-control-sm" action="/intake" id="user-medications">
+                <form action="/intake" id="user-medications">
                 <div class="input-group mb-3">
-                <select class ="form-control" id="user-medications" name="user-medications">
+                <select class ="form-control-sm" id="user-medications" name="user-medications" style="margin-top: 10px;">
                 {%for drug in drugs%}
                 <option value="{{drug.drug_id}}">{{drug.name}}</option>
                 {%endfor%}
                 </select> 
-                <button class="btn btn-dark" type="submit">submit</button>
+                <button class="btn btn-dark" type="submit" style="margin-top: 10px;">submit</button>
                 </div>
                 </form>
-            
+              
+
                 <div class="card-header">Add other conditions you would like to see on your profile</div>
-                <form class="form-control-sm" action="/intake" id="other-conditions">
+                <form action="/intake" id="other-conditions">
                 <div class="input-group mb-3">
-                <select class="form-control" id="other-conditions" name="other-conditions">
+                <select class="form-control-sm" id="other-conditions" name="other-conditions" style="margin-top: 10px;">
                 {%for condition in conditions%}
                 <option value="{{condition.diagnosis_id}}">{{condition.common_name}}</option>
                 {%endfor%}
                 </select> 
-                <button class="btn btn-dark" type="submit">submit</button>
+                <button class="btn btn-dark" type="submit" style="margin-top: 10px;">submit</button>
                 </div>
                 </form>
-                </div>
+              </div>
+            
+
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
               <a href="/dailylog" style="text-align:right;"><button type="button" class="btn btn-outline-dark">Go to daily log</button></a>

@@ -1,5 +1,6 @@
 body{
     background-color: #fff4bd;
+    font-family: 'Lato', sans-serif; 
 }
 
 .form-group {
@@ -18,4 +19,9 @@ h1, h2, h3 {
 
 #daily-label{
     font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+    margin-top: 10px;
 }
