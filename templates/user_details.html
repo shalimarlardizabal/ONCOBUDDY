@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% include 'navbar.html' %}
+{% include 'footer.html'%}
 
 {%block title %}{{user.user_name}}'s health profile {% endblock %}
 
@@ -18,10 +19,9 @@
 
 {%block body%}
 
-<div class="container-md py-5 my-5 h-100">
+<div class="container-lg py-5 my-5">
   <div class="row d-flex justify-content-center align-items-center">
     <div class="col-4">
-      <h1 style="font-size:20px; color:#5d94d8; font-weight: bold; text-shadow: 1px 1px 2px #2a537d;">{{user.user_name}}'s health profile</h1>
         
       <!-- Cards for Column -->
         <div class="card bg-transparent" style="width: 15rem; border-color: #5d94d8;">
@@ -30,21 +30,21 @@
             <p style="font-size: 10px;">click below to learn more about your diagnosis</p>
 
       <!-- Trigger the modal with a button -->
-            {% for element in cancer%}
+            {% for name, alt_name, content in diagnosis%}
             <div class="text-center">
-            <button type="button" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#myModal">{{element.cancer}}</button>
+            <button type="button" class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#diagnosis-{{alt_name}}">{{name}}</button>
             </div>
       <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
+            <div id="diagnosis-{{alt_name}}" class="modal fade" role="dialog">
               <div class="modal-dialog modal-dialog-scrollable">
 
       <!-- Modal content-->
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h4 class="modal-title">{{element.cancer}}</h4>
+                    <h4 class="modal-title">{{name}}</h4>
                   </div>
                   <div class="modal-body">
-                    <p>{{content[0]|safe}}</p>
+                    <p>{{content |safe}}</p>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
@@ -89,7 +89,10 @@
   </div>
 </div>
 <div class="col-8">
-    <div class="card bg-transparent" style="width: 45rem;">
+  <div class="card bg-transparent" style="width: 45rem; height: 10rem; margin-bottom: 50px;">
+  <h1 style=" font-size:20px; color:#5d94d8; font-weight: bold; text-shadow: 1px 1px 2px #2a537d;">{{user.user_name}}'s health profile</h1>
+</div>  
+  <div class="card bg-transparent" style="width: 45rem;">
       <div>
           <h2 style="font-size: 15px; font-weight:bold; color: #2a537d; text-align: center;">Daily Log</h2>
           <canvas id="logchart"></canvas>
@@ -157,6 +160,8 @@
 </div>
 </div>
 </div> 
+
+
 {%endblock%}
 
 {% block js %}

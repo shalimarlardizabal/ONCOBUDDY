@@ -2,7 +2,6 @@ import os
 import json
 from datetime import datetime
 import requests
-import urllib.parse
 from bs4 import BeautifulSoup
 
 import crud

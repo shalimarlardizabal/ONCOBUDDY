@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
-{% include 'navbar.html'%}
+{% include 'navbar.html' %}
+{% include 'footer.html'%}
+
 
 {%block title %}Hello, {{user.user_name}}{% endblock %}
 
 {%block body%}
 
   <!-- Dailies -->
-<div class="container-lg mt-5 py-5 h-100">
-  <div class="row d-flex justify-content-center align-items-center h-100">
-    <div class ="col-9">
+<div class="container-lg mt-5 py-5">
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class ="col-7 mb-5">
       <div class = "row form-group">
       <div class="card text-center" style="border-radius: 1rem; background-color: #5d9ad8;">
 <h1 style="font-size: 30px; font-weight: bold; color:#fff4bd">DAILY LOG</h1>
@@ -96,7 +98,7 @@
       
         <br>
         <div class="d-grid gap-2">
-        <button class= "btn btn-outline-dark btn-sm" type="submit" style="border-color:#5d9ad8;">LOG TREATMENT</button>
+        <button class= "btn btn-outline-dark btn-sm" type="submit" style="border-color:#5d9ad8; margin-top: 10px;">LOG TREATMENT</button>
       </div>
     </form>
     </div>
@@ -104,5 +106,6 @@
 </div>
 </div>
 </div>
+
 {%endblock%}
 

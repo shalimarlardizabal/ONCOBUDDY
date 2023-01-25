@@ -67,6 +67,8 @@ def create_account():
     
     if user:
         flash("Account with that email already exists. Please log in.")
+        return render_template('createaccount.html')
+    
     else:
         user = crud.create_user(email, password, user_name)
         db.session.add(user)
@@ -188,12 +190,17 @@ def show_user_page(user_id):
     for symptom in symptoms:
         symptom['start']= symptom['start'].date()
 
+    diagnosis=[]
 
     for element in cancer:
+        name= element['cancer']
+        alt_name= name.split()
+        alt2_name= alt_name[0]
         url= element['description']+ '/about'
         data= requests.get(url)
         html= BeautifulSoup(data.text, 'html.parser')
         content= html.select('.region-content')
+        diagnosis.append((name, alt2_name, content[0]))
 
     user_medication=[]
 
@@ -206,7 +213,7 @@ def show_user_page(user_id):
         user_medication.append((name, med_content[0]))
     
     
-    return render_template("user_details.html", user = user, medications=medications, symptoms=symptoms, cancer=cancer, content=content, user_medication=user_medication, administered_drugs=administered_drugs)
+    return render_template("user_details.html", user = user, medications=medications, symptoms=symptoms, cancer=cancer, diagnosis=diagnosis, user_medication=user_medication, administered_drugs=administered_drugs)
 
 
 @app.route('/logs.json')
