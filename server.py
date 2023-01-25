@@ -161,7 +161,7 @@ def show_daily_questionnaire():
     user_drug_id= request.args.get("administered-medications")
     
     if user_drug_id:
-        flash("You have logged today's treatment!")
+        flash("You have added an administered treatment.")
         date= datetime.now()
         drug= crud.get_user_drugs_by_id(user_drug_id)
         drug_name= drug.drug_name

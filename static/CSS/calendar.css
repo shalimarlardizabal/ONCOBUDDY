@@ -1,11 +1,12 @@
 
   #external-events {
-    position: relative;
+    position: fixed;
     z-index: 2;
     top: 20px;
     left: 20px;
     width: 150px;
     padding: 0 10px;
+    margin-top: 80px;
     border: 1px solid #ccc;
     background: #eee;
   }
@@ -25,4 +26,5 @@
   #calendar {
     max-width: 900px;
     margin: 20px auto;
+    color: #2a537d;
   }

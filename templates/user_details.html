@@ -24,7 +24,7 @@
     <div class="col-4">
         
       <!-- Cards for Column -->
-        <div class="card bg-transparent" style="width: 15rem; border-color: #5d94d8;">
+        <div class="card" style="width: 15rem; background-color:#f3fadc;">
           <img src="/static/Images/DIAGNOSIS.svg" class="card-img-top" alt="...">
           <div class="card-body">
             <p style="font-size: 10px;">click below to learn more about your diagnosis</p>
@@ -56,7 +56,7 @@
           </div>
         </div>
   
-  <div class="card bg-transparent" style="width: 15rem; border-color: #5d94d8; margin-top: 10px;">
+  <div class="card " style="width: 15rem; margin-top: 10px; background-color: #f3fadc;">
     <img src="/static/Images/Treatment.svg" class="card-img-top" alt="...">
     <div class="card-body">
       <p style="font-size: 10px;">click below to learn more about your treatment</p>
@@ -89,10 +89,35 @@
   </div>
 </div>
 <div class="col-8">
-  <div class="card bg-transparent" style="width: 45rem; height: 10rem; margin-bottom: 50px;">
-  <h1 style=" font-size:20px; color:#5d94d8; font-weight: bold; text-shadow: 1px 1px 2px #2a537d;">{{user.user_name}}'s health profile</h1>
+
+  <div class="card bg-transparent" style="width: 45rem; margin-bottom: 30px; border-color: transparent;">
+    <h1 style=" font-size:20px; color:#2a537d; font-weight: bold;"> >>> {{user.user_name}}'s Health Profile</h1>
+    <div class="card mb-3" style="border-color: transparent; background-color: #f3fadc; opacity: .7;">
+      <div class="row g-0">
+        <div class="col-md-7">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text text-muted">
+              <h6> Quick Overview:</h6>
+              <h7> Diagnosis </h7>
+              {% for name, alt_name, content in diagnosis%}
+              <li>{{name}}</li>
+              {%endfor%}
+              <h7> Treatments</h7>
+              {%for name, infor in user_medication%}
+              <li>{{name}}</li>
+              {%endfor%}
+              </p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <img src="/static/Images/profile.svg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+  
 </div>  
-  <div class="card bg-transparent" style="width: 45rem;">
+  <div class="card" style="width: 45rem; border-color: transparent; background-color:#f3fadc;">
       <div>
           <h2 style="font-size: 15px; font-weight:bold; color: #2a537d; text-align: center;">Daily Log</h2>
           <canvas id="logchart"></canvas>
