@@ -5,21 +5,25 @@
 {%block title%}Welcome to Onco Buddy {{user.user_name}} {%endblock%}
 
 {% block body %}
-
+<style>
+  body{
+    background-position: top;
+  }
+</style>
 <div class="container mt-5 py-5 h-75">
     <div class="row d-flex justify-content-center align-items-center h-100">
       
         <div class ="col-9">
-            <h1 style="font-size: 30px; color:#5d9ad8 ">Welcome to Onco Buddy, {{user.user_name}}!</h1>
+            <h1 style="font-size: 30px;">Let's do this, {{user.user_name}}!</h1>
             <p>Please enter your details to personalize your health profile. </p>
             {% for msg in get_flashed_messages() %}
-                      <p class="flash-msg" style="color: #5d9ad8; font-weight: bold;">
+                      <p class="flash-msg" style="font-weight: bold;">
                         {{msg}}
                       </p>
                     {% endfor %}
 
             <div class = "row form-group">
-            <div class="card" style="border-radius: 1rem; background-color:#ecedda; border-color: transparent;" >
+            <div class="card" style="border-radius: 1rem;" >
                 <div class="card-header">What is your cancer diagnosis?</div>
                 <form action="/intake" id="cancer-type">
                 <div class="input-group mb-3">

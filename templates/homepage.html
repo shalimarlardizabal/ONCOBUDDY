@@ -4,19 +4,23 @@
 {%block title %}Onco Buddy{% endblock %}
 
 {% block body%}
-
+<style>
+  body{
+    background-image: url(/static/Images/login-bg.jpg);
+  }
+</style>
 <!-- Sign-in  -->
-<section class="vh-50" style="background-color: #fff4bd;">
+<section class="vh-50">
     <div class="container py-5">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col col-md-10">
-          <div class="card" style="border-radius: 1rem;">
+          <div class="card" style="border-radius: 1rem; border-color: transparent; background-color: rgb(189,209,160, .5);">
             <div class="row g-0">
               <div class="col-md-6 col-lg-5 d-none d-md-block">
-                <img src="/static/Images/Onco Buddy (500 × 1000 px).svg"
-                  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                <img src="/static/Images/ONCOBUDDY-login.svg"
+                  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; border-color: transparent;" />
               </div>
-              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="col-md-6 col-lg-5 d-flex align-items-center">
                 <div class="card-body p-4 p-lg-5 text-black">
                   <form action="/users" method="POST">
                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Let's beat cancer together.</h5>
@@ -29,7 +33,7 @@
                 
                     </div>
                     <div class="pt-1 mb-4">
-                      <button class="btn btn-dark btn-md btn-block" type="submit">Login</button>
+                      <button class="btn btn-md btn-block" type="submit">Login</button>
                       <br>
                       {% for msg in get_flashed_messages() %}
                       <p class="flash-msg" style="color: red; font-weight: semi-bold;">
@@ -38,8 +42,7 @@
                     {% endfor %}
                     
                     </div>
-                    <p class="mb-5 pb-lg-2" style="color: #5d9ad8;">Don't have an account? <a href="/createaccount"
-                        style="color: #5d9ad8;">Register here</a></p>
+                    <p class="mb-5 pb-lg-2">Don't have an account? <a href="/createaccount">Register here</a></p>
                   </form>
                 </div>
               </div>

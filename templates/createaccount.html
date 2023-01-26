@@ -4,14 +4,20 @@
 {%block title %}Create an accont.{% endblock %}
 
 {% block body%}
-<section class="vh-50" style="background-color: #fff4bd;">
+<style>
+  body{
+    background-image: url(/static/Images/login-bg.jpg);
+  }
+</style>
+
+<section class="vh-50">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col col-md-10">
           <div class="card" style="border-radius: 1rem;">
             <div class="row g-0">
               <div class="col-md-6 col-lg-5 d-none d-md-block">
-                <img src="/static/Images/Onco Buddy (500 × 1000 px).svg"
+                <img src="/static/Images/ONCOBUDDY-login.svg"
                   alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
               </div>
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
@@ -40,8 +46,7 @@
                         {{msg}}
                       </p>
                     {% endfor %}
-                  <p class="mb-5 pb-lg-2" style="color: #5d9ad8;">Already have an account? <a href="/"
-                    style="color: #5d9ad8;">Sign-in</a></p>
+                  <p class="mb-5 pb-lg-2">Already have an account? <a href="/">Sign-in</a></p>
                 </div>
               </div>
             </div>

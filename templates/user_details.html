@@ -19,13 +19,13 @@
 
 {%block body%}
 
-<div class="container-lg py-5 my-5">
+<div class="container-sm py-5 my-5">
   <div class="row d-flex justify-content-center align-items-center">
-    <div class="col-4">
+    <div class="col-3 d-flex justify-content-end flex-column">
         
       <!-- Cards for Column -->
-        <div class="card" style="width: 15rem; background-color:#f3fadc;">
-          <img src="/static/Images/DIAGNOSIS.svg" class="card-img-top" alt="...">
+        <div class="card" style="width: 15rem;">
+          <img src="/static/Images/diagnosis-logo.svg" class="card-img-top" alt="...">
           <div class="card-body">
             <p style="font-size: 10px;">click below to learn more about your diagnosis</p>
 
@@ -56,8 +56,8 @@
           </div>
         </div>
   
-  <div class="card " style="width: 15rem; margin-top: 10px; background-color: #f3fadc;">
-    <img src="/static/Images/Treatment.svg" class="card-img-top" alt="...">
+  <div class="card g-0" style="width: 15rem; margin-top: 10px;">
+    <img src="/static/Images/treatment-logo.svg" class="card-img-top" alt="...">
     <div class="card-body">
       <p style="font-size: 10px;">click below to learn more about your treatment</p>
   <!-- Trigger modal with a button -->
@@ -91,8 +91,8 @@
 <div class="col-8">
 
   <div class="card bg-transparent" style="width: 45rem; margin-bottom: 30px; border-color: transparent;">
-    <h1 style=" font-size:20px; color:#2a537d; font-weight: bold;"> >>> {{user.user_name}}'s Health Profile</h1>
-    <div class="card mb-3" style="border-color: transparent; background-color: #f3fadc; opacity: .7;">
+    <h1 style=" font-size:20px; font-weight: bold;"> >>> {{user.user_name}}'s Health Profile</h1>
+    <div class="card mb-3" style="border-color: transparent;">
       <div class="row g-0">
         <div class="col-md-7">
           <div class="card-body">
@@ -117,9 +117,9 @@
     </div>
   
 </div>  
-  <div class="card" style="width: 45rem; border-color: transparent; background-color:#f3fadc;">
+  <div class="card" style="width: 45rem; border-color: transparent;">
       <div>
-          <h2 style="font-size: 15px; font-weight:bold; color: #2a537d; text-align: center;">Daily Log</h2>
+          <h2 style="font-size: 15px; font-weight:bold; text-align: center;">Daily Log</h2>
           <canvas id="logchart"></canvas>
       </div>
       </div>

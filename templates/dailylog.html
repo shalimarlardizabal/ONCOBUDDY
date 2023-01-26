@@ -7,20 +7,26 @@
 
 {%block body%}
 
+<style>
+  body{
+    background-position: top;
+  }
+</style>
+
   <!-- Dailies -->
 <div class="container-lg mt-5 py-5">
   <div class="row d-flex justify-content-center align-items-center">
     <div class ="col-7 mb-5">
       <div class = "row form-group">
-      <div class="card text-center" style="border-radius: 1rem; background-color: #5d9ad8;">
-<h1 style="font-size: 30px; font-weight: bold; color:#fff4bd">DAILY LOG</h1>
+      <div class="card text-center" style="border-radius: 1rem; background-color: rgb(69,83,38);">
+<h1 style="font-size: 35px; font-weight: bold; color: #fffbf5;">Daily Log</h1>
 {% for msg in get_flashed_messages() %}
-                      <p class="flash-msg" style="color: #fff4bd; font-weight: bold;">
+                      <p class="flash-msg" style="color: #f9f9f7; font-weight: bold;">
                         {{msg}}
                       </p>
                     {% endfor %}
-<div id="current_date">
-    <img src="/static/Images/calendar2-heart.svg">
+<div id="current_date" style="color:#f9f9f7; font-size: 20px;">
+  <i class="bi bi-calendar-heart-fill"></i>
     <script style="font-size: 20px;">
     date = new Date().toLocaleDateString();
     document.write(`${date}`);
@@ -30,39 +36,42 @@
     </div>
     </div>
     <div class = "row form-group">
-      <div class="card text-center" style="border-radius: 1rem; background-color:#ecedda; border-color: transparent;">
+      <div class="card text-center" style="border-radius: 1rem; border-color: transparent; ">
     <div class="dailies">
         <form action="/dailylog" id="daily-symptoms">
           <div class="form-group">
-            <label class="daily-label" for="pain"><strong>Rate your pain</strong> </label>
+            <label class="daily-label" for="pain">Rate your pain</label>
+            <br>
             {% for n in range(11) %}
             <input type="radio" value="{{n}}" name="pain"> {{n}}
             {%endfor%}
-            <p style="color:#5d9ad8; font-size: 9px;"> 0 No Pain, 1-4 Mild Pain, 5-6 Moderate Pain, 7-10 Severe pain</p>
-            <label class="daily-label" for="pain-location"><strong>Where do you feel the pain?</strong></label>
+            <p style="font-size: 9px;"> 0 No Pain, 1-4 Mild Pain, 5-6 Moderate Pain, 7-10 Severe pain</p>
+            <label class="daily-label" for="pain-location">Where do you feel the pain?</label>
             <select class= "form-control form-control-sm mx-auto" id="pain-location" name="pain-location" style="width: auto;">
                 {%for location in pain%}
                 <option value="{{location.symptom_id}}">{{location.common_name}}</option>
                 {%endfor%}
             </select>
+            <label class="daily-label" for="fatigue">Rate your fatigue</label>
             <br>
-            <label class="daily-label" for="fatigue"><strong>Rate your fatigue</strong></label>
             {% for n in range(11) %}
             <input type="radio" value="{{n}}" name="fatigue"> {{n}}
             {%endfor%}
-            <p style="color:#5d9ad8; font-size: 9px;">0 Rested, 1-4 Some Fatigue, 5-6 Tired, 7-8 Very Tired, 9-10 Exhausted</p>
-            <label class="daily-label" for="sleep"><strong>Enter hours of sleep</strong></label>
+            <p style="font-size: 9px;">0 Rested, 1-4 Some Fatigue, 5-6 Tired, 7-8 Very Tired, 9-10 Exhausted</p>
+            <label class="daily-label" for="sleep">Enter hours of sleep</label>
+            <br>
             {% for n in range(11) %}
             <input type="radio" value="{{n}}" name="sleep"> {{n}}
             {%endfor%}
-            <p style="color:#5d9ad8"></p>
-            <label class="daily-label" for="appetite"><strong>What is your appetite level?</strong></label>
+            <p></p>
+            <label class="daily-label" for="appetite">What is your appetite level?</label>
+            <br>
             {% for n in range(11) %}
             <input type="radio" value="{{n}}" name="appetite" id="dailylog"> {{n}}
             {%endfor%}
-            <p style="color:#5d9ad8; font-size: 9px;">0 Not Hungry, 1-4 Slightly Hungry, 5-7 Hungry, 8-10 Very Hungry  </p>
+            <p style="font-size: 9px;">0 Not Hungry, 1-4 Slightly Hungry, 5-7 Hungry, 8-10 Very Hungry  </p>
             <div class="d-grid gap-2">
-              <button class= "btn btn-outline-dark btn-sm" type="submit" id="dailylog" style="border-color:#5d9ad8;">ENTER DAILY LOG</button>
+              <button class= "btn btn-outline-dark btn-sm" type="submit" id="dailylog">ENTER DAILY LOG</button>
             </div>
           </div>
 
@@ -70,27 +79,27 @@
             </div>
             </div>
             <div class = "row form-group">
-              <div class="card text-center" style="border-radius: 1rem; background-color:#ecedda; border-color: transparent;">
+              <div class="card text-center" style="border-radius: 1rem;">
             <div class="other-symptoms">
             <form action="/dailylog">
               <div class="form-group">
             <label for="daily-symptoms"><strong>What symptoms are you currently having?</strong></label><br>
-            <p style="color:#5d9ad8; font-size: 9px;">Leave blank if you're not having any symptoms.</p>
+            <p style="font-size: 9px;">Leave blank if you're not having any symptoms.</p>
             <select class="form-control form-control-sm mx-auto" id="daily-symptoms" name="daily-symptoms" style="width: auto;">
                 {%for symptom in symptoms%}
                 <option value="{{symptom.symptom_id}}">{{symptom.common_name}}</option>
                 {%endfor%}
             </select><br>
             <div class="d-grid gap-2">
-            <button class= "btn btn-outline-dark btn-sm" type="submit" style="border-color:#5d9ad8;">LOG SYMPTOM</button>
+            <button class= "btn btn-outline-dark btn-sm" type="submit">LOG SYMPTOM</button>
           </div>
         </form></div></div></div></div>
         <div class = "row form-group">
-          <div class="card text-center" style="border-radius: 1rem; background-color:#ecedda; border-color: transparent; border-color: transparent;">
+          <div class="card text-center" style="border-radius: 1rem;">
     <div class="medications">
         <form action="/dailylog">
         <label for="administered-medications"><strong>What treatments were administered today?</strong></label><br>
-        <p style="color:#5d9ad8; font-size: 9px;">Leave blank if you didn't get any treatments today.</p>
+        <p style="font-size: 9px;">Leave blank if you didn't get any treatments today.</p>
         {%for medication in medications%}
         <input type="radio" id="administered-medications" name="administered-medications" value={{medication.user_drug_id}}>
         <label for="administered-medications"> {{medication.drug_name}}</label>
@@ -98,7 +107,7 @@
       
         <br>
         <div class="d-grid gap-2">
-        <button class= "btn btn-outline-dark btn-sm" type="submit" style="border-color:#5d9ad8; margin-top: 10px;">LOG TREATMENT</button>
+        <button class= "btn btn-outline-dark btn-sm" type="submit" style="margin-top: 10px;">LOG TREATMENT</button>
       </div>
     </form>
     </div>

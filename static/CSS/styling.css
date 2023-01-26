@@ -1,10 +1,40 @@
 body{
-    background-color: #fff4bd;
-    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f7;
+    font-family: 'Georgia', serif;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    color:  #332920;
+    
+}
+
+.btn{
+    background-color: #bdd1a0;
+    border-color: transparent;
+    color: #332920;
+}
+
+.btn:hover{
+    background-color: rgb(69,83,38, .75);
+    border-color: transparent;
+    color: #332920;
 }
 
 .form-group {
     margin-bottom: 10px;
+}
+
+a{
+    color:#332920;
+}
+
+a:hover{
+    color: #455326
+}
+
+.card{
+    background-color: rgb(189,209,160, .5);
+    border-color: transparent;
 }
 
 p {
@@ -25,3 +55,30 @@ h1, h2, h3 {
     margin-top: 10px;
 }
 
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #f9f9f7;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #f9f9f7;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(69,83,38);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}

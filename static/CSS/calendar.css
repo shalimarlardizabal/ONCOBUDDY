@@ -1,4 +1,4 @@
-
+  
   #external-events {
     position: fixed;
     z-index: 2;
@@ -7,13 +7,16 @@
     width: 150px;
     padding: 0 10px;
     margin-top: 80px;
-    border: 1px solid #ccc;
-    background: #eee;
+    border: 1px solid #332920;
+    background:  rgb(189,209,160, .5);
   }
   
   #external-events .fc-event {
     cursor: move;
     margin: 3px 0;
+    background-color: #332920;
+    border-color: #332920;
+    color: #f9f9f7;
   }
   
   #calendar-container {
@@ -26,5 +29,5 @@
   #calendar {
     max-width: 900px;
     margin: 20px auto;
-    color: #2a537d;
+    color: rgb(69,83,38);
   }
