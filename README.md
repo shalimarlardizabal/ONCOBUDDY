@@ -8,20 +8,19 @@ Onco Buddy was created by Shalimar Lardizabal. Learn more about the developer on
 
 ## Tech Stack
 
-..* Python
-..* Flask
-..* PostgreSQL
-..* SQL Alchemy
-..* Jinja2
-..* HTML
-..* CSS
-..* Bootstrap
-..* Javascript
-..* AJAX
-..* JSON
-..* Chart.js
-..* JS fullCalendar API
-..* Infermedica API
+* Python
+* Flask
+* PostgreSQL
+* SQL Alchemy
+* Jinja2
+* HTML
+* CSS
+* Bootstrap
+* Javascript
+* AJAX/JSON
+* Chart.js
+* JS fullCalendar API
+* Infermedica API
 
 ## Features
 
