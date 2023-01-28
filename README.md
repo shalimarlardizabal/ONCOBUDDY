@@ -4,7 +4,7 @@ Onco Buddy is a full-stack web application designed to assist cancer patients in
 
 ## About the Developer
 
-Onco Buddy was created by Shalimar Lardizabal. Learn more about the developer on [LinkedIn] (https://www.linkedin.com/in/shalimarlardizabal/).
+Onco Buddy was created by Shalimar Lardizabal. Learn more about the developer on [LinkedIn](https://www.linkedin.com/in/shalimarlardizabal/).
 
 ## Tech Stack
 
