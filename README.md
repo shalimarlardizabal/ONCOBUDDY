@@ -86,3 +86,8 @@ Users are able to see symptoms and administered treatments with dates.
 ![Calendar](/static/Images/Readme-screenshots/Calendar.png)
 
 Users can visualize date of treatment and onset of symptoms. 
+
+## Version 2.0
+* Implement a live-search for drop-down select
+* Implement a "wall" section where users with the same diagnosis can share stories and experiences
+* Implement comment feature for stories and experiences
